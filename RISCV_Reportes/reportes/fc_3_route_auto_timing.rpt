@@ -1,0 +1,2515 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : Top_RISCV
+Version: Y-2026.03-SP2
+Date   : Thu Nov  5 15:17:48 2026
+****************************************
+
+  Startpoint: u_riscv_core/u_datapath/u_pc_reg/pc_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_riscv_core/u_datapath/u_reg_file/rf_reg[2][18] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: typical
+  Scenario: func_typical
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[5]/CK (SFFRBQX1TAS7)
+                                                   0.00      0.00 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[5]/Q (SFFRBQX1TAS7)
+                                                   1.69      1.69 f
+  u_imem/A3594/O (NOR2X1TAS7)                      1.97      3.65 r
+  u_imem/A3601/O (CLKINVX1TAS7)                    1.10      4.75 f
+  u_imem/A3610/O (NOR3X1TAS7)                      2.64      7.39 r
+  u_imem/A3611/O (NAND2X1TAS7)                     0.81      8.20 f
+  u_imem/A3612/O (NOR2X1TAS7)                      1.72      9.92 r
+  u_imem/A3613/O (NOR2X1TAS7)                      0.50     10.42 f
+  u_imem/A3614/O (NAND3X1TAS7)                     1.08     11.49 r
+  u_imem/A3615/O (NOR2X1TAS7)                      0.69     12.18 f
+  u_riscv_core/u_controller/u_main_decoder/A3797/O (AOI112X1TAS7)
+                                                  20.04     32.22 r
+  u_riscv_core/u_datapath/u_srcb_mux/A3783/O (MUX2X1TAS7)
+                                                   6.86     39.08 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6586/O (NOR2B1X1TAS7)
+                                                   2.06     41.15 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6585/O (NOR2X1TAS7)
+                                                   1.47     42.62 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6584/O (NAND2B1X1TAS7)
+                                                   0.67     43.29 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6583/O (NOR2X1TAS7)
+                                                   1.35     44.64 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6582/O (NAND2B1X1TAS7)
+                                                   0.67     45.31 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6581/O (NOR2X1TAS7)
+                                                   1.35     46.66 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6580/O (NAND2B1X1TAS7)
+                                                   0.67     47.33 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6579/O (NOR2X1TAS7)
+                                                   1.35     48.68 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6578/O (NAND2B1X1TAS7)
+                                                   0.68     49.37 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6577/O (NOR2X1TAS7)
+                                                   1.36     50.73 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6576/O (NAND2B1X1TAS7)
+                                                   0.68     51.41 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6575/O (NOR2X1TAS7)
+                                                   1.36     52.77 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6574/O (NAND2B1X1TAS7)
+                                                   0.67     53.44 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6573/O (NOR2X1TAS7)
+                                                   1.35     54.79 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6572/O (NAND2B1X1TAS7)
+                                                   0.67     55.46 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6571/O (NOR2X1TAS7)
+                                                   1.35     56.81 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6570/O (NAND2B1X1TAS7)
+                                                   0.67     57.48 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6569/O (NOR2X1TAS7)
+                                                   1.35     58.83 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6568/O (NAND2B1X1TAS7)
+                                                   0.67     59.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6567/O (NOR2X1TAS7)
+                                                   1.35     60.85 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6566/O (NAND2B1X1TAS7)
+                                                   0.67     61.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6565/O (NOR2X1TAS7)
+                                                   1.35     62.87 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6564/O (NAND2B1X1TAS7)
+                                                   0.68     63.56 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6563/O (NOR2X1TAS7)
+                                                   1.13     64.69 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6562/O (NAND2B1X1TAS7)
+                                                   0.49     65.18 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6561/O (NOR2X1TAS7)
+                                                   0.79     65.97 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6560/O (NAND2B1X1TAS7)
+                                                   0.46     66.42 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6559/O (NOR2X1TAS7)
+                                                   0.76     67.19 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6558/O (NAND2B1X1TAS7)
+                                                   0.46     67.64 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6557/O (NOR2X1TAS7)
+                                                   0.73     68.37 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6587/O (CLKINVX1TAS7)
+                                                   0.45     68.82 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6556/O (NOR2X1TAS7)
+                                                   0.72     69.54 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6588/O (CLKINVX1TAS7)
+                                                   0.45     69.99 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6555/O (NOR2X1TAS7)
+                                                   0.72     70.71 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47/ctmi_6589/O (CLKINVX1TAS7)
+                                                   0.77     71.48 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/A1947/O (MUX2X1TAS7)
+                                                   1.78     73.26 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/U_35/CO (FAX1TAS7)
+                                                   3.61     76.86 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1042/O (NAND2X1TAS7)
+                                                   0.73     77.59 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1043/O (CLKINVX1TAS7)
+                                                   0.50     78.10 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1045/O (NAND2X1TAS7)
+                                                   0.60     78.69 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1046/O (CLKINVX1TAS7)
+                                                   0.51     79.20 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1048/O (NAND2X1TAS7)
+                                                   0.66     79.86 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1049/O (CLKINVX1TAS7)
+                                                   0.50     80.36 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1051/O (NAND2X1TAS7)
+                                                   0.66     81.02 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1052/O (CLKINVX1TAS7)
+                                                   0.50     81.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1054/O (NAND2X1TAS7)
+                                                   0.66     82.18 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1055/O (CLKINVX1TAS7)
+                                                   0.50     82.68 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1057/O (NAND2X1TAS7)
+                                                   0.66     83.34 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1058/O (CLKINVX1TAS7)
+                                                   0.52     83.86 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1060/O (NAND2X1TAS7)
+                                                   0.67     84.53 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1061/O (CLKINVX1TAS7)
+                                                   0.52     85.04 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1063/O (NAND2X1TAS7)
+                                                   0.67     85.71 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1064/O (CLKINVX1TAS7)
+                                                   0.52     86.23 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1066/O (NAND2X1TAS7)
+                                                   0.67     86.89 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1067/O (CLKINVX1TAS7)
+                                                   0.50     87.39 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1069/O (NAND2X1TAS7)
+                                                   0.66     88.06 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1070/O (CLKINVX1TAS7)
+                                                   0.50     88.56 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1072/O (NAND2X1TAS7)
+                                                   0.66     89.22 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1073/O (CLKINVX1TAS7)
+                                                   0.50     89.72 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1075/O (NAND2X1TAS7)
+                                                   0.66     90.38 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1076/O (CLKINVX1TAS7)
+                                                   0.50     90.88 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1078/O (NAND2X1TAS7)
+                                                   0.66     91.54 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1079/O (CLKINVX1TAS7)
+                                                   0.50     92.04 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1081/O (NAND2X1TAS7)
+                                                   0.66     92.70 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1082/O (CLKINVX1TAS7)
+                                                   0.50     93.20 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1084/O (NAND2X1TAS7)
+                                                   0.66     93.86 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1085/O (CLKINVX1TAS7)
+                                                   0.50     94.36 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1087/O (NAND2X1TAS7)
+                                                   0.66     95.02 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1088/O (CLKINVX1TAS7)
+                                                   0.50     95.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1090/O (NAND2X1TAS7)
+                                                   0.66     96.18 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1091/O (CLKINVX1TAS7)
+                                                   0.50     96.68 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1093/O (NAND2X1TAS7)
+                                                   0.66     97.35 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1094/O (CLKINVX1TAS7)
+                                                   0.50     97.85 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1096/O (NAND2X1TAS7)
+                                                   0.66     98.51 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1097/O (CLKINVX1TAS7)
+                                                   0.52     99.02 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1099/O (NAND2X1TAS7)
+                                                   0.67     99.69 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1100/O (CLKINVX1TAS7)
+                                                   0.52    100.21 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1102/O (NAND2X1TAS7)
+                                                   0.67    100.87 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1103/O (CLKINVX1TAS7)
+                                                   0.52    101.39 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1105/O (NAND2X1TAS7)
+                                                   0.67    102.05 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1106/O (CLKINVX1TAS7)
+                                                   0.52    102.57 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1108/O (NAND2X1TAS7)
+                                                   0.55    103.12 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1109/O (CLKINVX1TAS7)
+                                                   0.39    103.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1111/O (NAND2X1TAS7)
+                                                   0.49    103.99 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1112/O (CLKINVX1TAS7)
+                                                   0.36    104.35 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1114/O (NAND2X1TAS7)
+                                                   0.48    104.82 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1115/O (CLKINVX1TAS7)
+                                                   0.36    105.18 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1117/O (NAND2X1TAS7)
+                                                   0.48    105.66 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1118/O (CLKINVX1TAS7)
+                                                   0.36    106.02 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1120/O (NAND2X1TAS7)
+                                                   0.48    106.49 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1121/O (CLKINVX1TAS7)
+                                                   0.36    106.85 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1124/O (NAND2X1TAS7)
+                                                   0.49    107.34 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1126/O (NOR2X1TAS7)
+                                                   0.31    107.65 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I2/ctmi_1127/O (NAND2X1TAS7)
+                                                   1.04    108.69 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A1764/O (MUX2X1TAS7)
+                                                   1.93    110.62 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/U_35/CO (FAX1TAS7)
+                                                   3.76    114.38 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/U_38/CO (FAX1TAS7)
+                                                   3.12    117.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1529/O (NAND2X1TAS7)
+                                                   0.73    118.23 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1530/O (CLKINVX1TAS7)
+                                                   0.50    118.73 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1532/O (NAND2X1TAS7)
+                                                   0.60    119.33 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1533/O (CLKINVX1TAS7)
+                                                   0.51    119.83 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1535/O (NAND2X1TAS7)
+                                                   0.66    120.50 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1536/O (CLKINVX1TAS7)
+                                                   0.50    121.00 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1538/O (NAND2X1TAS7)
+                                                   0.66    121.66 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1539/O (CLKINVX1TAS7)
+                                                   0.50    122.16 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1541/O (NAND2X1TAS7)
+                                                   0.66    122.82 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1542/O (CLKINVX1TAS7)
+                                                   0.52    123.34 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1544/O (NAND2X1TAS7)
+                                                   0.67    124.00 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1545/O (CLKINVX1TAS7)
+                                                   0.52    124.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1547/O (NAND2X1TAS7)
+                                                   0.67    125.18 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1548/O (CLKINVX1TAS7)
+                                                   0.52    125.70 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1550/O (NAND2X1TAS7)
+                                                   0.67    126.37 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1551/O (CLKINVX1TAS7)
+                                                   0.50    126.87 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1553/O (NAND2X1TAS7)
+                                                   0.66    127.53 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1554/O (CLKINVX1TAS7)
+                                                   0.50    128.03 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1556/O (NAND2X1TAS7)
+                                                   0.66    128.69 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1557/O (CLKINVX1TAS7)
+                                                   0.50    129.19 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1559/O (NAND2X1TAS7)
+                                                   0.66    129.85 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1560/O (CLKINVX1TAS7)
+                                                   0.50    130.35 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1562/O (NAND2X1TAS7)
+                                                   0.66    131.01 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1563/O (CLKINVX1TAS7)
+                                                   0.50    131.51 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1565/O (NAND2X1TAS7)
+                                                   0.66    132.17 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1566/O (CLKINVX1TAS7)
+                                                   0.50    132.67 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1568/O (NAND2X1TAS7)
+                                                   0.66    133.33 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1569/O (CLKINVX1TAS7)
+                                                   0.50    133.84 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1571/O (NAND2X1TAS7)
+                                                   0.66    134.50 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1572/O (CLKINVX1TAS7)
+                                                   0.50    135.00 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1574/O (NAND2X1TAS7)
+                                                   0.66    135.66 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1575/O (CLKINVX1TAS7)
+                                                   0.50    136.16 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1577/O (NAND2X1TAS7)
+                                                   0.66    136.82 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1578/O (CLKINVX1TAS7)
+                                                   0.50    137.32 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1580/O (NAND2X1TAS7)
+                                                   0.66    137.98 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1581/O (CLKINVX1TAS7)
+                                                   0.52    138.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1583/O (NAND2X1TAS7)
+                                                   0.67    139.16 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1584/O (CLKINVX1TAS7)
+                                                   0.52    139.68 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1586/O (NAND2X1TAS7)
+                                                   0.67    140.35 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1587/O (CLKINVX1TAS7)
+                                                   0.52    140.86 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1589/O (NAND2X1TAS7)
+                                                   0.67    141.53 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1590/O (CLKINVX1TAS7)
+                                                   0.52    142.04 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1592/O (NAND2X1TAS7)
+                                                   0.67    142.71 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1593/O (CLKINVX1TAS7)
+                                                   0.52    143.23 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1595/O (NAND2X1TAS7)
+                                                   0.55    143.77 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1596/O (CLKINVX1TAS7)
+                                                   0.39    144.16 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1598/O (NAND2X1TAS7)
+                                                   0.49    144.65 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1599/O (CLKINVX1TAS7)
+                                                   0.36    145.00 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1601/O (NAND2X1TAS7)
+                                                   0.48    145.48 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1602/O (CLKINVX1TAS7)
+                                                   0.36    145.84 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1604/O (NAND2X1TAS7)
+                                                   0.48    146.31 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1605/O (CLKINVX1TAS7)
+                                                   0.36    146.67 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1608/O (NAND2X1TAS7)
+                                                   0.49    147.17 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1610/O (NOR2X1TAS7)
+                                                   0.31    147.47 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I3/ctmi_1611/O (NAND2X1TAS7)
+                                                   4.03    151.50 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A1924/O (MUX2X1TAS7)
+                                                   3.20    154.70 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/U_35/CO (FAX1TAS7)
+                                                   3.80    158.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/U_38/CO (FAX1TAS7)
+                                                   3.27    161.77 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/U_40/CO (FAX1TAS7)
+                                                   3.11    164.89 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1130/O (NAND2X1TAS7)
+                                                   0.73    165.61 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1131/O (CLKINVX1TAS7)
+                                                   0.50    166.12 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1133/O (NAND2X1TAS7)
+                                                   0.60    166.71 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1134/O (CLKINVX1TAS7)
+                                                   0.51    167.22 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1136/O (NAND2X1TAS7)
+                                                   0.66    167.88 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1137/O (CLKINVX1TAS7)
+                                                   0.50    168.38 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1139/O (NAND2X1TAS7)
+                                                   0.66    169.04 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1140/O (CLKINVX1TAS7)
+                                                   0.52    169.56 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1142/O (NAND2X1TAS7)
+                                                   0.67    170.23 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1143/O (CLKINVX1TAS7)
+                                                   0.52    170.74 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1145/O (NAND2X1TAS7)
+                                                   0.67    171.41 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1146/O (CLKINVX1TAS7)
+                                                   0.52    171.92 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1148/O (NAND2X1TAS7)
+                                                   0.67    172.59 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1149/O (CLKINVX1TAS7)
+                                                   0.50    173.09 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1151/O (NAND2X1TAS7)
+                                                   0.66    173.75 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1152/O (CLKINVX1TAS7)
+                                                   0.50    174.25 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1154/O (NAND2X1TAS7)
+                                                   0.66    174.91 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1155/O (CLKINVX1TAS7)
+                                                   0.50    175.41 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1157/O (NAND2X1TAS7)
+                                                   0.66    176.08 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1158/O (CLKINVX1TAS7)
+                                                   0.50    176.58 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1160/O (NAND2X1TAS7)
+                                                   0.66    177.24 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1161/O (CLKINVX1TAS7)
+                                                   0.50    177.74 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1163/O (NAND2X1TAS7)
+                                                   0.66    178.40 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1164/O (CLKINVX1TAS7)
+                                                   0.50    178.90 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1166/O (NAND2X1TAS7)
+                                                   0.66    179.56 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1167/O (CLKINVX1TAS7)
+                                                   0.50    180.06 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1169/O (NAND2X1TAS7)
+                                                   0.66    180.72 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1170/O (CLKINVX1TAS7)
+                                                   0.50    181.22 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1172/O (NAND2X1TAS7)
+                                                   0.66    181.88 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1173/O (CLKINVX1TAS7)
+                                                   0.50    182.38 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1175/O (NAND2X1TAS7)
+                                                   0.66    183.04 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1176/O (CLKINVX1TAS7)
+                                                   0.50    183.54 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1178/O (NAND2X1TAS7)
+                                                   0.66    184.20 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1179/O (CLKINVX1TAS7)
+                                                   0.52    184.72 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1181/O (NAND2X1TAS7)
+                                                   0.67    185.39 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1182/O (CLKINVX1TAS7)
+                                                   0.52    185.90 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1184/O (NAND2X1TAS7)
+                                                   0.67    186.57 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1185/O (CLKINVX1TAS7)
+                                                   0.52    187.09 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1187/O (NAND2X1TAS7)
+                                                   0.67    187.75 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1188/O (CLKINVX1TAS7)
+                                                   0.52    188.27 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1190/O (NAND2X1TAS7)
+                                                   0.67    188.93 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1191/O (CLKINVX1TAS7)
+                                                   0.52    189.45 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1193/O (NAND2X1TAS7)
+                                                   0.67    190.12 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1194/O (CLKINVX1TAS7)
+                                                   0.52    190.63 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1196/O (NAND2X1TAS7)
+                                                   0.55    191.18 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1197/O (CLKINVX1TAS7)
+                                                   0.39    191.56 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1199/O (NAND2X1TAS7)
+                                                   0.49    192.05 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1200/O (CLKINVX1TAS7)
+                                                   0.36    192.41 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1202/O (NAND2X1TAS7)
+                                                   0.48    192.89 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1203/O (CLKINVX1TAS7)
+                                                   0.36    193.25 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1206/O (NAND2X1TAS7)
+                                                   0.49    193.74 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1208/O (NOR2X1TAS7)
+                                                   0.31    194.04 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I4/ctmi_1209/O (NAND2X1TAS7)
+                                                   4.20    198.24 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2204/O (MUX2X1TAS7)
+                                                   3.27    201.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/U_35/CO (FAX1TAS7)
+                                                   3.80    205.32 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/U_38/CO (FAX1TAS7)
+                                                   3.27    208.59 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/U_40/CO (FAX1TAS7)
+                                                   3.27    211.86 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/U_43/CO (FAX1TAS7)
+                                                   3.11    214.97 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1212/O (NAND2X1TAS7)
+                                                   0.73    215.70 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1213/O (CLKINVX1TAS7)
+                                                   0.50    216.20 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1215/O (NAND2X1TAS7)
+                                                   0.60    216.79 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1216/O (CLKINVX1TAS7)
+                                                   0.51    217.30 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1218/O (NAND2X1TAS7)
+                                                   0.66    217.96 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1219/O (CLKINVX1TAS7)
+                                                   0.52    218.48 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1221/O (NAND2X1TAS7)
+                                                   0.67    219.15 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1222/O (CLKINVX1TAS7)
+                                                   0.52    219.66 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1224/O (NAND2X1TAS7)
+                                                   0.67    220.33 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1225/O (CLKINVX1TAS7)
+                                                   0.52    220.84 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1227/O (NAND2X1TAS7)
+                                                   0.67    221.51 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1228/O (CLKINVX1TAS7)
+                                                   0.50    222.01 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1230/O (NAND2X1TAS7)
+                                                   0.66    222.67 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1231/O (CLKINVX1TAS7)
+                                                   0.50    223.17 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1233/O (NAND2X1TAS7)
+                                                   0.66    223.83 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1234/O (CLKINVX1TAS7)
+                                                   0.50    224.33 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1236/O (NAND2X1TAS7)
+                                                   0.66    225.00 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1237/O (CLKINVX1TAS7)
+                                                   0.50    225.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1239/O (NAND2X1TAS7)
+                                                   0.66    226.16 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1240/O (CLKINVX1TAS7)
+                                                   0.50    226.66 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1242/O (NAND2X1TAS7)
+                                                   0.66    227.32 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1243/O (CLKINVX1TAS7)
+                                                   0.50    227.82 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1245/O (NAND2X1TAS7)
+                                                   0.66    228.48 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1246/O (CLKINVX1TAS7)
+                                                   0.50    228.98 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1248/O (NAND2X1TAS7)
+                                                   0.66    229.64 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1249/O (CLKINVX1TAS7)
+                                                   0.50    230.14 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1251/O (NAND2X1TAS7)
+                                                   0.66    230.80 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1252/O (CLKINVX1TAS7)
+                                                   0.50    231.30 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1254/O (NAND2X1TAS7)
+                                                   0.66    231.96 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1255/O (CLKINVX1TAS7)
+                                                   0.50    232.46 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1257/O (NAND2X1TAS7)
+                                                   0.66    233.12 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1258/O (CLKINVX1TAS7)
+                                                   0.52    233.64 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1260/O (NAND2X1TAS7)
+                                                   0.67    234.31 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1261/O (CLKINVX1TAS7)
+                                                   0.52    234.82 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1263/O (NAND2X1TAS7)
+                                                   0.67    235.49 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1264/O (CLKINVX1TAS7)
+                                                   0.52    236.01 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1266/O (NAND2X1TAS7)
+                                                   0.67    236.67 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1267/O (CLKINVX1TAS7)
+                                                   0.52    237.19 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1269/O (NAND2X1TAS7)
+                                                   0.67    237.85 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1270/O (CLKINVX1TAS7)
+                                                   0.52    238.37 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1272/O (NAND2X1TAS7)
+                                                   0.67    239.04 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1273/O (CLKINVX1TAS7)
+                                                   0.52    239.55 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1275/O (NAND2X1TAS7)
+                                                   0.67    240.22 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1276/O (CLKINVX1TAS7)
+                                                   0.52    240.74 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1278/O (NAND2X1TAS7)
+                                                   0.55    241.28 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1279/O (CLKINVX1TAS7)
+                                                   0.39    241.67 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1281/O (NAND2X1TAS7)
+                                                   0.49    242.15 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1282/O (CLKINVX1TAS7)
+                                                   0.36    242.51 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1285/O (NAND2X1TAS7)
+                                                   0.49    243.01 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1287/O (NOR2X1TAS7)
+                                                   0.31    243.31 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I5/ctmi_1288/O (NAND2X1TAS7)
+                                                   7.08    250.40 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A1740/O (MUX2X1TAS7)
+                                                   3.92    254.32 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/U_35/CO (FAX1TAS7)
+                                                   3.83    258.15 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/U_38/CO (FAX1TAS7)
+                                                   3.27    261.42 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/U_40/CO (FAX1TAS7)
+                                                   3.27    264.68 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/U_43/CO (FAX1TAS7)
+                                                   3.26    267.95 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/U_45/CO (FAX1TAS7)
+                                                   3.11    271.06 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1291/O (NAND2X1TAS7)
+                                                   0.73    271.79 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1292/O (CLKINVX1TAS7)
+                                                   0.50    272.29 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1294/O (NAND2X1TAS7)
+                                                   0.60    272.89 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1295/O (CLKINVX1TAS7)
+                                                   0.52    273.41 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1297/O (NAND2X1TAS7)
+                                                   0.67    274.07 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1298/O (CLKINVX1TAS7)
+                                                   0.52    274.59 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1300/O (NAND2X1TAS7)
+                                                   0.67    275.26 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1301/O (CLKINVX1TAS7)
+                                                   0.52    275.77 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1303/O (NAND2X1TAS7)
+                                                   0.67    276.44 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1304/O (CLKINVX1TAS7)
+                                                   0.50    276.94 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1306/O (NAND2X1TAS7)
+                                                   0.66    277.60 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1307/O (CLKINVX1TAS7)
+                                                   0.50    278.10 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1309/O (NAND2X1TAS7)
+                                                   0.66    278.76 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1310/O (CLKINVX1TAS7)
+                                                   0.50    279.26 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1312/O (NAND2X1TAS7)
+                                                   0.66    279.92 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1313/O (CLKINVX1TAS7)
+                                                   0.50    280.42 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1315/O (NAND2X1TAS7)
+                                                   0.66    281.08 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1316/O (CLKINVX1TAS7)
+                                                   0.50    281.59 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1318/O (NAND2X1TAS7)
+                                                   0.66    282.25 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1319/O (CLKINVX1TAS7)
+                                                   0.50    282.75 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1321/O (NAND2X1TAS7)
+                                                   0.66    283.41 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1322/O (CLKINVX1TAS7)
+                                                   0.50    283.91 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1324/O (NAND2X1TAS7)
+                                                   0.66    284.57 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1325/O (CLKINVX1TAS7)
+                                                   0.50    285.07 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1327/O (NAND2X1TAS7)
+                                                   0.66    285.73 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1328/O (CLKINVX1TAS7)
+                                                   0.50    286.23 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1330/O (NAND2X1TAS7)
+                                                   0.66    286.89 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1331/O (CLKINVX1TAS7)
+                                                   0.50    287.39 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1333/O (NAND2X1TAS7)
+                                                   0.66    288.05 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1334/O (CLKINVX1TAS7)
+                                                   0.52    288.57 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1336/O (NAND2X1TAS7)
+                                                   0.67    289.23 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1337/O (CLKINVX1TAS7)
+                                                   0.52    289.75 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1339/O (NAND2X1TAS7)
+                                                   0.67    290.42 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1340/O (CLKINVX1TAS7)
+                                                   0.52    290.93 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1342/O (NAND2X1TAS7)
+                                                   0.67    291.60 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1343/O (CLKINVX1TAS7)
+                                                   0.52    292.12 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1345/O (NAND2X1TAS7)
+                                                   0.67    292.78 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1346/O (CLKINVX1TAS7)
+                                                   0.52    293.30 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1348/O (NAND2X1TAS7)
+                                                   0.67    293.97 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1349/O (CLKINVX1TAS7)
+                                                   0.52    294.48 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1351/O (NAND2X1TAS7)
+                                                   0.67    295.15 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1352/O (CLKINVX1TAS7)
+                                                   0.52    295.66 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1354/O (NAND2X1TAS7)
+                                                   0.67    296.33 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1355/O (CLKINVX1TAS7)
+                                                   0.52    296.85 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1357/O (NAND2X1TAS7)
+                                                   0.55    297.39 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1358/O (CLKINVX1TAS7)
+                                                   0.39    297.78 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1361/O (NAND2X1TAS7)
+                                                   0.50    298.28 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1363/O (NOR2X1TAS7)
+                                                   0.31    298.59 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I6/ctmi_1364/O (NAND2X1TAS7)
+                                                   2.58    301.16 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2162/O (MUX2X1TAS7)
+                                                   2.63    303.79 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/U_35/CO (FAX1TAS7)
+                                                   3.78    307.57 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/U_38/CO (FAX1TAS7)
+                                                   3.27    310.84 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/U_40/CO (FAX1TAS7)
+                                                   3.27    314.11 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/U_43/CO (FAX1TAS7)
+                                                   3.26    317.37 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/U_45/CO (FAX1TAS7)
+                                                   3.27    320.64 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/U_48/CO (FAX1TAS7)
+                                                   3.11    323.75 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1367/O (NAND2X1TAS7)
+                                                   0.73    324.48 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1368/O (CLKINVX1TAS7)
+                                                   0.51    324.99 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1370/O (NAND2X1TAS7)
+                                                   0.60    325.59 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1371/O (CLKINVX1TAS7)
+                                                   0.52    326.11 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1373/O (NAND2X1TAS7)
+                                                   0.67    326.78 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1374/O (CLKINVX1TAS7)
+                                                   0.52    327.30 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1376/O (NAND2X1TAS7)
+                                                   0.67    327.96 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1377/O (CLKINVX1TAS7)
+                                                   0.50    328.46 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1379/O (NAND2X1TAS7)
+                                                   0.66    329.12 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1380/O (CLKINVX1TAS7)
+                                                   0.50    329.62 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1382/O (NAND2X1TAS7)
+                                                   0.66    330.28 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1383/O (CLKINVX1TAS7)
+                                                   0.50    330.79 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1385/O (NAND2X1TAS7)
+                                                   0.66    331.45 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1386/O (CLKINVX1TAS7)
+                                                   0.50    331.95 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1388/O (NAND2X1TAS7)
+                                                   0.66    332.61 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1389/O (CLKINVX1TAS7)
+                                                   0.50    333.11 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1391/O (NAND2X1TAS7)
+                                                   0.66    333.77 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1392/O (CLKINVX1TAS7)
+                                                   0.50    334.27 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1394/O (NAND2X1TAS7)
+                                                   0.66    334.93 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1395/O (CLKINVX1TAS7)
+                                                   0.50    335.43 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1397/O (NAND2X1TAS7)
+                                                   0.66    336.09 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1398/O (CLKINVX1TAS7)
+                                                   0.50    336.59 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1400/O (NAND2X1TAS7)
+                                                   0.66    337.25 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1401/O (CLKINVX1TAS7)
+                                                   0.50    337.75 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1403/O (NAND2X1TAS7)
+                                                   0.66    338.41 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1404/O (CLKINVX1TAS7)
+                                                   0.50    338.92 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1406/O (NAND2X1TAS7)
+                                                   0.66    339.58 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1407/O (CLKINVX1TAS7)
+                                                   0.52    340.09 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1409/O (NAND2X1TAS7)
+                                                   0.67    340.76 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1410/O (CLKINVX1TAS7)
+                                                   0.52    341.27 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1412/O (NAND2X1TAS7)
+                                                   0.67    341.94 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1413/O (CLKINVX1TAS7)
+                                                   0.52    342.46 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1415/O (NAND2X1TAS7)
+                                                   0.67    343.12 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1416/O (CLKINVX1TAS7)
+                                                   0.52    343.64 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1418/O (NAND2X1TAS7)
+                                                   0.67    344.31 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1419/O (CLKINVX1TAS7)
+                                                   0.52    344.82 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1421/O (NAND2X1TAS7)
+                                                   0.67    345.49 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1422/O (CLKINVX1TAS7)
+                                                   0.52    346.01 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1424/O (NAND2X1TAS7)
+                                                   0.67    346.67 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1425/O (CLKINVX1TAS7)
+                                                   0.52    347.19 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1427/O (NAND2X1TAS7)
+                                                   0.67    347.85 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1428/O (CLKINVX1TAS7)
+                                                   0.52    348.37 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1430/O (NAND2X1TAS7)
+                                                   0.67    349.04 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1431/O (CLKINVX1TAS7)
+                                                   0.52    349.55 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1434/O (NAND2X1TAS7)
+                                                   0.56    350.12 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1436/O (NOR2X1TAS7)
+                                                   0.33    350.45 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I7/ctmi_1437/O (NAND2X1TAS7)
+                                                   4.98    355.43 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A1790/O (MUX2X1TAS7)
+                                                   3.56    358.99 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/U_35/CO (FAX1TAS7)
+                                                   3.81    362.80 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/U_38/CO (FAX1TAS7)
+                                                   3.27    366.08 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/U_40/CO (FAX1TAS7)
+                                                   3.27    369.34 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/U_43/CO (FAX1TAS7)
+                                                   3.26    372.61 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/U_45/CO (FAX1TAS7)
+                                                   3.27    375.87 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/U_48/CO (FAX1TAS7)
+                                                   3.26    379.14 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/U_50/CO (FAX1TAS7)
+                                                   3.11    382.25 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1440/O (NAND2X1TAS7)
+                                                   0.73    382.98 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1441/O (CLKINVX1TAS7)
+                                                   0.51    383.49 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1443/O (NAND2X1TAS7)
+                                                   0.60    384.10 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1444/O (CLKINVX1TAS7)
+                                                   0.52    384.61 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1446/O (NAND2X1TAS7)
+                                                   0.67    385.28 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1447/O (CLKINVX1TAS7)
+                                                   0.50    385.78 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1449/O (NAND2X1TAS7)
+                                                   0.66    386.44 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1450/O (CLKINVX1TAS7)
+                                                   0.50    386.94 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1452/O (NAND2X1TAS7)
+                                                   0.66    387.60 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1453/O (CLKINVX1TAS7)
+                                                   0.50    388.11 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1455/O (NAND2X1TAS7)
+                                                   0.66    388.77 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1456/O (CLKINVX1TAS7)
+                                                   0.50    389.27 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1458/O (NAND2X1TAS7)
+                                                   0.66    389.93 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1459/O (CLKINVX1TAS7)
+                                                   0.50    390.43 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1461/O (NAND2X1TAS7)
+                                                   0.66    391.09 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1462/O (CLKINVX1TAS7)
+                                                   0.50    391.59 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1464/O (NAND2X1TAS7)
+                                                   0.66    392.25 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1465/O (CLKINVX1TAS7)
+                                                   0.50    392.75 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1467/O (NAND2X1TAS7)
+                                                   0.66    393.41 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1468/O (CLKINVX1TAS7)
+                                                   0.50    393.91 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1470/O (NAND2X1TAS7)
+                                                   0.66    394.57 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1471/O (CLKINVX1TAS7)
+                                                   0.50    395.07 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1473/O (NAND2X1TAS7)
+                                                   0.66    395.73 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1474/O (CLKINVX1TAS7)
+                                                   0.50    396.23 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1476/O (NAND2X1TAS7)
+                                                   0.66    396.89 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1477/O (CLKINVX1TAS7)
+                                                   0.52    397.41 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1479/O (NAND2X1TAS7)
+                                                   0.67    398.08 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1480/O (CLKINVX1TAS7)
+                                                   0.52    398.59 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1482/O (NAND2X1TAS7)
+                                                   0.67    399.26 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1483/O (CLKINVX1TAS7)
+                                                   0.52    399.78 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1485/O (NAND2X1TAS7)
+                                                   0.67    400.44 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1486/O (CLKINVX1TAS7)
+                                                   0.52    400.96 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1488/O (NAND2X1TAS7)
+                                                   0.67    401.62 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1489/O (CLKINVX1TAS7)
+                                                   0.52    402.14 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1491/O (NAND2X1TAS7)
+                                                   0.67    402.81 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1492/O (CLKINVX1TAS7)
+                                                   0.52    403.32 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1494/O (NAND2X1TAS7)
+                                                   0.67    403.99 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1495/O (CLKINVX1TAS7)
+                                                   0.52    404.51 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1497/O (NAND2X1TAS7)
+                                                   0.67    405.17 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1498/O (CLKINVX1TAS7)
+                                                   0.52    405.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1500/O (NAND2X1TAS7)
+                                                   0.67    406.36 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1501/O (CLKINVX1TAS7)
+                                                   0.52    406.87 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1504/O (NAND2X1TAS7)
+                                                   0.82    407.69 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1506/O (NOR2X1TAS7)
+                                                   0.39    408.08 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I8/ctmi_1507/O (NAND2X1TAS7)
+                                                   5.16    413.25 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2353/O (MUX2X1TAS7)
+                                                   3.62    416.87 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_35/CO (FAX1TAS7)
+                                                   3.82    420.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_38/CO (FAX1TAS7)
+                                                   3.27    423.96 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_40/CO (FAX1TAS7)
+                                                   3.27    427.22 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_43/CO (FAX1TAS7)
+                                                   3.26    430.49 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_45/CO (FAX1TAS7)
+                                                   3.27    433.75 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_48/CO (FAX1TAS7)
+                                                   3.26    437.02 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_50/CO (FAX1TAS7)
+                                                   3.27    440.28 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_53/CO (FAX1TAS7)
+                                                   3.27    443.55 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_55/CO (FAX1TAS7)
+                                                   3.27    446.82 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_58/CO (FAX1TAS7)
+                                                   3.27    450.08 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_60/CO (FAX1TAS7)
+                                                   3.27    453.35 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_63/CO (FAX1TAS7)
+                                                   3.11    456.46 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/ctmi_1508/O (AND2X1TAS7)
+                                                   0.96    457.42 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_68/CO (FAX1TAS7)
+                                                   3.08    460.49 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_70/CO (FAX1TAS7)
+                                                   3.27    463.76 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_73/CO (FAX1TAS7)
+                                                   3.26    467.02 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_75/CO (FAX1TAS7)
+                                                   3.27    470.29 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_78/CO (FAX1TAS7)
+                                                   3.26    473.55 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_80/CO (FAX1TAS7)
+                                                   3.27    476.82 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_83/CO (FAX1TAS7)
+                                                   3.26    480.08 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_85/CO (FAX1TAS7)
+                                                   3.27    483.35 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_88/CO (FAX1TAS7)
+                                                   3.27    486.62 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_90/CO (FAX1TAS7)
+                                                   3.27    489.88 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_93/CO (FAX1TAS7)
+                                                   3.27    493.15 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_95/CO (FAX1TAS7)
+                                                   3.27    496.42 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_98/CO (FAX1TAS7)
+                                                   3.27    499.68 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/U_100/CO (FAX1TAS7)
+                                                   3.11    502.80 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/ctmi_1512/O (NAND2X1TAS7)
+                                                   0.73    503.53 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/ctmi_1513/O (CLKINVX1TAS7)
+                                                   0.52    504.04 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/ctmi_1516/O (NAND2X1TAS7)
+                                                   0.82    504.87 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/ctmi_1518/O (NOR2X1TAS7)
+                                                   0.53    505.40 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I9/ctmi_1519/O (NAND2X1TAS7)
+                                                   7.48    512.87 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2087/O (MUX2X1TAS7)
+                                                   3.92    516.79 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_35/CO (FAX1TAS7)
+                                                   3.83    520.62 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_38/CO (FAX1TAS7)
+                                                   3.27    523.89 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_40/CO (FAX1TAS7)
+                                                   3.27    527.16 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_43/CO (FAX1TAS7)
+                                                   3.26    530.42 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_45/CO (FAX1TAS7)
+                                                   3.27    533.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_48/CO (FAX1TAS7)
+                                                   3.26    536.95 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_50/CO (FAX1TAS7)
+                                                   3.27    540.22 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_53/CO (FAX1TAS7)
+                                                   3.27    543.49 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_55/CO (FAX1TAS7)
+                                                   3.27    546.75 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_58/CO (FAX1TAS7)
+                                                   3.27    550.02 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_60/CO (FAX1TAS7)
+                                                   3.27    553.28 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_63/CO (FAX1TAS7)
+                                                   3.26    556.55 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_65/CO (FAX1TAS7)
+                                                   3.27    559.81 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_68/CO (FAX1TAS7)
+                                                   3.26    563.08 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_70/CO (FAX1TAS7)
+                                                   3.27    566.34 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_73/CO (FAX1TAS7)
+                                                   3.26    569.61 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_75/CO (FAX1TAS7)
+                                                   3.27    572.87 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_78/CO (FAX1TAS7)
+                                                   3.26    576.14 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_80/CO (FAX1TAS7)
+                                                   3.27    579.40 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_83/CO (FAX1TAS7)
+                                                   3.26    582.67 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_85/CO (FAX1TAS7)
+                                                   3.27    585.93 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_88/CO (FAX1TAS7)
+                                                   3.27    589.20 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_90/CO (FAX1TAS7)
+                                                   3.27    592.47 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_93/CO (FAX1TAS7)
+                                                   3.27    595.73 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_95/CO (FAX1TAS7)
+                                                   3.27    599.00 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_98/CO (FAX1TAS7)
+                                                   3.27    602.27 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_100/CO (FAX1TAS7)
+                                                   3.27    605.53 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/U_103/CO (FAX1TAS7)
+                                                   3.11    608.65 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/ctmi_1523/O (NAND2X1TAS7)
+                                                   0.89    609.54 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/ctmi_1525/O (NOR2X1TAS7)
+                                                   0.50    610.05 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/ctmi_1524/O (AND2X1TAS7)
+                                                   0.84    610.89 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I10/ctmi_7392/O (XNOR2X1TAS7)
+                                                   8.39    619.28 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2253/O (MUX2X1TAS7)
+                                                   3.92    623.20 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_35/CO (FAX1TAS7)
+                                                   3.83    627.03 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_38/CO (FAX1TAS7)
+                                                   3.27    630.30 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_40/CO (FAX1TAS7)
+                                                   3.27    633.57 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_43/CO (FAX1TAS7)
+                                                   3.26    636.83 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_45/CO (FAX1TAS7)
+                                                   3.27    640.10 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_48/CO (FAX1TAS7)
+                                                   3.26    643.36 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_50/CO (FAX1TAS7)
+                                                   3.27    646.63 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_53/CO (FAX1TAS7)
+                                                   3.27    649.89 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_55/CO (FAX1TAS7)
+                                                   3.27    653.16 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_58/CO (FAX1TAS7)
+                                                   3.27    656.43 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_60/CO (FAX1TAS7)
+                                                   3.27    659.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_63/CO (FAX1TAS7)
+                                                   3.26    662.96 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_65/CO (FAX1TAS7)
+                                                   3.27    666.22 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_68/CO (FAX1TAS7)
+                                                   3.26    669.49 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_70/CO (FAX1TAS7)
+                                                   3.27    672.75 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_73/CO (FAX1TAS7)
+                                                   3.26    676.02 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_75/CO (FAX1TAS7)
+                                                   3.27    679.28 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_78/CO (FAX1TAS7)
+                                                   3.26    682.55 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_80/CO (FAX1TAS7)
+                                                   3.27    685.81 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_83/CO (FAX1TAS7)
+                                                   3.26    689.08 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_85/CO (FAX1TAS7)
+                                                   3.27    692.34 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_88/CO (FAX1TAS7)
+                                                   3.27    695.61 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_90/CO (FAX1TAS7)
+                                                   3.27    698.88 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_93/CO (FAX1TAS7)
+                                                   3.27    702.14 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_95/CO (FAX1TAS7)
+                                                   3.27    705.41 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_98/CO (FAX1TAS7)
+                                                   3.27    708.68 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_100/CO (FAX1TAS7)
+                                                   3.27    711.94 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_103/CO (FAX1TAS7)
+                                                   3.27    715.21 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_105/CO (FAX1TAS7)
+                                                   3.27    718.47 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_108/CO (FAX1TAS7)
+                                                   3.27    721.74 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/U_110/CO (FAX1TAS7)
+                                                   3.12    724.86 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I11/ctmi_7357/O (XNOR2X1TAS7)
+                                                   8.83    733.69 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2399/O (MUX2X1TAS7)
+                                                   3.92    737.61 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_35/CO (FAX1TAS7)
+                                                   3.83    741.44 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_38/CO (FAX1TAS7)
+                                                   3.27    744.71 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_40/CO (FAX1TAS7)
+                                                   3.27    747.97 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_43/CO (FAX1TAS7)
+                                                   3.26    751.24 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_45/CO (FAX1TAS7)
+                                                   3.27    754.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_48/CO (FAX1TAS7)
+                                                   3.26    757.77 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_50/CO (FAX1TAS7)
+                                                   3.27    761.03 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_53/CO (FAX1TAS7)
+                                                   3.27    764.30 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_55/CO (FAX1TAS7)
+                                                   3.27    767.57 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_58/CO (FAX1TAS7)
+                                                   3.27    770.83 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_60/CO (FAX1TAS7)
+                                                   3.27    774.10 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_63/CO (FAX1TAS7)
+                                                   3.26    777.36 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_65/CO (FAX1TAS7)
+                                                   3.27    780.63 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_68/CO (FAX1TAS7)
+                                                   3.26    783.89 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_70/CO (FAX1TAS7)
+                                                   3.27    787.16 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_73/CO (FAX1TAS7)
+                                                   3.26    790.42 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_75/CO (FAX1TAS7)
+                                                   3.27    793.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_78/CO (FAX1TAS7)
+                                                   3.26    796.95 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_80/CO (FAX1TAS7)
+                                                   3.27    800.22 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_83/CO (FAX1TAS7)
+                                                   3.26    803.48 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_85/CO (FAX1TAS7)
+                                                   3.27    806.75 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_88/CO (FAX1TAS7)
+                                                   3.27    810.01 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_90/CO (FAX1TAS7)
+                                                   3.27    813.28 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_93/CO (FAX1TAS7)
+                                                   3.27    816.55 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_95/CO (FAX1TAS7)
+                                                   3.27    819.81 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_98/CO (FAX1TAS7)
+                                                   3.27    823.08 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_100/CO (FAX1TAS7)
+                                                   3.27    826.35 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_103/CO (FAX1TAS7)
+                                                   3.27    829.61 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_105/CO (FAX1TAS7)
+                                                   3.27    832.88 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_108/CO (FAX1TAS7)
+                                                   3.27    836.15 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/U_110/CO (FAX1TAS7)
+                                                   3.12    839.26 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I12/ctmi_7322/O (XNOR2X1TAS7)
+                                                   8.83    848.09 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2451/O (MUX2X1TAS7)
+                                                   3.92    852.01 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_35/CO (FAX1TAS7)
+                                                   3.83    855.84 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_38/CO (FAX1TAS7)
+                                                   3.27    859.11 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_40/CO (FAX1TAS7)
+                                                   3.27    862.38 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_43/CO (FAX1TAS7)
+                                                   3.26    865.64 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_45/CO (FAX1TAS7)
+                                                   3.27    868.91 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_48/CO (FAX1TAS7)
+                                                   3.26    872.17 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_50/CO (FAX1TAS7)
+                                                   3.27    875.44 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_53/CO (FAX1TAS7)
+                                                   3.27    878.70 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_55/CO (FAX1TAS7)
+                                                   3.27    881.97 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_58/CO (FAX1TAS7)
+                                                   3.27    885.24 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_60/CO (FAX1TAS7)
+                                                   3.27    888.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_63/CO (FAX1TAS7)
+                                                   3.26    891.77 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_65/CO (FAX1TAS7)
+                                                   3.27    895.03 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_68/CO (FAX1TAS7)
+                                                   3.26    898.30 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_70/CO (FAX1TAS7)
+                                                   3.27    901.56 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_73/CO (FAX1TAS7)
+                                                   3.26    904.83 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_75/CO (FAX1TAS7)
+                                                   3.27    908.09 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_78/CO (FAX1TAS7)
+                                                   3.26    911.36 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_80/CO (FAX1TAS7)
+                                                   3.27    914.62 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_83/CO (FAX1TAS7)
+                                                   3.26    917.89 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_85/CO (FAX1TAS7)
+                                                   3.27    921.15 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_88/CO (FAX1TAS7)
+                                                   3.27    924.42 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_90/CO (FAX1TAS7)
+                                                   3.27    927.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_93/CO (FAX1TAS7)
+                                                   3.27    930.95 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_95/CO (FAX1TAS7)
+                                                   3.27    934.22 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_98/CO (FAX1TAS7)
+                                                   3.27    937.49 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_100/CO (FAX1TAS7)
+                                                   3.27    940.75 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_103/CO (FAX1TAS7)
+                                                   3.27    944.02 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_105/CO (FAX1TAS7)
+                                                   3.27    947.28 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_108/CO (FAX1TAS7)
+                                                   3.27    950.55 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/U_110/CO (FAX1TAS7)
+                                                   3.12    953.67 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I13/ctmi_7287/O (XNOR2X1TAS7)
+                                                   8.83    962.50 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2000/O (MUX2X1TAS7)
+                                                   3.92    966.42 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_35/CO (FAX1TAS7)
+                                                   3.83    970.25 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_38/CO (FAX1TAS7)
+                                                   3.27    973.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_40/CO (FAX1TAS7)
+                                                   3.27    976.78 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_43/CO (FAX1TAS7)
+                                                   3.26    980.05 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_45/CO (FAX1TAS7)
+                                                   3.27    983.31 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_48/CO (FAX1TAS7)
+                                                   3.26    986.58 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_50/CO (FAX1TAS7)
+                                                   3.27    989.84 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_53/CO (FAX1TAS7)
+                                                   3.27    993.11 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_55/CO (FAX1TAS7)
+                                                   3.27    996.38 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_58/CO (FAX1TAS7)
+                                                   3.27    999.64 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_60/CO (FAX1TAS7)
+                                                   3.27    1002.91 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_63/CO (FAX1TAS7)
+                                                   3.26    1006.17 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_65/CO (FAX1TAS7)
+                                                   3.27    1009.44 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_68/CO (FAX1TAS7)
+                                                   3.26    1012.70 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_70/CO (FAX1TAS7)
+                                                   3.27    1015.97 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_73/CO (FAX1TAS7)
+                                                   3.26    1019.23 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_75/CO (FAX1TAS7)
+                                                   3.27    1022.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_78/CO (FAX1TAS7)
+                                                   3.26    1025.76 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_80/CO (FAX1TAS7)
+                                                   3.27    1029.03 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_83/CO (FAX1TAS7)
+                                                   3.26    1032.29 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_85/CO (FAX1TAS7)
+                                                   3.27    1035.56 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_88/CO (FAX1TAS7)
+                                                   3.27    1038.82 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_90/CO (FAX1TAS7)
+                                                   3.27    1042.09 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_93/CO (FAX1TAS7)
+                                                   3.27    1045.36 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_95/CO (FAX1TAS7)
+                                                   3.27    1048.62 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_98/CO (FAX1TAS7)
+                                                   3.27    1051.89 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_100/CO (FAX1TAS7)
+                                                   3.27    1055.16 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_103/CO (FAX1TAS7)
+                                                   3.27    1058.42 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_105/CO (FAX1TAS7)
+                                                   3.27    1061.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_108/CO (FAX1TAS7)
+                                                   3.27    1064.96 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/U_110/CO (FAX1TAS7)
+                                                   3.12    1068.07 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I14/ctmi_7252/O (XNOR2X1TAS7)
+                                                   8.83    1076.90 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2073/O (MUX2X1TAS7)
+                                                   3.92    1080.82 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_35/CO (FAX1TAS7)
+                                                   3.83    1084.65 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_38/CO (FAX1TAS7)
+                                                   3.27    1087.92 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_40/CO (FAX1TAS7)
+                                                   3.27    1091.19 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_43/CO (FAX1TAS7)
+                                                   3.26    1094.45 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_45/CO (FAX1TAS7)
+                                                   3.27    1097.72 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_48/CO (FAX1TAS7)
+                                                   3.26    1100.98 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_50/CO (FAX1TAS7)
+                                                   3.27    1104.25 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_53/CO (FAX1TAS7)
+                                                   3.27    1107.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_55/CO (FAX1TAS7)
+                                                   3.27    1110.78 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_58/CO (FAX1TAS7)
+                                                   3.27    1114.05 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_60/CO (FAX1TAS7)
+                                                   3.27    1117.31 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_63/CO (FAX1TAS7)
+                                                   3.26    1120.58 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_65/CO (FAX1TAS7)
+                                                   3.27    1123.84 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_68/CO (FAX1TAS7)
+                                                   3.26    1127.11 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_70/CO (FAX1TAS7)
+                                                   3.27    1130.37 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_73/CO (FAX1TAS7)
+                                                   3.26    1133.64 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_75/CO (FAX1TAS7)
+                                                   3.27    1136.90 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_78/CO (FAX1TAS7)
+                                                   3.26    1140.17 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_80/CO (FAX1TAS7)
+                                                   3.27    1143.43 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_83/CO (FAX1TAS7)
+                                                   3.26    1146.70 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_85/CO (FAX1TAS7)
+                                                   3.27    1149.96 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_88/CO (FAX1TAS7)
+                                                   3.27    1153.23 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_90/CO (FAX1TAS7)
+                                                   3.27    1156.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_93/CO (FAX1TAS7)
+                                                   3.27    1159.76 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_95/CO (FAX1TAS7)
+                                                   3.27    1163.03 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_98/CO (FAX1TAS7)
+                                                   3.27    1166.30 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_100/CO (FAX1TAS7)
+                                                   3.27    1169.56 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_103/CO (FAX1TAS7)
+                                                   3.27    1172.83 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_105/CO (FAX1TAS7)
+                                                   3.27    1176.09 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_108/CO (FAX1TAS7)
+                                                   3.27    1179.36 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/U_110/CO (FAX1TAS7)
+                                                   3.12    1182.48 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I15/ctmi_7217/O (XNOR2X1TAS7)
+                                                   8.83    1191.31 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A1814/O (MUX2X1TAS7)
+                                                   3.92    1195.23 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_35/CO (FAX1TAS7)
+                                                   3.83    1199.06 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_38/CO (FAX1TAS7)
+                                                   3.27    1202.33 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_40/CO (FAX1TAS7)
+                                                   3.27    1205.59 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_43/CO (FAX1TAS7)
+                                                   3.26    1208.86 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_45/CO (FAX1TAS7)
+                                                   3.27    1212.12 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_48/CO (FAX1TAS7)
+                                                   3.26    1215.39 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_50/CO (FAX1TAS7)
+                                                   3.27    1218.65 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_53/CO (FAX1TAS7)
+                                                   3.27    1221.92 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_55/CO (FAX1TAS7)
+                                                   3.27    1225.19 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_58/CO (FAX1TAS7)
+                                                   3.27    1228.45 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_60/CO (FAX1TAS7)
+                                                   3.27    1231.72 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_63/CO (FAX1TAS7)
+                                                   3.26    1234.98 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_65/CO (FAX1TAS7)
+                                                   3.27    1238.25 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_68/CO (FAX1TAS7)
+                                                   3.26    1241.51 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_70/CO (FAX1TAS7)
+                                                   3.27    1244.78 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_73/CO (FAX1TAS7)
+                                                   3.26    1248.04 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_75/CO (FAX1TAS7)
+                                                   3.27    1251.31 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_78/CO (FAX1TAS7)
+                                                   3.26    1254.57 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_80/CO (FAX1TAS7)
+                                                   3.27    1257.84 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_83/CO (FAX1TAS7)
+                                                   3.26    1261.10 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_85/CO (FAX1TAS7)
+                                                   3.27    1264.37 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_88/CO (FAX1TAS7)
+                                                   3.27    1267.64 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_90/CO (FAX1TAS7)
+                                                   3.27    1270.90 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_93/CO (FAX1TAS7)
+                                                   3.27    1274.17 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_95/CO (FAX1TAS7)
+                                                   3.27    1277.43 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_98/CO (FAX1TAS7)
+                                                   3.27    1280.70 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_100/CO (FAX1TAS7)
+                                                   3.27    1283.97 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_103/CO (FAX1TAS7)
+                                                   3.27    1287.23 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_105/CO (FAX1TAS7)
+                                                   3.27    1290.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_108/CO (FAX1TAS7)
+                                                   3.27    1293.77 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/U_110/CO (FAX1TAS7)
+                                                   3.12    1296.88 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I16/ctmi_7182/O (XNOR2X1TAS7)
+                                                   8.83    1305.71 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2109/O (MUX2X1TAS7)
+                                                   3.92    1309.63 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_35/CO (FAX1TAS7)
+                                                   3.83    1313.46 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_38/CO (FAX1TAS7)
+                                                   3.27    1316.73 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_40/CO (FAX1TAS7)
+                                                   3.27    1320.00 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_43/CO (FAX1TAS7)
+                                                   3.26    1323.26 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_45/CO (FAX1TAS7)
+                                                   3.27    1326.53 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_48/CO (FAX1TAS7)
+                                                   3.26    1329.79 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_50/CO (FAX1TAS7)
+                                                   3.27    1333.06 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_53/CO (FAX1TAS7)
+                                                   3.27    1336.33 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_55/CO (FAX1TAS7)
+                                                   3.27    1339.59 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_58/CO (FAX1TAS7)
+                                                   3.27    1342.86 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_60/CO (FAX1TAS7)
+                                                   3.27    1346.12 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_63/CO (FAX1TAS7)
+                                                   3.26    1349.39 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_65/CO (FAX1TAS7)
+                                                   3.27    1352.65 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_68/CO (FAX1TAS7)
+                                                   3.26    1355.92 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_70/CO (FAX1TAS7)
+                                                   3.27    1359.18 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_73/CO (FAX1TAS7)
+                                                   3.26    1362.45 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_75/CO (FAX1TAS7)
+                                                   3.27    1365.71 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_78/CO (FAX1TAS7)
+                                                   3.26    1368.98 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_80/CO (FAX1TAS7)
+                                                   3.27    1372.24 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_83/CO (FAX1TAS7)
+                                                   3.26    1375.51 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_85/CO (FAX1TAS7)
+                                                   3.27    1378.77 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_88/CO (FAX1TAS7)
+                                                   3.27    1382.04 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_90/CO (FAX1TAS7)
+                                                   3.27    1385.31 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_93/CO (FAX1TAS7)
+                                                   3.27    1388.57 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_95/CO (FAX1TAS7)
+                                                   3.27    1391.84 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_98/CO (FAX1TAS7)
+                                                   3.27    1395.11 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_100/CO (FAX1TAS7)
+                                                   3.27    1398.37 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_103/CO (FAX1TAS7)
+                                                   3.27    1401.64 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_105/CO (FAX1TAS7)
+                                                   3.27    1404.90 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_108/CO (FAX1TAS7)
+                                                   3.27    1408.17 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/U_110/CO (FAX1TAS7)
+                                                   3.12    1411.29 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/ctmi_7112/O (XNOR2X1TAS7)
+                                                   8.83    1420.12 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A1802/O (MUX2X1TAS7)
+                                                   3.92    1424.04 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_35/CO (FAX1TAS7)
+                                                   3.83    1427.87 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_38/CO (FAX1TAS7)
+                                                   3.27    1431.14 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_40/CO (FAX1TAS7)
+                                                   3.27    1434.40 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_43/CO (FAX1TAS7)
+                                                   3.26    1437.67 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_45/CO (FAX1TAS7)
+                                                   3.27    1440.93 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_48/CO (FAX1TAS7)
+                                                   3.26    1444.20 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_50/CO (FAX1TAS7)
+                                                   3.27    1447.46 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_53/CO (FAX1TAS7)
+                                                   3.27    1450.73 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_55/CO (FAX1TAS7)
+                                                   3.27    1454.00 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_58/CO (FAX1TAS7)
+                                                   3.27    1457.26 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_60/CO (FAX1TAS7)
+                                                   3.27    1460.53 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_63/CO (FAX1TAS7)
+                                                   3.26    1463.79 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_65/CO (FAX1TAS7)
+                                                   3.27    1467.06 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_68/CO (FAX1TAS7)
+                                                   3.26    1470.32 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_70/CO (FAX1TAS7)
+                                                   3.27    1473.59 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_73/CO (FAX1TAS7)
+                                                   3.26    1476.85 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_75/CO (FAX1TAS7)
+                                                   3.27    1480.12 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_78/CO (FAX1TAS7)
+                                                   3.26    1483.38 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_80/CO (FAX1TAS7)
+                                                   3.27    1486.65 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_83/CO (FAX1TAS7)
+                                                   3.26    1489.91 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_85/CO (FAX1TAS7)
+                                                   3.27    1493.18 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_88/CO (FAX1TAS7)
+                                                   3.27    1496.45 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_90/CO (FAX1TAS7)
+                                                   3.27    1499.71 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_93/CO (FAX1TAS7)
+                                                   3.27    1502.98 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_95/CO (FAX1TAS7)
+                                                   3.27    1506.24 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_98/CO (FAX1TAS7)
+                                                   3.27    1509.51 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_100/CO (FAX1TAS7)
+                                                   3.27    1512.78 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_103/CO (FAX1TAS7)
+                                                   3.27    1516.04 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_105/CO (FAX1TAS7)
+                                                   3.27    1519.31 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_108/CO (FAX1TAS7)
+                                                   3.27    1522.58 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_110/CO (FAX1TAS7)
+                                                   3.12    1525.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/ctmi_7147/O (XNOR2X1TAS7)
+                                                   8.83    1534.52 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2246/O (MUX2X1TAS7)
+                                                   3.92    1538.44 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_35/CO (FAX1TAS7)
+                                                   3.83    1542.27 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_38/CO (FAX1TAS7)
+                                                   3.27    1545.54 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_40/CO (FAX1TAS7)
+                                                   3.27    1548.81 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_43/CO (FAX1TAS7)
+                                                   3.26    1552.07 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_45/CO (FAX1TAS7)
+                                                   3.27    1555.34 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_48/CO (FAX1TAS7)
+                                                   3.26    1558.60 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_50/CO (FAX1TAS7)
+                                                   3.27    1561.87 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_53/CO (FAX1TAS7)
+                                                   3.27    1565.14 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_55/CO (FAX1TAS7)
+                                                   3.27    1568.40 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_58/CO (FAX1TAS7)
+                                                   3.27    1571.67 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_60/CO (FAX1TAS7)
+                                                   3.27    1574.93 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_63/CO (FAX1TAS7)
+                                                   3.26    1578.20 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_65/CO (FAX1TAS7)
+                                                   3.27    1581.46 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_68/CO (FAX1TAS7)
+                                                   3.26    1584.73 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_70/CO (FAX1TAS7)
+                                                   3.27    1587.99 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_73/CO (FAX1TAS7)
+                                                   3.26    1591.26 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_75/CO (FAX1TAS7)
+                                                   3.27    1594.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_78/CO (FAX1TAS7)
+                                                   3.26    1597.79 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_80/CO (FAX1TAS7)
+                                                   3.27    1601.05 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_83/CO (FAX1TAS7)
+                                                   3.26    1604.32 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_85/CO (FAX1TAS7)
+                                                   3.27    1607.58 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_88/CO (FAX1TAS7)
+                                                   3.27    1610.85 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_90/CO (FAX1TAS7)
+                                                   3.27    1614.12 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_93/CO (FAX1TAS7)
+                                                   3.27    1617.38 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_95/CO (FAX1TAS7)
+                                                   3.27    1620.65 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_98/CO (FAX1TAS7)
+                                                   3.27    1623.92 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_100/CO (FAX1TAS7)
+                                                   3.27    1627.18 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_103/CO (FAX1TAS7)
+                                                   3.27    1630.45 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_105/CO (FAX1TAS7)
+                                                   3.27    1633.71 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_108/CO (FAX1TAS7)
+                                                   3.27    1636.98 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_110/CO (FAX1TAS7)
+                                                   3.12    1640.10 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/ctmi_7077/O (XNOR2X1TAS7)
+                                                   8.83    1648.93 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2290/O (MUX2X1TAS7)
+                                                   3.92    1652.85 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_35/CO (FAX1TAS7)
+                                                   3.83    1656.68 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_38/CO (FAX1TAS7)
+                                                   3.27    1659.95 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_40/CO (FAX1TAS7)
+                                                   3.27    1663.21 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_43/CO (FAX1TAS7)
+                                                   3.26    1666.48 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_45/CO (FAX1TAS7)
+                                                   3.27    1669.74 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_48/CO (FAX1TAS7)
+                                                   3.26    1673.01 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_50/CO (FAX1TAS7)
+                                                   3.27    1676.27 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_53/CO (FAX1TAS7)
+                                                   3.27    1679.54 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_55/CO (FAX1TAS7)
+                                                   3.27    1682.81 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_58/CO (FAX1TAS7)
+                                                   3.27    1686.07 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_60/CO (FAX1TAS7)
+                                                   3.27    1689.34 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_63/CO (FAX1TAS7)
+                                                   3.26    1692.60 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_65/CO (FAX1TAS7)
+                                                   3.27    1695.87 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_68/CO (FAX1TAS7)
+                                                   3.26    1699.13 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_70/CO (FAX1TAS7)
+                                                   3.27    1702.40 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_73/CO (FAX1TAS7)
+                                                   3.26    1705.66 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_75/CO (FAX1TAS7)
+                                                   3.27    1708.93 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_78/CO (FAX1TAS7)
+                                                   3.26    1712.19 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_80/CO (FAX1TAS7)
+                                                   3.27    1715.46 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_83/CO (FAX1TAS7)
+                                                   3.26    1718.72 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_85/CO (FAX1TAS7)
+                                                   3.27    1721.99 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_88/CO (FAX1TAS7)
+                                                   3.27    1725.26 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_90/CO (FAX1TAS7)
+                                                   3.27    1728.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_93/CO (FAX1TAS7)
+                                                   3.27    1731.79 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_95/CO (FAX1TAS7)
+                                                   3.27    1735.05 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_98/CO (FAX1TAS7)
+                                                   3.27    1738.32 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_100/CO (FAX1TAS7)
+                                                   3.27    1741.59 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_103/CO (FAX1TAS7)
+                                                   3.27    1744.85 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_105/CO (FAX1TAS7)
+                                                   3.27    1748.12 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_108/CO (FAX1TAS7)
+                                                   3.27    1751.39 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_110/CO (FAX1TAS7)
+                                                   3.12    1754.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/ctmi_7042/O (XNOR2X1TAS7)
+                                                   8.83    1763.33 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2559/O (MUX2X1TAS7)
+                                                   3.92    1767.25 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_35/CO (FAX1TAS7)
+                                                   3.83    1771.08 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_38/CO (FAX1TAS7)
+                                                   3.27    1774.35 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_40/CO (FAX1TAS7)
+                                                   3.27    1777.62 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_43/CO (FAX1TAS7)
+                                                   3.26    1780.88 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_45/CO (FAX1TAS7)
+                                                   3.27    1784.15 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_48/CO (FAX1TAS7)
+                                                   3.26    1787.41 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_50/CO (FAX1TAS7)
+                                                   3.27    1790.68 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_53/CO (FAX1TAS7)
+                                                   3.27    1793.95 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_55/CO (FAX1TAS7)
+                                                   3.27    1797.21 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_58/CO (FAX1TAS7)
+                                                   3.27    1800.48 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_60/CO (FAX1TAS7)
+                                                   3.27    1803.74 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_63/CO (FAX1TAS7)
+                                                   3.26    1807.01 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_65/CO (FAX1TAS7)
+                                                   3.27    1810.27 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_68/CO (FAX1TAS7)
+                                                   3.26    1813.54 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_70/CO (FAX1TAS7)
+                                                   3.27    1816.80 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_73/CO (FAX1TAS7)
+                                                   3.26    1820.07 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_75/CO (FAX1TAS7)
+                                                   3.27    1823.33 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_78/CO (FAX1TAS7)
+                                                   3.26    1826.60 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_80/CO (FAX1TAS7)
+                                                   3.27    1829.86 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_83/CO (FAX1TAS7)
+                                                   3.26    1833.13 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_85/CO (FAX1TAS7)
+                                                   3.27    1836.39 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_88/CO (FAX1TAS7)
+                                                   3.27    1839.66 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_90/CO (FAX1TAS7)
+                                                   3.27    1842.93 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_93/CO (FAX1TAS7)
+                                                   3.27    1846.19 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_95/CO (FAX1TAS7)
+                                                   3.27    1849.46 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_98/CO (FAX1TAS7)
+                                                   3.27    1852.73 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_100/CO (FAX1TAS7)
+                                                   3.27    1855.99 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_103/CO (FAX1TAS7)
+                                                   3.27    1859.26 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_105/CO (FAX1TAS7)
+                                                   3.27    1862.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_108/CO (FAX1TAS7)
+                                                   3.27    1865.79 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/U_110/CO (FAX1TAS7)
+                                                   3.12    1868.91 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I21/ctmi_7007/O (XNOR2X1TAS7)
+                                                   8.83    1877.74 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2137/O (MUX2X1TAS7)
+                                                   3.92    1881.66 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_35/CO (FAX1TAS7)
+                                                   3.83    1885.49 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_38/CO (FAX1TAS7)
+                                                   3.27    1888.76 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_40/CO (FAX1TAS7)
+                                                   3.27    1892.02 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_43/CO (FAX1TAS7)
+                                                   3.26    1895.29 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_45/CO (FAX1TAS7)
+                                                   3.27    1898.55 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_48/CO (FAX1TAS7)
+                                                   3.26    1901.82 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_50/CO (FAX1TAS7)
+                                                   3.27    1905.08 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_53/CO (FAX1TAS7)
+                                                   3.27    1908.35 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_55/CO (FAX1TAS7)
+                                                   3.27    1911.62 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_58/CO (FAX1TAS7)
+                                                   3.27    1914.88 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_60/CO (FAX1TAS7)
+                                                   3.27    1918.15 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_63/CO (FAX1TAS7)
+                                                   3.26    1921.41 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_65/CO (FAX1TAS7)
+                                                   3.27    1924.68 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_68/CO (FAX1TAS7)
+                                                   3.26    1927.94 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_70/CO (FAX1TAS7)
+                                                   3.27    1931.21 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_73/CO (FAX1TAS7)
+                                                   3.26    1934.47 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_75/CO (FAX1TAS7)
+                                                   3.27    1937.74 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_78/CO (FAX1TAS7)
+                                                   3.26    1941.00 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_80/CO (FAX1TAS7)
+                                                   3.27    1944.27 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_83/CO (FAX1TAS7)
+                                                   3.26    1947.53 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_85/CO (FAX1TAS7)
+                                                   3.27    1950.80 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_88/CO (FAX1TAS7)
+                                                   3.27    1954.07 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_90/CO (FAX1TAS7)
+                                                   3.27    1957.33 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_93/CO (FAX1TAS7)
+                                                   3.27    1960.60 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_95/CO (FAX1TAS7)
+                                                   3.27    1963.86 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_98/CO (FAX1TAS7)
+                                                   3.27    1967.13 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_100/CO (FAX1TAS7)
+                                                   3.27    1970.40 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_103/CO (FAX1TAS7)
+                                                   3.27    1973.66 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_105/CO (FAX1TAS7)
+                                                   3.27    1976.93 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_108/CO (FAX1TAS7)
+                                                   3.27    1980.20 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/U_110/CO (FAX1TAS7)
+                                                   3.12    1983.31 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I22/ctmi_6972/O (XNOR2X1TAS7)
+                                                   8.83    1992.14 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2452/O (MUX2X1TAS7)
+                                                   3.92    1996.06 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_35/CO (FAX1TAS7)
+                                                   3.83    1999.89 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_38/CO (FAX1TAS7)
+                                                   3.27    2003.16 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_40/CO (FAX1TAS7)
+                                                   3.27    2006.43 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_43/CO (FAX1TAS7)
+                                                   3.26    2009.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_45/CO (FAX1TAS7)
+                                                   3.27    2012.96 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_48/CO (FAX1TAS7)
+                                                   3.26    2016.22 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_50/CO (FAX1TAS7)
+                                                   3.27    2019.49 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_53/CO (FAX1TAS7)
+                                                   3.27    2022.76 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_55/CO (FAX1TAS7)
+                                                   3.27    2026.02 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_58/CO (FAX1TAS7)
+                                                   3.27    2029.29 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_60/CO (FAX1TAS7)
+                                                   3.27    2032.55 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_63/CO (FAX1TAS7)
+                                                   3.26    2035.82 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_65/CO (FAX1TAS7)
+                                                   3.27    2039.08 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_68/CO (FAX1TAS7)
+                                                   3.26    2042.35 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_70/CO (FAX1TAS7)
+                                                   3.27    2045.61 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_73/CO (FAX1TAS7)
+                                                   3.26    2048.88 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_75/CO (FAX1TAS7)
+                                                   3.27    2052.14 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_78/CO (FAX1TAS7)
+                                                   3.26    2055.41 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_80/CO (FAX1TAS7)
+                                                   3.27    2058.67 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_83/CO (FAX1TAS7)
+                                                   3.26    2061.94 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_85/CO (FAX1TAS7)
+                                                   3.27    2065.20 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_88/CO (FAX1TAS7)
+                                                   3.27    2068.47 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_90/CO (FAX1TAS7)
+                                                   3.27    2071.74 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_93/CO (FAX1TAS7)
+                                                   3.27    2075.00 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_95/CO (FAX1TAS7)
+                                                   3.27    2078.27 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_98/CO (FAX1TAS7)
+                                                   3.27    2081.54 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_100/CO (FAX1TAS7)
+                                                   3.27    2084.80 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_103/CO (FAX1TAS7)
+                                                   3.27    2088.07 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_105/CO (FAX1TAS7)
+                                                   3.27    2091.33 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_108/CO (FAX1TAS7)
+                                                   3.27    2094.60 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/U_110/CO (FAX1TAS7)
+                                                   3.12    2097.72 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I23/ctmi_6937/O (XNOR2X1TAS7)
+                                                   8.83    2106.55 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2577/O (MUX2X1TAS7)
+                                                   3.92    2110.47 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_35/CO (FAX1TAS7)
+                                                   3.83    2114.30 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_38/CO (FAX1TAS7)
+                                                   3.27    2117.57 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_40/CO (FAX1TAS7)
+                                                   3.27    2120.83 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_43/CO (FAX1TAS7)
+                                                   3.26    2124.10 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_45/CO (FAX1TAS7)
+                                                   3.27    2127.36 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_48/CO (FAX1TAS7)
+                                                   3.26    2130.63 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_50/CO (FAX1TAS7)
+                                                   3.27    2133.90 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_53/CO (FAX1TAS7)
+                                                   3.27    2137.16 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_55/CO (FAX1TAS7)
+                                                   3.27    2140.43 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_58/CO (FAX1TAS7)
+                                                   3.27    2143.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_60/CO (FAX1TAS7)
+                                                   3.27    2146.96 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_63/CO (FAX1TAS7)
+                                                   3.26    2150.22 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_65/CO (FAX1TAS7)
+                                                   3.27    2153.49 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_68/CO (FAX1TAS7)
+                                                   3.26    2156.75 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_70/CO (FAX1TAS7)
+                                                   3.27    2160.02 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_73/CO (FAX1TAS7)
+                                                   3.26    2163.28 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_75/CO (FAX1TAS7)
+                                                   3.27    2166.55 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_78/CO (FAX1TAS7)
+                                                   3.26    2169.81 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_80/CO (FAX1TAS7)
+                                                   3.27    2173.08 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_83/CO (FAX1TAS7)
+                                                   3.26    2176.34 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_85/CO (FAX1TAS7)
+                                                   3.27    2179.61 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_88/CO (FAX1TAS7)
+                                                   3.27    2182.88 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_90/CO (FAX1TAS7)
+                                                   3.27    2186.14 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_93/CO (FAX1TAS7)
+                                                   3.27    2189.41 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_95/CO (FAX1TAS7)
+                                                   3.27    2192.68 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_98/CO (FAX1TAS7)
+                                                   3.27    2195.94 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_100/CO (FAX1TAS7)
+                                                   3.27    2199.21 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_103/CO (FAX1TAS7)
+                                                   3.27    2202.48 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_105/CO (FAX1TAS7)
+                                                   3.27    2205.74 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_108/CO (FAX1TAS7)
+                                                   3.27    2209.01 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/U_110/CO (FAX1TAS7)
+                                                   3.12    2212.13 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I24/ctmi_6902/O (XNOR2X1TAS7)
+                                                   8.83    2220.96 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2435/O (MUX2X1TAS7)
+                                                   3.92    2224.87 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_35/CO (FAX1TAS7)
+                                                   3.83    2228.70 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_38/CO (FAX1TAS7)
+                                                   3.27    2231.98 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_40/CO (FAX1TAS7)
+                                                   3.27    2235.24 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_43/CO (FAX1TAS7)
+                                                   3.26    2238.51 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_45/CO (FAX1TAS7)
+                                                   3.27    2241.77 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_48/CO (FAX1TAS7)
+                                                   3.26    2245.04 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_50/CO (FAX1TAS7)
+                                                   3.27    2248.30 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_53/CO (FAX1TAS7)
+                                                   3.27    2251.57 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_55/CO (FAX1TAS7)
+                                                   3.27    2254.83 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_58/CO (FAX1TAS7)
+                                                   3.27    2258.10 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_60/CO (FAX1TAS7)
+                                                   3.27    2261.37 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_63/CO (FAX1TAS7)
+                                                   3.26    2264.63 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_65/CO (FAX1TAS7)
+                                                   3.27    2267.90 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_68/CO (FAX1TAS7)
+                                                   3.26    2271.16 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_70/CO (FAX1TAS7)
+                                                   3.27    2274.43 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_73/CO (FAX1TAS7)
+                                                   3.26    2277.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_75/CO (FAX1TAS7)
+                                                   3.27    2280.96 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_78/CO (FAX1TAS7)
+                                                   3.26    2284.22 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_80/CO (FAX1TAS7)
+                                                   3.27    2287.49 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_83/CO (FAX1TAS7)
+                                                   3.26    2290.75 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_85/CO (FAX1TAS7)
+                                                   3.27    2294.02 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_88/CO (FAX1TAS7)
+                                                   3.27    2297.28 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_90/CO (FAX1TAS7)
+                                                   3.27    2300.55 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_93/CO (FAX1TAS7)
+                                                   3.27    2303.82 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_95/CO (FAX1TAS7)
+                                                   3.27    2307.08 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_98/CO (FAX1TAS7)
+                                                   3.27    2310.35 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_100/CO (FAX1TAS7)
+                                                   3.27    2313.62 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_103/CO (FAX1TAS7)
+                                                   3.27    2316.88 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_105/CO (FAX1TAS7)
+                                                   3.27    2320.15 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_108/CO (FAX1TAS7)
+                                                   3.27    2323.41 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/U_110/CO (FAX1TAS7)
+                                                   3.12    2326.53 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I25/ctmi_6867/O (XNOR2X1TAS7)
+                                                   8.83    2335.36 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A1828/O (MUX2X1TAS7)
+                                                   3.92    2339.28 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_35/CO (FAX1TAS7)
+                                                   3.83    2343.11 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_38/CO (FAX1TAS7)
+                                                   3.27    2346.38 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_40/CO (FAX1TAS7)
+                                                   3.27    2349.65 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_43/CO (FAX1TAS7)
+                                                   3.26    2352.91 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_45/CO (FAX1TAS7)
+                                                   3.27    2356.18 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_48/CO (FAX1TAS7)
+                                                   3.26    2359.44 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_50/CO (FAX1TAS7)
+                                                   3.27    2362.71 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_53/CO (FAX1TAS7)
+                                                   3.27    2365.97 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_55/CO (FAX1TAS7)
+                                                   3.27    2369.24 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_58/CO (FAX1TAS7)
+                                                   3.27    2372.51 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_60/CO (FAX1TAS7)
+                                                   3.27    2375.77 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_63/CO (FAX1TAS7)
+                                                   3.26    2379.04 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_65/CO (FAX1TAS7)
+                                                   3.27    2382.30 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_68/CO (FAX1TAS7)
+                                                   3.26    2385.57 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_70/CO (FAX1TAS7)
+                                                   3.27    2388.83 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_73/CO (FAX1TAS7)
+                                                   3.26    2392.10 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_75/CO (FAX1TAS7)
+                                                   3.27    2395.36 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_78/CO (FAX1TAS7)
+                                                   3.26    2398.63 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_80/CO (FAX1TAS7)
+                                                   3.27    2401.89 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_83/CO (FAX1TAS7)
+                                                   3.26    2405.16 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_85/CO (FAX1TAS7)
+                                                   3.27    2408.42 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_88/CO (FAX1TAS7)
+                                                   3.27    2411.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_90/CO (FAX1TAS7)
+                                                   3.27    2414.96 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_93/CO (FAX1TAS7)
+                                                   3.27    2418.22 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_95/CO (FAX1TAS7)
+                                                   3.27    2421.49 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_98/CO (FAX1TAS7)
+                                                   3.27    2424.76 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_100/CO (FAX1TAS7)
+                                                   3.27    2428.02 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_103/CO (FAX1TAS7)
+                                                   3.27    2431.29 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_105/CO (FAX1TAS7)
+                                                   3.27    2434.55 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_108/CO (FAX1TAS7)
+                                                   3.27    2437.82 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/U_110/CO (FAX1TAS7)
+                                                   3.12    2440.94 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I26/ctmi_6832/O (XNOR2X1TAS7)
+                                                   8.83    2449.77 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2008/O (MUX2X1TAS7)
+                                                   3.92    2453.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_35/CO (FAX1TAS7)
+                                                   3.83    2457.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_38/CO (FAX1TAS7)
+                                                   3.27    2460.79 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_40/CO (FAX1TAS7)
+                                                   3.27    2464.05 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_43/CO (FAX1TAS7)
+                                                   3.26    2467.32 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_45/CO (FAX1TAS7)
+                                                   3.27    2470.58 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_48/CO (FAX1TAS7)
+                                                   3.26    2473.85 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_50/CO (FAX1TAS7)
+                                                   3.27    2477.11 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_53/CO (FAX1TAS7)
+                                                   3.27    2480.38 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_55/CO (FAX1TAS7)
+                                                   3.27    2483.65 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_58/CO (FAX1TAS7)
+                                                   3.27    2486.91 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_60/CO (FAX1TAS7)
+                                                   3.27    2490.18 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_63/CO (FAX1TAS7)
+                                                   3.26    2493.44 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_65/CO (FAX1TAS7)
+                                                   3.27    2496.71 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_68/CO (FAX1TAS7)
+                                                   3.26    2499.97 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_70/CO (FAX1TAS7)
+                                                   3.27    2503.24 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_73/CO (FAX1TAS7)
+                                                   3.26    2506.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_75/CO (FAX1TAS7)
+                                                   3.27    2509.77 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_78/CO (FAX1TAS7)
+                                                   3.26    2513.03 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_80/CO (FAX1TAS7)
+                                                   3.27    2516.30 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_83/CO (FAX1TAS7)
+                                                   3.26    2519.56 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_85/CO (FAX1TAS7)
+                                                   3.27    2522.83 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_88/CO (FAX1TAS7)
+                                                   3.27    2526.10 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_90/CO (FAX1TAS7)
+                                                   3.27    2529.36 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_93/CO (FAX1TAS7)
+                                                   3.27    2532.63 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_95/CO (FAX1TAS7)
+                                                   3.27    2535.90 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_98/CO (FAX1TAS7)
+                                                   3.27    2539.16 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_100/CO (FAX1TAS7)
+                                                   3.27    2542.43 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_103/CO (FAX1TAS7)
+                                                   3.27    2545.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_105/CO (FAX1TAS7)
+                                                   3.27    2548.96 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_108/CO (FAX1TAS7)
+                                                   3.27    2552.23 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/U_110/CO (FAX1TAS7)
+                                                   3.12    2555.34 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I27/ctmi_6797/O (XNOR2X1TAS7)
+                                                   8.83    2564.17 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2603/O (MUX2X1TAS7)
+                                                   3.92    2568.09 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_35/CO (FAX1TAS7)
+                                                   3.83    2571.92 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_38/CO (FAX1TAS7)
+                                                   3.27    2575.20 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_40/CO (FAX1TAS7)
+                                                   3.27    2578.46 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_43/CO (FAX1TAS7)
+                                                   3.26    2581.73 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_45/CO (FAX1TAS7)
+                                                   3.27    2584.99 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_48/CO (FAX1TAS7)
+                                                   3.26    2588.26 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_50/CO (FAX1TAS7)
+                                                   3.27    2591.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_53/CO (FAX1TAS7)
+                                                   3.27    2594.79 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_55/CO (FAX1TAS7)
+                                                   3.27    2598.05 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_58/CO (FAX1TAS7)
+                                                   3.27    2601.32 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_60/CO (FAX1TAS7)
+                                                   3.27    2604.59 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_63/CO (FAX1TAS7)
+                                                   3.26    2607.85 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_65/CO (FAX1TAS7)
+                                                   3.27    2611.12 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_68/CO (FAX1TAS7)
+                                                   3.26    2614.38 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_70/CO (FAX1TAS7)
+                                                   3.27    2617.65 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_73/CO (FAX1TAS7)
+                                                   3.26    2620.91 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_75/CO (FAX1TAS7)
+                                                   3.27    2624.18 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_78/CO (FAX1TAS7)
+                                                   3.26    2627.44 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_80/CO (FAX1TAS7)
+                                                   3.27    2630.71 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_83/CO (FAX1TAS7)
+                                                   3.26    2633.97 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_85/CO (FAX1TAS7)
+                                                   3.27    2637.24 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_88/CO (FAX1TAS7)
+                                                   3.27    2640.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_90/CO (FAX1TAS7)
+                                                   3.27    2643.77 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_93/CO (FAX1TAS7)
+                                                   3.27    2647.04 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_95/CO (FAX1TAS7)
+                                                   3.27    2650.30 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_98/CO (FAX1TAS7)
+                                                   3.27    2653.57 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_100/CO (FAX1TAS7)
+                                                   3.27    2656.83 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_103/CO (FAX1TAS7)
+                                                   3.27    2660.10 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_105/CO (FAX1TAS7)
+                                                   3.27    2663.37 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_108/CO (FAX1TAS7)
+                                                   3.27    2666.63 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/U_110/CO (FAX1TAS7)
+                                                   3.12    2669.75 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I28/ctmi_6762/O (XNOR2X1TAS7)
+                                                   8.83    2678.58 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2333/O (MUX2X1TAS7)
+                                                   3.92    2682.50 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_35/CO (FAX1TAS7)
+                                                   3.83    2686.33 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_38/CO (FAX1TAS7)
+                                                   3.27    2689.60 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_40/CO (FAX1TAS7)
+                                                   3.27    2692.87 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_43/CO (FAX1TAS7)
+                                                   3.26    2696.13 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_45/CO (FAX1TAS7)
+                                                   3.27    2699.40 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_48/CO (FAX1TAS7)
+                                                   3.26    2702.66 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_50/CO (FAX1TAS7)
+                                                   3.27    2705.93 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_53/CO (FAX1TAS7)
+                                                   3.27    2709.19 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_55/CO (FAX1TAS7)
+                                                   3.27    2712.46 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_58/CO (FAX1TAS7)
+                                                   3.27    2715.73 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_60/CO (FAX1TAS7)
+                                                   3.27    2718.99 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_63/CO (FAX1TAS7)
+                                                   3.26    2722.26 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_65/CO (FAX1TAS7)
+                                                   3.27    2725.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_68/CO (FAX1TAS7)
+                                                   3.26    2728.79 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_70/CO (FAX1TAS7)
+                                                   3.27    2732.05 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_73/CO (FAX1TAS7)
+                                                   3.26    2735.32 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_75/CO (FAX1TAS7)
+                                                   3.27    2738.58 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_78/CO (FAX1TAS7)
+                                                   3.26    2741.85 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_80/CO (FAX1TAS7)
+                                                   3.27    2745.11 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_83/CO (FAX1TAS7)
+                                                   3.26    2748.38 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_85/CO (FAX1TAS7)
+                                                   3.27    2751.64 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_88/CO (FAX1TAS7)
+                                                   3.27    2754.91 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_90/CO (FAX1TAS7)
+                                                   3.27    2758.18 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_93/CO (FAX1TAS7)
+                                                   3.27    2761.44 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_95/CO (FAX1TAS7)
+                                                   3.27    2764.71 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_98/CO (FAX1TAS7)
+                                                   3.27    2767.97 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_100/CO (FAX1TAS7)
+                                                   3.27    2771.24 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_103/CO (FAX1TAS7)
+                                                   3.27    2774.51 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_105/CO (FAX1TAS7)
+                                                   3.27    2777.77 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_108/CO (FAX1TAS7)
+                                                   3.27    2781.04 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/U_110/CO (FAX1TAS7)
+                                                   3.12    2784.16 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I29/ctmi_6727/O (XNOR2X1TAS7)
+                                                   8.83    2792.99 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2576/O (MUX2X1TAS7)
+                                                   3.92    2796.91 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_35/CO (FAX1TAS7)
+                                                   3.83    2800.74 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_38/CO (FAX1TAS7)
+                                                   3.27    2804.01 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_40/CO (FAX1TAS7)
+                                                   3.27    2807.27 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_43/CO (FAX1TAS7)
+                                                   3.26    2810.54 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_45/CO (FAX1TAS7)
+                                                   3.27    2813.80 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_48/CO (FAX1TAS7)
+                                                   3.26    2817.07 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_50/CO (FAX1TAS7)
+                                                   3.27    2820.33 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_53/CO (FAX1TAS7)
+                                                   3.27    2823.60 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_55/CO (FAX1TAS7)
+                                                   3.27    2826.87 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_58/CO (FAX1TAS7)
+                                                   3.27    2830.13 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_60/CO (FAX1TAS7)
+                                                   3.27    2833.40 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_63/CO (FAX1TAS7)
+                                                   3.26    2836.66 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_65/CO (FAX1TAS7)
+                                                   3.27    2839.93 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_68/CO (FAX1TAS7)
+                                                   3.26    2843.19 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_70/CO (FAX1TAS7)
+                                                   3.27    2846.46 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_73/CO (FAX1TAS7)
+                                                   3.26    2849.72 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_75/CO (FAX1TAS7)
+                                                   3.27    2852.99 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_78/CO (FAX1TAS7)
+                                                   3.26    2856.25 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_80/CO (FAX1TAS7)
+                                                   3.27    2859.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_83/CO (FAX1TAS7)
+                                                   3.26    2862.78 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_85/CO (FAX1TAS7)
+                                                   3.27    2866.05 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_88/CO (FAX1TAS7)
+                                                   3.27    2869.32 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_90/CO (FAX1TAS7)
+                                                   3.27    2872.58 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_93/CO (FAX1TAS7)
+                                                   3.27    2875.85 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_95/CO (FAX1TAS7)
+                                                   3.27    2879.11 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_98/CO (FAX1TAS7)
+                                                   3.27    2882.38 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_100/CO (FAX1TAS7)
+                                                   3.27    2885.65 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_103/CO (FAX1TAS7)
+                                                   3.27    2888.91 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_105/CO (FAX1TAS7)
+                                                   3.27    2892.18 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_108/CO (FAX1TAS7)
+                                                   3.27    2895.45 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/U_110/CO (FAX1TAS7)
+                                                   3.12    2898.56 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I30/ctmi_6692/O (XNOR2X1TAS7)
+                                                   8.83    2907.39 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2610/O (MUX2X1TAS7)
+                                                   3.92    2911.31 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_35/CO (FAX1TAS7)
+                                                   3.83    2915.14 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_38/CO (FAX1TAS7)
+                                                   3.27    2918.42 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_40/CO (FAX1TAS7)
+                                                   3.27    2921.68 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_43/CO (FAX1TAS7)
+                                                   3.26    2924.95 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_45/CO (FAX1TAS7)
+                                                   3.27    2928.21 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_48/CO (FAX1TAS7)
+                                                   3.26    2931.48 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_50/CO (FAX1TAS7)
+                                                   3.27    2934.74 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_53/CO (FAX1TAS7)
+                                                   3.27    2938.01 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_55/CO (FAX1TAS7)
+                                                   3.27    2941.27 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_58/CO (FAX1TAS7)
+                                                   3.27    2944.54 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_60/CO (FAX1TAS7)
+                                                   3.27    2947.80 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_63/CO (FAX1TAS7)
+                                                   3.26    2951.07 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_65/CO (FAX1TAS7)
+                                                   3.27    2954.33 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_68/CO (FAX1TAS7)
+                                                   3.26    2957.60 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_70/CO (FAX1TAS7)
+                                                   3.27    2960.86 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_73/CO (FAX1TAS7)
+                                                   3.26    2964.13 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_75/CO (FAX1TAS7)
+                                                   3.27    2967.39 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_78/CO (FAX1TAS7)
+                                                   3.26    2970.66 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_80/CO (FAX1TAS7)
+                                                   3.27    2973.92 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_83/CO (FAX1TAS7)
+                                                   3.26    2977.19 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_85/CO (FAX1TAS7)
+                                                   3.27    2980.46 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_88/CO (FAX1TAS7)
+                                                   3.27    2983.72 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_90/CO (FAX1TAS7)
+                                                   3.27    2986.99 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_93/CO (FAX1TAS7)
+                                                   3.27    2990.26 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_95/CO (FAX1TAS7)
+                                                   3.27    2993.52 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_98/CO (FAX1TAS7)
+                                                   3.27    2996.79 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_100/CO (FAX1TAS7)
+                                                   3.27    3000.05 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_103/CO (FAX1TAS7)
+                                                   3.27    3003.32 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_105/CO (FAX1TAS7)
+                                                   3.27    3006.59 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_108/CO (FAX1TAS7)
+                                                   3.27    3009.85 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/U_110/CO (FAX1TAS7)
+                                                   3.12    3012.97 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I31/ctmi_6657/O (XNOR2X1TAS7)
+                                                   8.83    3021.80 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A2108/O (MUX2X1TAS7)
+                                                   3.92    3025.72 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_35/CO (FAX1TAS7)
+                                                   3.83    3029.56 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_38/CO (FAX1TAS7)
+                                                   3.27    3032.83 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_40/CO (FAX1TAS7)
+                                                   3.27    3036.09 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_43/CO (FAX1TAS7)
+                                                   3.26    3039.36 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_45/CO (FAX1TAS7)
+                                                   3.27    3042.62 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_48/CO (FAX1TAS7)
+                                                   3.26    3045.89 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_50/CO (FAX1TAS7)
+                                                   3.27    3049.15 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_53/CO (FAX1TAS7)
+                                                   3.27    3052.42 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_55/CO (FAX1TAS7)
+                                                   3.27    3055.69 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_58/CO (FAX1TAS7)
+                                                   3.27    3058.95 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_60/CO (FAX1TAS7)
+                                                   3.27    3062.22 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_63/CO (FAX1TAS7)
+                                                   3.26    3065.48 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_65/CO (FAX1TAS7)
+                                                   3.27    3068.75 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_68/CO (FAX1TAS7)
+                                                   3.26    3072.01 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_70/CO (FAX1TAS7)
+                                                   3.27    3075.28 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_73/CO (FAX1TAS7)
+                                                   3.26    3078.54 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_75/CO (FAX1TAS7)
+                                                   3.27    3081.81 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_78/CO (FAX1TAS7)
+                                                   3.26    3085.07 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_80/CO (FAX1TAS7)
+                                                   3.27    3088.34 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_83/CO (FAX1TAS7)
+                                                   3.26    3091.60 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_85/CO (FAX1TAS7)
+                                                   3.27    3094.87 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_88/CO (FAX1TAS7)
+                                                   3.27    3098.13 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_90/CO (FAX1TAS7)
+                                                   3.27    3101.40 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_93/CO (FAX1TAS7)
+                                                   3.27    3104.67 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_95/CO (FAX1TAS7)
+                                                   3.27    3107.93 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_98/CO (FAX1TAS7)
+                                                   3.27    3111.20 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_100/CO (FAX1TAS7)
+                                                   3.27    3114.47 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_103/CO (FAX1TAS7)
+                                                   3.27    3117.73 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_105/CO (FAX1TAS7)
+                                                   3.27    3121.00 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_108/CO (FAX1TAS7)
+                                                   3.27    3124.27 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/U_110/CO (FAX1TAS7)
+                                                   3.12    3127.38 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I32/ctmi_6622/O (XNOR2X1TAS7)
+                                                   1.39    3128.78 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/A1847/O (NOR2X1TAS7)
+                                                   8.78    3137.56 r
+  u_riscv_core/u_datapath/u_alu/u_divisor/A1848/O (AOI222X1TAS7)
+                                                   1.31    3138.87 f
+  u_riscv_core/u_datapath/u_alu/u_divisor/A1849/O (CLKINVX1TAS7)
+                                                   0.90    3139.76 r
+  u_riscv_core/u_datapath/u_alu/u_mux_final/A3560/O (AOI222X1TAS7)
+                                                   0.56    3140.32 f
+  u_riscv_core/u_datapath/u_alu/u_mux_final/A3562/O (NAND2X1TAS7)
+                                                   1.77    3142.09 r
+  u_dmem/A2814/O (CLKINVX1TAS7)                    0.80    3142.89 f
+  u_dmem/A2829/O (NOR4B1X1TAS7)                   18.32    3161.21 r
+  u_dmem/A3054/O (AOI222X1TAS7)                    1.61    3162.82 f
+  u_dmem/A3061/O (NAND4X1TAS7)                     1.21    3164.03 r
+  u_riscv_core/u_datapath/u_result_mux/ctmi_308/O (OAI222X1TAS7)
+                                                   0.79    3164.82 f
+  u_riscv_core/u_datapath/u_result_mux/ctmi_309/O (CLKINVX1TAS7)
+                                                   1.52    3166.34 r
+  u_riscv_core/u_datapath/u_reg_file/rf_reg[2][18]/D (SFFRBQX1TAS7)
+                                                   0.00    3166.34 r
+  data arrival time                                        3166.34
+
+  clock clk (rise edge)                          285.00    285.00
+  clock network delay (ideal)                      0.00    285.00
+  u_riscv_core/u_datapath/u_reg_file/rf_reg[2][18]/CK (SFFRBQX1TAS7)
+                                                   0.00    285.00 r
+  clock uncertainty                               -0.20    284.80
+  library setup time                              -1.86    282.94
+  data required time                                       282.94
+  ------------------------------------------------------------------------
+  data required time                                       282.94
+  data arrival time                                        -3166.34
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -2883.40
+
+
+1

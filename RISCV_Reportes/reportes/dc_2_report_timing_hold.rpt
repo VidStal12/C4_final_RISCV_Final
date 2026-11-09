@@ -1,0 +1,277 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 5
+Design : Top_RISCV
+Version: X-2025.06-SP5-5
+Date   : Thu Nov  5 04:48:55 2026
+****************************************
+
+Operating Conditions: 25CTT1P8   Library: M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_riscv_core/u_datapath/u_pc_reg/pc_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_riscv_core/u_datapath/u_pc_reg/pc_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Top_RISCV          MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+  datapath           MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[1]/CK (DFFRBQX4TAS7)
+                                                          0.00       0.00 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[1]/Q (DFFRBQX4TAS7)
+                                                          2.55       2.55 r
+  u_riscv_core/u_datapath/u_pc_reg/pc[1] (program_counter_WIDTH32)
+                                                          0.00       2.55 r
+  u_riscv_core/u_datapath/u_pc_plus_4/a[1] (adder_WIDTH32_1)
+                                                          0.00       2.55 r
+  u_riscv_core/u_datapath/u_pc_plus_4/y[1] (adder_WIDTH32_1)
+                                                          0.00       2.55 r
+  u_riscv_core/u_datapath/u_pc_mux/d0[1] (Mux_instancia_ancho32_2)
+                                                          0.00       2.55 r
+  u_riscv_core/u_datapath/u_pc_mux/U17/O (MUX2X1TAS7)     0.88       3.43 r
+  u_riscv_core/u_datapath/u_pc_mux/y[1] (Mux_instancia_ancho32_2)
+                                                          0.00       3.43 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_next[1] (program_counter_WIDTH32)
+                                                          0.00       3.43 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[1]/D (DFFRBQX4TAS7)
+                                                          0.00       3.43 r
+  data arrival time                                                  3.43
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[1]/CK (DFFRBQX4TAS7)
+                                                          0.00       0.20 r
+  library hold time                                      -0.20       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -3.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.43
+
+
+  Startpoint: u_riscv_core/u_datapath/u_pc_reg/pc_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_riscv_core/u_datapath/u_pc_reg/pc_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Top_RISCV          MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+  datapath           MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[0]/CK (DFFRBQX4TAS7)
+                                                          0.00       0.00 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[0]/Q (DFFRBQX4TAS7)
+                                                          2.59       2.59 r
+  u_riscv_core/u_datapath/u_pc_reg/pc[0] (program_counter_WIDTH32)
+                                                          0.00       2.59 r
+  u_riscv_core/u_datapath/u_pc_plus_4/a[0] (adder_WIDTH32_1)
+                                                          0.00       2.59 r
+  u_riscv_core/u_datapath/u_pc_plus_4/y[0] (adder_WIDTH32_1)
+                                                          0.00       2.59 r
+  u_riscv_core/u_datapath/u_pc_mux/d0[0] (Mux_instancia_ancho32_2)
+                                                          0.00       2.59 r
+  u_riscv_core/u_datapath/u_pc_mux/U16/O (MUX2X1TAS7)     0.89       3.49 r
+  u_riscv_core/u_datapath/u_pc_mux/y[0] (Mux_instancia_ancho32_2)
+                                                          0.00       3.49 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_next[0] (program_counter_WIDTH32)
+                                                          0.00       3.49 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[0]/D (DFFRBQX4TAS7)
+                                                          0.00       3.49 r
+  data arrival time                                                  3.49
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[0]/CK (DFFRBQX4TAS7)
+                                                          0.00       0.20 r
+  library hold time                                      -0.20       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -3.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.49
+
+
+  Startpoint: u_riscv_core/u_datapath/u_pc_reg/pc_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_riscv_core/u_datapath/u_pc_reg/pc_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Top_RISCV          MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+  datapath           MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[31]/CK (DFFRBQX4TAS7)
+                                                          0.00       0.00 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[31]/Q (DFFRBQX4TAS7)
+                                                          1.69       1.69 f
+  u_riscv_core/u_datapath/u_pc_reg/pc[31] (program_counter_WIDTH32)
+                                                          0.00       1.69 f
+  u_riscv_core/u_datapath/u_pc_plus_4/a[31] (adder_WIDTH32_1)
+                                                          0.00       1.69 f
+  u_riscv_core/u_datapath/u_pc_plus_4/U110/O (AOI22B2X1TAS7)
+                                                          1.03       2.72 r
+  u_riscv_core/u_datapath/u_pc_plus_4/y[31] (adder_WIDTH32_1)
+                                                          0.00       2.72 r
+  u_riscv_core/u_datapath/u_pc_mux/d0[31] (Mux_instancia_ancho32_2)
+                                                          0.00       2.72 r
+  u_riscv_core/u_datapath/u_pc_mux/U12/O (OAI12B2X1TAS7)
+                                                          0.94       3.66 r
+  u_riscv_core/u_datapath/u_pc_mux/y[31] (Mux_instancia_ancho32_2)
+                                                          0.00       3.66 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_next[31] (program_counter_WIDTH32)
+                                                          0.00       3.66 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[31]/D (DFFRBQX4TAS7)
+                                                          0.00       3.66 r
+  data arrival time                                                  3.66
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[31]/CK (DFFRBQX4TAS7)
+                                                          0.00       0.20 r
+  library hold time                                      -0.20       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -3.66
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.66
+
+
+  Startpoint: u_riscv_core/u_datapath/u_pc_reg/pc_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_riscv_core/u_datapath/u_pc_reg/pc_reg[27]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Top_RISCV          MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+  datapath           MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[27]/CK (DFFRBQX4TAS7)
+                                                          0.00       0.00 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[27]/Q (DFFRBQX4TAS7)
+                                                          1.79       1.79 f
+  u_riscv_core/u_datapath/u_pc_reg/pc[27] (program_counter_WIDTH32)
+                                                          0.00       1.79 f
+  u_riscv_core/u_datapath/u_pc_plus_4/a[27] (adder_WIDTH32_1)
+                                                          0.00       1.79 f
+  u_riscv_core/u_datapath/u_pc_plus_4/U5/O (AOI22B2X2TAS7)
+                                                          0.97       2.76 r
+  u_riscv_core/u_datapath/u_pc_plus_4/y[27] (adder_WIDTH32_1)
+                                                          0.00       2.76 r
+  u_riscv_core/u_datapath/u_pc_mux/d0[27] (Mux_instancia_ancho32_2)
+                                                          0.00       2.76 r
+  u_riscv_core/u_datapath/u_pc_mux/U23/O (MUX2X1TAS7)     0.92       3.68 r
+  u_riscv_core/u_datapath/u_pc_mux/y[27] (Mux_instancia_ancho32_2)
+                                                          0.00       3.68 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_next[27] (program_counter_WIDTH32)
+                                                          0.00       3.68 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[27]/D (DFFRBQX4TAS7)
+                                                          0.00       3.68 r
+  data arrival time                                                  3.68
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[27]/CK (DFFRBQX4TAS7)
+                                                          0.00       0.20 r
+  library hold time                                      -0.20       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -3.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.68
+
+
+  Startpoint: u_riscv_core/u_datapath/u_pc_reg/pc_reg[29]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_riscv_core/u_datapath/u_pc_reg/pc_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Top_RISCV          MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+  datapath           MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[29]/CK (DFFRBQX4TAS7)
+                                                          0.00       0.00 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[29]/Q (DFFRBQX4TAS7)
+                                                          1.79       1.79 f
+  u_riscv_core/u_datapath/u_pc_reg/pc[29] (program_counter_WIDTH32)
+                                                          0.00       1.79 f
+  u_riscv_core/u_datapath/u_pc_plus_4/a[29] (adder_WIDTH32_1)
+                                                          0.00       1.79 f
+  u_riscv_core/u_datapath/u_pc_plus_4/U4/O (AOI22B2X2TAS7)
+                                                          0.97       2.76 r
+  u_riscv_core/u_datapath/u_pc_plus_4/y[29] (adder_WIDTH32_1)
+                                                          0.00       2.76 r
+  u_riscv_core/u_datapath/u_pc_mux/d0[29] (Mux_instancia_ancho32_2)
+                                                          0.00       2.76 r
+  u_riscv_core/u_datapath/u_pc_mux/U24/O (MUX2X1TAS7)     0.92       3.68 r
+  u_riscv_core/u_datapath/u_pc_mux/y[29] (Mux_instancia_ancho32_2)
+                                                          0.00       3.68 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_next[29] (program_counter_WIDTH32)
+                                                          0.00       3.68 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[29]/D (DFFRBQX4TAS7)
+                                                          0.00       3.68 r
+  data arrival time                                                  3.68
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg[29]/CK (DFFRBQX4TAS7)
+                                                          0.00       0.20 r
+  library hold time                                      -0.20       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -3.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.68
+
+
+1

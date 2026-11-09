@@ -1,0 +1,75 @@
+****************************************
+Report : design
+Design : Top_RISCV
+Version: Y-2026.03-SP2
+Date   : Thu Nov  5 15:18:04 2026
+****************************************
+
+Total number of std cells in library : 295
+Total number of dont_use lib cells   : 0
+Total number of dont_touch lib cells : 0
+Total number of buffers              : 28
+Total number of inverters            : 16
+Total number of flip-flops           : 48
+Total number of latches              : 24
+Total number of ICGs                 : 6
+
+Cell Instance Type  Count         Area
+--------------------------------------
+TOTAL LEAF CELLS    13482   200985.523
+unit                13482   200985.523
+Standard cells      13482   200985.523
+unit                13482   200985.523
+Hard macro cells        0        0.000
+unit                13482   200985.523
+Soft macro cells        0        0.000
+unit                13482   200985.523
+Always on cells         0        0.000
+unit                13482   200985.523
+Physical only        7782    47024.410
+unit                13482   200985.523
+Fixed cells             0        0.000
+unit                13482   200985.523
+Moveable cells      13482   200985.523
+unit                13482   200985.523
+Placed cells        13482   200985.523
+unit                13482   200985.523
+Sequential            783    49956.480
+unit                13482   200985.523
+Buffer/inverter      1349     8702.669
+unit                13482   200985.523
+ICG cells              23      927.360
+unit                13482   200985.523
+
+Logic Hierarchies                    : 57
+Design Masters count                 : 45
+Total Flat nets count                : 6506
+Total FloatingNets count             : 0
+Total no of Ports                    : 69
+Number of Master Clocks in design    : 1
+Number of Generated Clocks in design : 0
+Number of Path Groups in design      : 7 (1 of them Non Default)
+Number of Scan Chains in design      : 0
+List of Modes                        : func
+List of Corners                      : typical
+List of Scenarios                    : func_typical
+
+Core Area                            : 212778.317
+Chip Area                            : 223993.037
+Total Site Row Area                  : 212778.317
+Number of Blockages                  : 0
+Total area of Blockages              : 0.000
+Number of Power Domains              : 1
+Number of Voltage Areas              : 1
+Number of Group Bounds               : 0
+Number of Exclusive MoveBounds       : 0
+Number of Hard or Soft MoveBounds    : 0
+Number of Multibit Registers         : 0
+Number of Multibit LS/ISO Cells      : 0
+Number of Top Level RP Groups        : 0
+Number of Tech Layers                : 16 (11 of them have unknown routing dir.)
+
+Total wire length                    : 239236.34 micron
+Total number of wires                : 47212
+Total number of contacts             : 44791
+1

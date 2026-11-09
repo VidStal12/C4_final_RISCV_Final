@@ -1,0 +1,456 @@
+ 
+****************************************
+Report : area
+Design : Top_RISCV
+Version: X-2025.06-SP5-5
+Date   : Thu Nov  5 04:48:56 2026
+****************************************
+
+Library(s) Used:
+
+    M31LLSC750GL150MS_25CTT1P8_ctyp_ccs (File: /home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/ccs_db/M31LLSC750GL150MS_25CTT1P8_ctyp_ccs.db)
+
+Number of ports:                         3499
+Number of nets:                         25810
+Number of cells:                        22933
+Number of combinational cells:          19205
+Number of sequential cells:              3421
+Number of macros/black boxes:               0
+Number of buf/inv:                       8075
+Number of references:                       8
+
+Combinational area:             263915.366519
+Buf/Inv area:                    81567.359769
+Noncombinational area:          177132.211678
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                441047.578197
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  -------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-    Black-
+                                  Total        Total    national     national     boxes   Design
+--------------------------------  -----------  -------  -----------  -----------  ------  --------------------------------
+Top_RISCV                         441047.5782    100.0     212.8896       0.0000  0.0000  Top_RISCV
+u_dmem                            156777.0627     35.5   43313.3571  105722.2657  0.0000  dmem
+u_dmem/clk_gate_RAM_reg[0]            40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_0
+u_dmem/clk_gate_RAM_reg[0]_0          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_191
+u_dmem/clk_gate_RAM_reg[0]_1          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_190
+u_dmem/clk_gate_RAM_reg[10]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_162
+u_dmem/clk_gate_RAM_reg[10]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_161
+u_dmem/clk_gate_RAM_reg[10]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_160
+u_dmem/clk_gate_RAM_reg[11]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_159
+u_dmem/clk_gate_RAM_reg[11]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_158
+u_dmem/clk_gate_RAM_reg[11]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_157
+u_dmem/clk_gate_RAM_reg[12]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_156
+u_dmem/clk_gate_RAM_reg[12]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_155
+u_dmem/clk_gate_RAM_reg[12]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_154
+u_dmem/clk_gate_RAM_reg[13]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_153
+u_dmem/clk_gate_RAM_reg[13]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_152
+u_dmem/clk_gate_RAM_reg[13]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_151
+u_dmem/clk_gate_RAM_reg[14]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_150
+u_dmem/clk_gate_RAM_reg[14]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_149
+u_dmem/clk_gate_RAM_reg[14]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_148
+u_dmem/clk_gate_RAM_reg[15]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_147
+u_dmem/clk_gate_RAM_reg[15]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_146
+u_dmem/clk_gate_RAM_reg[15]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_145
+u_dmem/clk_gate_RAM_reg[16]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_144
+u_dmem/clk_gate_RAM_reg[16]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_143
+u_dmem/clk_gate_RAM_reg[16]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_142
+u_dmem/clk_gate_RAM_reg[17]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_141
+u_dmem/clk_gate_RAM_reg[17]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_140
+u_dmem/clk_gate_RAM_reg[17]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_139
+u_dmem/clk_gate_RAM_reg[18]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_138
+u_dmem/clk_gate_RAM_reg[18]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_137
+u_dmem/clk_gate_RAM_reg[18]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_136
+u_dmem/clk_gate_RAM_reg[19]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_135
+u_dmem/clk_gate_RAM_reg[19]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_134
+u_dmem/clk_gate_RAM_reg[19]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_133
+u_dmem/clk_gate_RAM_reg[1]            40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_189
+u_dmem/clk_gate_RAM_reg[1]_0          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_188
+u_dmem/clk_gate_RAM_reg[1]_1          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_187
+u_dmem/clk_gate_RAM_reg[20]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_132
+u_dmem/clk_gate_RAM_reg[20]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_131
+u_dmem/clk_gate_RAM_reg[20]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_130
+u_dmem/clk_gate_RAM_reg[21]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_129
+u_dmem/clk_gate_RAM_reg[21]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_128
+u_dmem/clk_gate_RAM_reg[21]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_127
+u_dmem/clk_gate_RAM_reg[22]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_126
+u_dmem/clk_gate_RAM_reg[22]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_125
+u_dmem/clk_gate_RAM_reg[22]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_124
+u_dmem/clk_gate_RAM_reg[23]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_123
+u_dmem/clk_gate_RAM_reg[23]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_122
+u_dmem/clk_gate_RAM_reg[23]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_121
+u_dmem/clk_gate_RAM_reg[24]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_120
+u_dmem/clk_gate_RAM_reg[24]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_119
+u_dmem/clk_gate_RAM_reg[24]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_118
+u_dmem/clk_gate_RAM_reg[25]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_117
+u_dmem/clk_gate_RAM_reg[25]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_116
+u_dmem/clk_gate_RAM_reg[25]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_115
+u_dmem/clk_gate_RAM_reg[26]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_114
+u_dmem/clk_gate_RAM_reg[26]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_113
+u_dmem/clk_gate_RAM_reg[26]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_112
+u_dmem/clk_gate_RAM_reg[27]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_111
+u_dmem/clk_gate_RAM_reg[27]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_110
+u_dmem/clk_gate_RAM_reg[27]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_109
+u_dmem/clk_gate_RAM_reg[28]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_108
+u_dmem/clk_gate_RAM_reg[28]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_107
+u_dmem/clk_gate_RAM_reg[28]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_106
+u_dmem/clk_gate_RAM_reg[29]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_105
+u_dmem/clk_gate_RAM_reg[29]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_104
+u_dmem/clk_gate_RAM_reg[29]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_103
+u_dmem/clk_gate_RAM_reg[2]            40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_186
+u_dmem/clk_gate_RAM_reg[2]_0          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_185
+u_dmem/clk_gate_RAM_reg[2]_1          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_184
+u_dmem/clk_gate_RAM_reg[30]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_102
+u_dmem/clk_gate_RAM_reg[30]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_101
+u_dmem/clk_gate_RAM_reg[30]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_100
+u_dmem/clk_gate_RAM_reg[31]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_99
+u_dmem/clk_gate_RAM_reg[31]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_98
+u_dmem/clk_gate_RAM_reg[31]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_97
+u_dmem/clk_gate_RAM_reg[32]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_96
+u_dmem/clk_gate_RAM_reg[32]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_95
+u_dmem/clk_gate_RAM_reg[32]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_94
+u_dmem/clk_gate_RAM_reg[33]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_93
+u_dmem/clk_gate_RAM_reg[33]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_92
+u_dmem/clk_gate_RAM_reg[33]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_91
+u_dmem/clk_gate_RAM_reg[34]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_90
+u_dmem/clk_gate_RAM_reg[34]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_89
+u_dmem/clk_gate_RAM_reg[34]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_88
+u_dmem/clk_gate_RAM_reg[35]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_87
+u_dmem/clk_gate_RAM_reg[35]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_86
+u_dmem/clk_gate_RAM_reg[35]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_85
+u_dmem/clk_gate_RAM_reg[36]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_84
+u_dmem/clk_gate_RAM_reg[36]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_83
+u_dmem/clk_gate_RAM_reg[36]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_82
+u_dmem/clk_gate_RAM_reg[37]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_81
+u_dmem/clk_gate_RAM_reg[37]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_80
+u_dmem/clk_gate_RAM_reg[37]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_79
+u_dmem/clk_gate_RAM_reg[38]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_78
+u_dmem/clk_gate_RAM_reg[38]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_77
+u_dmem/clk_gate_RAM_reg[38]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_76
+u_dmem/clk_gate_RAM_reg[39]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_75
+u_dmem/clk_gate_RAM_reg[39]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_74
+u_dmem/clk_gate_RAM_reg[39]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_73
+u_dmem/clk_gate_RAM_reg[3]            40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_183
+u_dmem/clk_gate_RAM_reg[3]_0          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_182
+u_dmem/clk_gate_RAM_reg[3]_1          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_181
+u_dmem/clk_gate_RAM_reg[40]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_72
+u_dmem/clk_gate_RAM_reg[40]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_71
+u_dmem/clk_gate_RAM_reg[40]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_70
+u_dmem/clk_gate_RAM_reg[41]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_69
+u_dmem/clk_gate_RAM_reg[41]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_68
+u_dmem/clk_gate_RAM_reg[41]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_67
+u_dmem/clk_gate_RAM_reg[42]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_66
+u_dmem/clk_gate_RAM_reg[42]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_65
+u_dmem/clk_gate_RAM_reg[42]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_64
+u_dmem/clk_gate_RAM_reg[43]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_63
+u_dmem/clk_gate_RAM_reg[43]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_62
+u_dmem/clk_gate_RAM_reg[43]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_61
+u_dmem/clk_gate_RAM_reg[44]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_60
+u_dmem/clk_gate_RAM_reg[44]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_59
+u_dmem/clk_gate_RAM_reg[44]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_58
+u_dmem/clk_gate_RAM_reg[45]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_57
+u_dmem/clk_gate_RAM_reg[45]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_56
+u_dmem/clk_gate_RAM_reg[45]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_55
+u_dmem/clk_gate_RAM_reg[46]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_54
+u_dmem/clk_gate_RAM_reg[46]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_53
+u_dmem/clk_gate_RAM_reg[46]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_52
+u_dmem/clk_gate_RAM_reg[47]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_51
+u_dmem/clk_gate_RAM_reg[47]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_50
+u_dmem/clk_gate_RAM_reg[47]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_49
+u_dmem/clk_gate_RAM_reg[48]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_48
+u_dmem/clk_gate_RAM_reg[48]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_47
+u_dmem/clk_gate_RAM_reg[48]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_46
+u_dmem/clk_gate_RAM_reg[49]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_45
+u_dmem/clk_gate_RAM_reg[49]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_44
+u_dmem/clk_gate_RAM_reg[49]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_43
+u_dmem/clk_gate_RAM_reg[4]            40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_180
+u_dmem/clk_gate_RAM_reg[4]_0          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_179
+u_dmem/clk_gate_RAM_reg[4]_1          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_178
+u_dmem/clk_gate_RAM_reg[50]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_42
+u_dmem/clk_gate_RAM_reg[50]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_41
+u_dmem/clk_gate_RAM_reg[50]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_40
+u_dmem/clk_gate_RAM_reg[51]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_39
+u_dmem/clk_gate_RAM_reg[51]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_38
+u_dmem/clk_gate_RAM_reg[51]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_37
+u_dmem/clk_gate_RAM_reg[52]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_36
+u_dmem/clk_gate_RAM_reg[52]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_35
+u_dmem/clk_gate_RAM_reg[52]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_34
+u_dmem/clk_gate_RAM_reg[53]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_33
+u_dmem/clk_gate_RAM_reg[53]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_32
+u_dmem/clk_gate_RAM_reg[53]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_31
+u_dmem/clk_gate_RAM_reg[54]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_30
+u_dmem/clk_gate_RAM_reg[54]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_29
+u_dmem/clk_gate_RAM_reg[54]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_28
+u_dmem/clk_gate_RAM_reg[55]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_27
+u_dmem/clk_gate_RAM_reg[55]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_26
+u_dmem/clk_gate_RAM_reg[55]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_25
+u_dmem/clk_gate_RAM_reg[56]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_24
+u_dmem/clk_gate_RAM_reg[56]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_23
+u_dmem/clk_gate_RAM_reg[56]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_22
+u_dmem/clk_gate_RAM_reg[57]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_21
+u_dmem/clk_gate_RAM_reg[57]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_20
+u_dmem/clk_gate_RAM_reg[57]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_19
+u_dmem/clk_gate_RAM_reg[58]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_18
+u_dmem/clk_gate_RAM_reg[58]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_17
+u_dmem/clk_gate_RAM_reg[58]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_16
+u_dmem/clk_gate_RAM_reg[59]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_15
+u_dmem/clk_gate_RAM_reg[59]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_14
+u_dmem/clk_gate_RAM_reg[59]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_13
+u_dmem/clk_gate_RAM_reg[5]            40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_177
+u_dmem/clk_gate_RAM_reg[5]_0          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_176
+u_dmem/clk_gate_RAM_reg[5]_1          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_175
+u_dmem/clk_gate_RAM_reg[60]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_12
+u_dmem/clk_gate_RAM_reg[60]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_11
+u_dmem/clk_gate_RAM_reg[60]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_10
+u_dmem/clk_gate_RAM_reg[61]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_9
+u_dmem/clk_gate_RAM_reg[61]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_8
+u_dmem/clk_gate_RAM_reg[61]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_7
+u_dmem/clk_gate_RAM_reg[62]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_6
+u_dmem/clk_gate_RAM_reg[62]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_5
+u_dmem/clk_gate_RAM_reg[62]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_4
+u_dmem/clk_gate_RAM_reg[63]           40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_3
+u_dmem/clk_gate_RAM_reg[63]_0         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_2
+u_dmem/clk_gate_RAM_reg[63]_1         40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_1
+u_dmem/clk_gate_RAM_reg[6]            40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_174
+u_dmem/clk_gate_RAM_reg[6]_0          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_173
+u_dmem/clk_gate_RAM_reg[6]_1          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_172
+u_dmem/clk_gate_RAM_reg[7]            40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_171
+u_dmem/clk_gate_RAM_reg[7]_0          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_170
+u_dmem/clk_gate_RAM_reg[7]_1          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_169
+u_dmem/clk_gate_RAM_reg[8]            40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_168
+u_dmem/clk_gate_RAM_reg[8]_0          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_167
+u_dmem/clk_gate_RAM_reg[8]_1          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_166
+u_dmem/clk_gate_RAM_reg[9]            40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_165
+u_dmem/clk_gate_RAM_reg[9]_0          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_164
+u_dmem/clk_gate_RAM_reg[9]_1          40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_dmem_163
+u_imem                              3828.7872      0.9    3828.7872       0.0000  0.0000  imem
+u_riscv_core                      280228.8387     63.5     687.0528       0.0000  0.0000  riscv_core
+u_riscv_core/u_controller            767.6928      0.2      38.7072       0.0000  0.0000  controller
+u_riscv_core/u_controller/u_alu_decoder
+                                     361.2672      0.1     361.2672       0.0000  0.0000  alu_decoder
+u_riscv_core/u_controller/u_main_decoder
+                                     367.7184      0.1     367.7184       0.0000  0.0000  main_decoder
+u_riscv_core/u_datapath           278774.0931     63.2     875.7504       0.0000  0.0000  datapath
+u_riscv_core/u_datapath/u_alu     169881.0623     38.5    1974.0672       0.0000  0.0000  Top_ALU_width32
+u_riscv_core/u_datapath/u_alu/u_adder
+                                    3675.5712      0.8    3675.5712       0.0000  0.0000  prefix_adder_ancho32
+u_riscv_core/u_datapath/u_alu/u_divisor
+                                  157175.4239     35.6  157175.4239       0.0000  0.0000  divisor_WIDTH32
+u_riscv_core/u_datapath/u_alu/u_flags
+                                     491.9040      0.1     491.9040       0.0000  0.0000  flags_nzcv_ancho32
+u_riscv_core/u_datapath/u_alu/u_logic_tristate
+                                    1561.1904      0.4     838.6560     722.5344  0.0000  logica_triestado_ancho32
+u_riscv_core/u_datapath/u_alu/u_mux_b
+                                     995.0976      0.2     995.0976       0.0000  0.0000  Mux_instancia_ancho32_0
+u_riscv_core/u_datapath/u_alu/u_mux_final
+                                    4007.8080      0.9    4007.8080       0.0000  0.0000  Mux_decision_ancho32
+u_riscv_core/u_datapath/u_extend     695.1168      0.2     695.1168       0.0000  0.0000  extend
+u_riscv_core/u_datapath/u_pc_mux     825.7536      0.2     825.7536       0.0000  0.0000  Mux_instancia_ancho32_2
+u_riscv_core/u_datapath/u_pc_plus_4
+                                    1153.1520      0.3    1153.1520       0.0000  0.0000  adder_WIDTH32_1
+u_riscv_core/u_datapath/u_pc_reg    2138.5728      0.5     232.2432    1906.3296  0.0000  program_counter_WIDTH32
+u_riscv_core/u_datapath/u_pc_target
+                                    3565.9008      0.8    3565.9008       0.0000  0.0000  adder_WIDTH32_0
+u_riscv_core/u_datapath/u_reg_file
+                                   95876.1220     21.7   34836.4800   57289.8820  0.0000  reg_file
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[10]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_33
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[10]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_32
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[10]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_31
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[11]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_36
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[11]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_35
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[11]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_34
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[12]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_39
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[12]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_38
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[12]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_37
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[13]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_42
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[13]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_41
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[13]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_40
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[14]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_45
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[14]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_44
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[14]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_43
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[15]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_48
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[15]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_47
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[15]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_46
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[16]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_51
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[16]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_50
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[16]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_49
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[17]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_54
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[17]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_53
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[17]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_52
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[18]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_57
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[18]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_56
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[18]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_55
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[19]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_60
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[19]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_59
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[19]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_58
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[1]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_6
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[1]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_5
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[1]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_4
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[20]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_63
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[20]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_62
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[20]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_61
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[21]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_66
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[21]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_65
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[21]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_64
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[22]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_69
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[22]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_68
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[22]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_67
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[23]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_72
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[23]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_71
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[23]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_70
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[24]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_75
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[24]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_74
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[24]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_73
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[25]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_78
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[25]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_77
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[25]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_76
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[26]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_81
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[26]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_80
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[26]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_79
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[27]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_84
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[27]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_83
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[27]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_82
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[28]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_87
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[28]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_86
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[28]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_85
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[29]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_90
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[29]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_89
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[29]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_88
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[2]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_9
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[2]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_8
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[2]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_7
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[30]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_93
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[30]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_92
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[30]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_91
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[31]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_0
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[31]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_95
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[31]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_94
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[3]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_12
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[3]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_11
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[3]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_10
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[4]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_15
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[4]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_14
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[4]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_13
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[5]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_18
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[5]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_17
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[5]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_16
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[6]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_21
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[6]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_20
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[6]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_19
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[7]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_24
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[7]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_23
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[7]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_22
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[8]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_27
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[8]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_26
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[8]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_25
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[9]
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_30
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[9]_0
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_29
+u_riscv_core/u_datapath/u_reg_file/clk_gate_rf_reg[9]_1
+                                      40.3200      0.0       0.0000      40.3200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_file_28
+u_riscv_core/u_datapath/u_result_mux
+                                    1838.5920      0.4    1838.5920       0.0000  0.0000  mux3_WIDTH32
+u_riscv_core/u_datapath/u_srcb_mux
+                                    1924.0704      0.4    1924.0704       0.0000  0.0000  Mux_instancia_ancho32_1
+--------------------------------  -----------  -------  -----------  -----------  ------  --------------------------------
+Total                                                   263915.3665  177132.2117  0.0000
+
+1

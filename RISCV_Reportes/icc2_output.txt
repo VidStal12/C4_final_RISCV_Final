@@ -1,0 +1,71 @@
+ 
+                              IC Compiler II (TM)
+
+                Version Y-2026.03-SP2 for linux64 - Sep 01, 2026
+                           Base build date 6/22/2026.
+
+                    Copyright (c) 1988 - 2026 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+      Inc.  This software may only be used in accordance with the terms and
+  conditions of a written license agreement with Synopsys, Inc.  All other use,
+   reproduction, or distribution of this software is strictly prohibited.  By
+   installing, accessing, using, or executing this software, you agree that it
+  will reside on, operate within, and have access to the computers and networks
+    where such software is used ("Host System"), and that Synopsys may access
+     components and data of the Host System as necessary for it to function
+ properly, to authenticate and validate license keys, to verify that it is used
+ only in conformity with the applicable license restrictions, and to communicate
+                 error messages and associated data to Synopsys.
+
+
+Invocation: /usr/synopsys/icc2/Y-2026.03-SP2/linux64/nwtn/bin/icc2_exec
+Execution time: Thu Nov  5 05:25:35 2026
+Host: synopsys-unis (1 x 2700.005 MHz Intel(R) Xeon(R) D-2123IT CPU @ 2.20GHz)
+Working directory: /home/vpezzarossi/RISCV
+
+icc2_shell> set_app_options -name shell.undo.enabled -value true
+icc2_shell> open_block {/home/vpezzarossi/RISCV/riscv_icc2_lib.ndm:Top_RISCV/05_route_opt.design}
+Information: User units loaded from library 'M31LLSC750GL150MS' (LNK-040)
+Opening block 'riscv_icc2_lib.ndm:Top_RISCV/05_route_opt.design' in edit mode
+icc2_shell> link_block
+Using libraries: riscv_icc2_lib.ndm M31LLSC750GL150MS
+Visiting block riscv_icc2_lib.ndm:Top_RISCV/05_route_opt.design
+Design 'Top_RISCV' was successfully linked.
+1
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -drag {{876.946 452.488} {922.328 387.084}} -scale 1.3348
+icc2_shell> source color_riscv.tcl
+1
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {926.332 509.883} -scale 1.3348
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+icc2_shell> # 1. Clear previous highlights
+icc2_shell> gui_change_highlight -remove -all_colors
+icc2_shell> gui_set_highlight_options -auto_cycle_color false
+icc2_shell> # 2. Color leaf cells by their full hierarchical path (full_name)
+icc2_shell> gui_change_highlight -color blue    -collection [get_cells -hierarchical -filter "full_name =~ *u_dmem/*"]
+icc2_shell> gui_change_highlight -color green   -collection [get_cells -hierarchical -filter "full_name =~ *u_reg_file/*"]
+icc2_shell> gui_change_highlight -color orange  -collection [get_cells -hierarchical -filter "full_name =~ *u_divisor/*"]
+icc2_shell> gui_change_highlight -color red     -collection [get_cells -hierarchical -filter "full_name =~ *u_adder/*"]
+icc2_shell> gui_change_highlight -color magenta -collection [get_cells -hierarchical -filter "full_name =~ *u_pc* || full_name =~ *u_extend* || full_name =~ *u_result_mux*"]
+Error: Invalid color specified.
+        Use error_info for more info. (CMD-013)
+icc2_shell> gui_change_highlight -color yellow  -collection [get_cells -hierarchical -filter "full_name =~ *u_controller/* || full_name =~ *u_imem/*"]
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+icc2_shell> 
+::Customize::image_view_proc zoom_full image.1 
+::Customize::image_view_proc zoom_full image.1 
+::Customize::image_view_proc zoom_full image.1 
+Target pin found with connected net fan in/out beyond limit of 10000. This pin will not be included.
+Target pin found with connected net fan in/out beyond limit of 10000. This pin will not be included.
+Target pin found with connected net fan in/out beyond limit of 10000. This pin will not be included.
+Target pin found with connected net fan in/out beyond limit of 10000. This pin will not be included.
+Target pin found with connected net fan in/out beyond limit of 10000. This pin will not be included.
+Target pin found with connected net fan in/out beyond limit of 10000. This pin will not be included.
+Target pin found with connected net fan in/out beyond limit of 10000. This pin will not be included.
+Target pin found with connected net fan in/out beyond limit of 10000. This pin will not be included.
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {-158.572 600.695} -scale 1.3438
+icc2_shell> gui_set_mouse_tool_option -tool MoveTool -option {dragAngle} -value {Orthogonal}
+icc2_shell> 
+::Customize::image_view_proc zoom_full image.1 

@@ -1,0 +1,1792 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version X-2025.06-SP5-5 for linux64 - Aug 13, 2026 
+
+                    Copyright (c) 1988 - 2026 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+      Inc.  This software may only be used in accordance with the terms and
+  conditions of a written license agreement with Synopsys, Inc.  All other use,
+   reproduction, or distribution of this software is strictly prohibited.  By
+   installing, accessing, using, or executing this software, you agree that it
+  will reside on, operate within, and have access to the computers and networks
+    where such software is used ("Host System"), and that Synopsys may access
+     components and data of the Host System as necessary for it to function
+ properly, to authenticate and validate license keys, to verify that it is used
+ only in conformity with the applicable license restrictions, and to communicate
+                 error messages and associated data to Synopsys.
+
+Initializing...
+Current time:       Thu Nov  5 04:08:31 2026
+Hostname:           synopsys-unis
+CPU Model:          Intel(R) Xeon(R) D-2123IT CPU @ 2.20GHz
+CPU Details:        Cores = 8 : Sockets = 1 : Cache Size = 8448 KB : Freq = 2.70 GHz
+OS:                 Linux 5.14.0-687.49.1.el9_8.x86_64
+RAM:                124 GB (Free  97 GB)
+Swap:                31 GB (Free  31 GB)
+Work Filesystem:    /home mounted to /dev/mapper/rl_synopsys_home-home
+Tmp Filesystem:     / mounted to /dev/mapper/rl_synopsys_root-root
+Work Disk:          11169 GB (Free 10569 GB)
+Tmp Disk:           379 GB (Free  78 GB)
+
+CPU Load: 1%, Ram Free: 97 GB, Swap Free: 31 GB, Work Disk Free: 10569 GB, Tmp Disk Free: 78 GB
+# 1. Configurar biblioteca estándar M31 (150nm GlobalFoundries)
+set PDK_DB_DIR "$env(HOME)/RISCV/M31/M31LLSC750GL150MS_00.01.000/ccs_db"
+/home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/ccs_db
+set TARGET_LIB "$PDK_DB_DIR/M31LLSC750GL150MS_25CTT1P8_ctyp_ccs.db"
+/home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/ccs_db/M31LLSC750GL150MS_25CTT1P8_ctyp_ccs.db
+set_app_var search_path    [list "." $PDK_DB_DIR]
+. /home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/ccs_db
+set_app_var target_library $TARGET_LIB
+/home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/ccs_db/M31LLSC750GL150MS_25CTT1P8_ctyp_ccs.db
+set_app_var link_library   "* $TARGET_LIB"
+* /home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/ccs_db/M31LLSC750GL150MS_25CTT1P8_ctyp_ccs.db
+file mkdir work
+define_design_lib WORK -path ./work
+1
+# 2. Analizar los 20 archivos de hardware
+set RTL_FILES [list \
+    prefix_adder.v \
+    Mux_instancia_ALU.sv \
+    Buffer_Triestado.sv \
+    divisor.sv \
+    Mux_seleccion_ALU.sv \
+    flags_nzcv.sv \
+    Top_ALU.sv \
+    program_counter.sv \
+    adder.sv \
+    mux3.sv \
+    reg_file.sv \
+    extend.sv \
+    main_decoder.sv \
+    ALU_decoder.sv \
+    controller.sv \
+    datapath.sv \
+    riscv_core.sv \
+    imem.sv \
+    dmem.sv \
+    Top_RISCV.sv \
+]
+prefix_adder.v Mux_instancia_ALU.sv Buffer_Triestado.sv divisor.sv Mux_seleccion_ALU.sv flags_nzcv.sv Top_ALU.sv program_counter.sv adder.sv mux3.sv reg_file.sv extend.sv main_decoder.sv ALU_decoder.sv controller.sv datapath.sv riscv_core.sv imem.sv dmem.sv Top_RISCV.sv
+foreach rtl_file $RTL_FILES {
+    puts ">>> Analizando archivo: $rtl_file"
+    analyze -format sverilog -work WORK $rtl_file
+}
+>>> Analizando archivo: prefix_adder.v
+Running PRESTO HDLC
+Compiling source file ./prefix_adder.v
+Presto compilation completed successfully.
+Loading db file '/home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/ccs_db/M31LLSC750GL150MS_25CTT1P8_ctyp_ccs.db'
+Information: Using CCS timing libraries. (TIM-024)
+>>> Analizando archivo: Mux_instancia_ALU.sv
+Running PRESTO HDLC
+Compiling source file ./Mux_instancia_ALU.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: Buffer_Triestado.sv
+Running PRESTO HDLC
+Compiling source file ./Buffer_Triestado.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: divisor.sv
+Running PRESTO HDLC
+Compiling source file ./divisor.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: Mux_seleccion_ALU.sv
+Running PRESTO HDLC
+Compiling source file ./Mux_seleccion_ALU.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: flags_nzcv.sv
+Running PRESTO HDLC
+Compiling source file ./flags_nzcv.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: Top_ALU.sv
+Running PRESTO HDLC
+Compiling source file ./Top_ALU.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: program_counter.sv
+Running PRESTO HDLC
+Compiling source file ./program_counter.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: adder.sv
+Running PRESTO HDLC
+Compiling source file ./adder.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: mux3.sv
+Running PRESTO HDLC
+Compiling source file ./mux3.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: reg_file.sv
+Running PRESTO HDLC
+Compiling source file ./reg_file.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: extend.sv
+Running PRESTO HDLC
+Compiling source file ./extend.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: main_decoder.sv
+Running PRESTO HDLC
+Compiling source file ./main_decoder.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: ALU_decoder.sv
+Running PRESTO HDLC
+Compiling source file ./ALU_decoder.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: controller.sv
+Running PRESTO HDLC
+Compiling source file ./controller.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: datapath.sv
+Running PRESTO HDLC
+Compiling source file ./datapath.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: riscv_core.sv
+Running PRESTO HDLC
+Compiling source file ./riscv_core.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: imem.sv
+Running PRESTO HDLC
+Compiling source file ./imem.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: dmem.sv
+Running PRESTO HDLC
+Compiling source file ./dmem.sv
+Presto compilation completed successfully.
+>>> Analizando archivo: Top_RISCV.sv
+Running PRESTO HDLC
+Compiling source file ./Top_RISCV.sv
+Presto compilation completed successfully.
+# 3. Detectar automáticamente el nombre del módulo Top en Top_RISCV.sv
+set TOP_MODULE "Top_RISCV"
+Top_RISCV
+set fp [open "Top_RISCV.sv" r]
+file15
+while {[gets $fp line] >= 0} {
+    if {[regexp {^\s*module\s+([a-zA-Z0-9_]+)} $line -> mod_name]} {
+        set TOP_MODULE $mod_name
+        break
+    }
+}
+close $fp
+# 4. Elaborar, enlazar y crear copias únicas de submódulos parametrizados
+elaborate $TOP_MODULE -work WORK
+Loading db file '/usr/synopsys/syn/X-2025.06-SP5-5/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/syn/X-2025.06-SP5-5/libraries/syn/standard.sldb'
+  Loading link library 'M31LLSC750GL150MS_25CTT1P8_ctyp_ccs'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (Top_RISCV)
+Module: Top_RISCV, Ports: 67, Input: 2, Output: 65, Inout: 0
+Module: Top_RISCV, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module Top_RISCV report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'Top_RISCV'.
+Information: Building the design 'riscv_core'. (HDL-193)
+Presto compilation completed successfully. (riscv_core)
+Module: riscv_core, Ports: 163, Input: 66, Output: 97, Inout: 0
+Module: riscv_core, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module riscv_core report end. (ELAB-965)
+Information: Building the design 'imem'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'./imem.sv'
+==========================================================
+|    Line    |  full/ parallel  |     block location     |
+==========================================================
+|     10     |    auto/auto     | always block at line 9 |
+==========================================================
+Presto compilation completed successfully. (imem)
+Module: imem, Ports: 64, Input: 32, Output: 32, Inout: 0
+Module: imem, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module imem report end. (ELAB-965)
+Information: Building the design 'dmem'. (HDL-193)
+
+Inferred memory devices in process in routine 'dmem' in file
+	 ./dmem.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       RAM_reg       | Flip-flop | 2048  |  Y  | N  | None  | Async | N  |  38  |
+==================================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|     dmem/35      |   64   |   32    |      6       |
+======================================================
+Presto compilation completed successfully. (dmem)
+Module: dmem, Ports: 99, Input: 67, Output: 32, Inout: 0
+Module: dmem, Registers: 2048, Async set/reset: 2048, Sync set/reset: 0
+Information: Module dmem report end. (ELAB-965)
+Information: Building the design 'controller'. (HDL-193)
+Presto compilation completed successfully. (controller)
+Module: controller, Ports: 25, Input: 13, Output: 12, Inout: 0
+Module: controller, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module controller report end. (ELAB-965)
+Information: Building the design 'datapath'. (HDL-193)
+Presto compilation completed successfully. (datapath)
+Module: datapath, Ports: 173, Input: 76, Output: 97, Inout: 0
+Module: datapath, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module datapath report end. (ELAB-965)
+Information: Building the design 'main_decoder'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'./main_decoder.sv'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    auto/auto     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (main_decoder)
+Module: main_decoder, Ports: 18, Input: 7, Output: 11, Inout: 0
+Module: main_decoder, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module main_decoder report end. (ELAB-965)
+Information: Building the design 'alu_decoder'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'./ALU_decoder.sv'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     38     |    auto/auto     | always block at line 37 |
+|     43     |    auto/auto     | always block at line 37 |
+|     49     |    auto/auto     | always block at line 37 |
+===========================================================
+Presto compilation completed successfully. (alu_decoder)
+Module: alu_decoder, Ports: 11, Input: 8, Output: 3, Inout: 0
+Module: alu_decoder, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module alu_decoder report end. (ELAB-965)
+Information: Building the design 'program_counter' instantiated from design 'datapath' with
+	the parameters "32". (HDL-193)
+
+Inferred memory devices in process in routine 'program_counter_WIDTH32' in file
+	 ./program_counter.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       pc_reg        | Flip-flop |  32   |  Y  | N  | None  | Async | N  |  33  |
+==================================================================================
+Presto compilation completed successfully. (program_counter_WIDTH32)
+Module: program_counter_WIDTH32, Ports: 66, Input: 34, Output: 32, Inout: 0
+Module: program_counter_WIDTH32, Registers: 32, Async set/reset: 32, Sync set/reset: 0
+Information: Module program_counter_WIDTH32 report end. (ELAB-965)
+Information: Building the design 'adder' instantiated from design 'datapath' with
+	the parameters "32". (HDL-193)
+Presto compilation completed successfully. (adder_WIDTH32)
+Module: adder_WIDTH32, Ports: 96, Input: 64, Output: 32, Inout: 0
+Module: adder_WIDTH32, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module adder_WIDTH32 report end. (ELAB-965)
+Information: Building the design 'Mux_instancia' instantiated from design 'datapath' with
+	the parameters "ancho=32". (HDL-193)
+Presto compilation completed successfully. (Mux_instancia_ancho32)
+Module: Mux_instancia_ancho32, Ports: 97, Input: 65, Output: 32, Inout: 0
+Module: Mux_instancia_ancho32, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module Mux_instancia_ancho32 report end. (ELAB-965)
+Information: Building the design 'reg_file'. (HDL-193)
+
+Inferred memory devices in process in routine 'reg_file' in file
+	 ./reg_file.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       rf_reg        | Flip-flop | 1024  |  Y  | N  | None  | Async | N  |  36  |
+==================================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|   reg_file/46    |   32   |   32    |      5       |
+|   reg_file/47    |   32   |   32    |      5       |
+======================================================
+Presto compilation completed successfully. (reg_file)
+Module: reg_file, Ports: 114, Input: 50, Output: 64, Inout: 0
+Module: reg_file, Registers: 1024, Async set/reset: 1024, Sync set/reset: 0
+Information: Module reg_file report end. (ELAB-965)
+Information: Building the design 'extend'. (HDL-193)
+Warning:  ./extend.sv:39: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block in file
+	'./extend.sv'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     30     |    auto/auto     | always block at line 29 |
+===========================================================
+Presto compilation completed successfully. (extend)
+Module: extend, Ports: 59, Input: 27, Output: 32, Inout: 0
+Module: extend, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module extend report end. (ELAB-965)
+Information: Building the design 'Top_ALU' instantiated from design 'datapath' with
+	the parameters "width=32". (HDL-193)
+Presto compilation completed successfully. (Top_ALU_width32)
+Module: Top_ALU_width32, Ports: 103, Input: 67, Output: 36, Inout: 0
+Module: Top_ALU_width32, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module Top_ALU_width32 report end. (ELAB-965)
+Information: Building the design 'mux3' instantiated from design 'datapath' with
+	the parameters "32". (HDL-193)
+Presto compilation completed successfully. (mux3_WIDTH32)
+Module: mux3_WIDTH32, Ports: 130, Input: 98, Output: 32, Inout: 0
+Module: mux3_WIDTH32, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module mux3_WIDTH32 report end. (ELAB-965)
+Information: Building the design 'prefix_adder' instantiated from design 'Top_ALU_width32' with
+	the parameters "ancho=32". (HDL-193)
+Presto compilation completed successfully. (prefix_adder_ancho32)
+Module: prefix_adder_ancho32, Ports: 98, Input: 65, Output: 33, Inout: 0
+Module: prefix_adder_ancho32, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module prefix_adder_ancho32 report end. (ELAB-965)
+Information: Building the design 'logica_triestado' instantiated from design 'Top_ALU_width32' with
+	the parameters "ancho=32". (HDL-193)
+
+Inferred tri-state devices in process
+	in routine logica_triestado_ancho32 line 38 in file
+		'./Buffer_Triestado.sv'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+|  out_and_tri  | Tri-State Buffer |  32   |
+============================================
+
+Inferred tri-state devices in process
+	in routine logica_triestado_ancho32 line 39 in file
+		'./Buffer_Triestado.sv'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+|  out_or_tri   | Tri-State Buffer |  32   |
+============================================
+Presto compilation completed successfully. (logica_triestado_ancho32)
+Module: logica_triestado_ancho32, Ports: 131, Input: 67, Output: 64, Inout: 0
+Module: logica_triestado_ancho32, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module logica_triestado_ancho32 report end. (ELAB-965)
+Information: Building the design 'divisor' instantiated from design 'Top_ALU_width32' with
+	the parameters "WIDTH=32". (HDL-193)
+Presto compilation completed successfully. (divisor_WIDTH32)
+Module: divisor_WIDTH32, Ports: 128, Input: 64, Output: 64, Inout: 0
+Module: divisor_WIDTH32, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module divisor_WIDTH32 report end. (ELAB-965)
+Information: Building the design 'Mux_decision' instantiated from design 'Top_ALU_width32' with
+	the parameters "ancho=32". (HDL-193)
+Presto compilation completed successfully. (Mux_decision_ancho32)
+Module: Mux_decision_ancho32, Ports: 291, Input: 259, Output: 32, Inout: 0
+Module: Mux_decision_ancho32, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module Mux_decision_ancho32 report end. (ELAB-965)
+Information: Building the design 'flags_nzcv' instantiated from design 'Top_ALU_width32' with
+	the parameters "ancho=32". (HDL-193)
+Presto compilation completed successfully. (flags_nzcv_ancho32)
+Module: flags_nzcv_ancho32, Ports: 136, Input: 132, Output: 4, Inout: 0
+Module: flags_nzcv_ancho32, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module flags_nzcv_ancho32 report end. (ELAB-965)
+1
+current_design $TOP_MODULE
+Current design is 'Top_RISCV'.
+{Top_RISCV}
+link
+
+  Linking design 'Top_RISCV'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (20 designs)              /home/vpezzarossi/RISCV/Top_RISCV.db, etc
+  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs (library) /home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/ccs_db/M31LLSC750GL150MS_25CTT1P8_ctyp_ccs.db
+
+Information: Summary of messages issued during linking: (LINK-1806)
+No messages were issued during linking.
+1
+uniquify
+Information: Uniquified 2 instances of design 'adder_WIDTH32'. (OPT-1056)
+Information: Uniquified 3 instances of design 'Mux_instancia_ancho32'. (OPT-1056)
+1
+# 5. Aplicar restricciones SDC
+source riscv.sdc
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Current design is 'Top_RISCV'.
+Current design is 'Top_RISCV'.
+1
+# 6. Configurar Clock Gating (-max_fanout 12)
+set_clock_gating_style \
+    -sequential_cell latch \
+    -positive_edge_logic {integrated} \
+    -control_point before \
+    -minimum_bitwidth 4 \
+    -max_fanout 12
+
+Current clock gating style....
+Sequential cell: latch
+Minimum bank bitwidth: 4
+Minimum bank bitwidth for enhanced clock gating: 8
+Maximum fanout: 12
+Setup time for clock gate: -
+Hold time for clock gate: -
+Clock gating circuitry (positive edge): integrated
+Clock gating circuitry (negative edge): or
+ Note: inverter between clock gating circuitry 
+       and (negative edge) register clock pin.
+Control point insertion: before
+Control signal for control point: scan_enable
+Observation point insertion: false
+Observation logic depth: 5
+1
+# 7. Sintetizar mapeando el 100% de los módulos a celdas M31 sin borrar jerarquías
+compile_ultra -gate_clock -no_autoungroup -no_boundary_optimization
+Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Loading db file '/usr/synopsys/syn/X-2025.06-SP5-5/libraries/syn/dw_foundation.sldb'
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 2%, Ram Free: 96 GB, Swap Free: 31 GB, Work Disk Free: 10569 GB, Tmp Disk Free: 78 GB
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | X-2025.06-DWBB_202506.5 |     *     |
+| Licensed DW Building Blocks        | X-2025.06-DWBB_202506.5 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra -no_autoungroup -no_boundary_optimization -gate_clock               |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 4618                                   |
+| Number of User Hierarchies                              | 22                                     |
+| Sequential Cell Count                                   | 3104                                   |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 218                                    |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 386 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'Top_RISCV'
+
+Loaded alib file './alib-52/M31LLSC750GL150MS_25CTT1P8_ctyp_ccs.db.alib'
+CPU Load: 2%, Ram Free: 96 GB, Swap Free: 31 GB, Work Disk Free: 10569 GB, Tmp Disk Free: 78 GB
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'dmem'
+  Processing 'reg_file'
+Information: The register 'rf_reg[0][31]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][30]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][29]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][28]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][27]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][26]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][25]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][24]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][23]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][22]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][21]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][20]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][19]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][18]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][17]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][16]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][15]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][14]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][13]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][12]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][11]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][10]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][9]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][8]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][7]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][6]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][5]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][4]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][3]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][2]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][1]' will be removed. (OPT-1207)
+Information: The register 'rf_reg[0][0]' will be removed. (OPT-1207)
+  Processing 'prefix_adder_ancho32'
+  Processing 'Top_ALU_width32'
+  Processing 'datapath'
+  Processing 'imem'
+  Processing 'Top_RISCV'
+  Processing 'logica_triestado_ancho32'
+  Processing 'Mux_decision_ancho32'
+  Processing 'program_counter_WIDTH32'
+  Processing 'riscv_core'
+  Processing 'main_decoder'
+  Processing 'flags_nzcv_ancho32'
+  Processing 'adder_WIDTH32_0'
+ Implement Synthetic for 'adder_WIDTH32_0'.
+  Processing 'adder_WIDTH32_1'
+ Implement Synthetic for 'adder_WIDTH32_1'.
+  Processing 'extend'
+  Processing 'divisor_WIDTH32'
+ Implement Synthetic for 'divisor_WIDTH32'.
+  Processing 'mux3_WIDTH32'
+  Processing 'Mux_instancia_ancho32_0'
+  Processing 'alu_decoder'
+  Processing 'controller'
+  Processing 'SNPS_CLOCK_GATE_HIGH_dmem_0'
+  Mapping integrated clock gating circuitry
+  Processing 'SNPS_CLOCK_GATE_HIGH_reg_file_0'
+  Mapping integrated clock gating circuitry
+CPU Load: 5%, Ram Free: 96 GB, Swap Free: 31 GB, Work Disk Free: 10569 GB, Tmp Disk Free: 78 GB
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIE1X1TAS7' in the library 'M31LLSC750GL150MS_25CTT1P8_ctyp_ccs' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIE0X1TAS7' in the library 'M31LLSC750GL150MS_25CTT1P8_ctyp_ccs' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Skipping clock gating on design Top_RISCV, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design riscv_core, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design imem, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design controller, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design datapath, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design dmem_MUX_OP_64_6_32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design main_decoder, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design alu_decoder, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design adder_WIDTH32_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design adder_WIDTH32_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Mux_instancia_ancho32_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design extend, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Top_ALU_width32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design mux3_WIDTH32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design adder_WIDTH32_1_DW01_add_J3_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design adder_WIDTH32_0_DW01_add_J3_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design prefix_adder_ancho32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design logica_triestado_ancho32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Mux_decision_ancho32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design flags_nzcv_ancho32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_15, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_16, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_18, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_20, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_21, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_23, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_24, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_25, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_26, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_28, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_29, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_30, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design divisor_WIDTH32_DW01_sub_J4_31, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Mux_instancia_ancho32_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Mux_instancia_ancho32_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_15, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_16, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_18, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_20, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_21, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_23, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_24, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_25, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_26, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_28, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_29, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_30, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_31, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_33, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_34, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_35, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_36, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_37, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_38, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_39, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_40, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_41, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_42, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_43, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_44, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_45, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_46, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_47, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_48, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_49, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_50, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_51, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_52, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_53, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_54, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_55, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_56, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_57, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_58, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_59, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_60, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_61, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_62, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_63, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_64, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_65, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_66, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_67, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_68, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_69, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_70, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_71, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_72, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_73, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_74, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_75, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_76, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_77, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_78, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_79, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_80, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_81, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_82, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_83, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_84, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_85, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_86, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_87, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_88, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_89, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_90, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_91, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_92, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_93, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_94, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_95, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_96, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_97, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_98, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_99, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_100, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_101, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_102, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_103, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_104, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_105, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_106, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_107, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_108, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_109, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_110, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_111, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_112, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_113, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_114, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_115, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_116, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_117, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_118, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_119, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_120, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_121, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_122, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_123, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_124, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_125, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_126, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_127, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_128, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_129, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_130, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_131, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_132, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_133, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_134, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_135, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_136, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_137, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_138, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_139, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_140, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_141, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_142, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_143, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_144, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_145, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_146, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_147, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_148, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_149, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_150, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_151, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_152, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_153, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_154, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_155, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_156, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_157, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_158, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_159, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_160, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_161, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_162, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_163, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_164, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_165, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_166, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_167, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_168, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_169, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_170, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_171, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_172, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_173, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_174, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_175, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_176, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_177, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_178, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_179, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_180, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_181, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_182, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_183, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_184, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_185, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_186, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_187, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_188, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_189, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_190, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_dmem_191, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_15, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_16, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_18, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_20, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_21, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_23, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_24, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_25, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_26, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_28, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_29, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_30, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_31, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_33, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_34, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_35, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_36, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_37, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_38, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_39, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_40, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_41, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_42, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_43, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_44, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_45, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_46, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_47, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_48, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_49, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_50, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_51, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_52, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_53, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_54, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_55, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_56, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_57, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_58, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_59, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_60, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_61, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_62, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_63, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_64, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_65, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_66, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_67, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_68, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_69, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_70, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_71, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_72, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_73, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_74, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_75, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_76, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_77, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_78, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_79, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_80, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_81, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_82, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_83, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_84, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_85, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_86, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_87, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_88, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_89, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_90, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_91, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_92, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_93, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_94, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_95, since there are no registers. (PWR-806)
+Information: Performing clock-gating on design program_counter_WIDTH32. (PWR-730)
+Information: Performing clock-gating on design dmem. (PWR-730)
+Information: Performing clock-gating on design reg_file. (PWR-730)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'adder_WIDTH32_1'. (DDB-72)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+Information: Added key list 'DesignWare' to design 'divisor_WIDTH32'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'prefix_adder_ancho32'. (DDB-72)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:34  767902.5    244.16  326001.6   10098.1                           38390.1406
+    0:04:35  765034.9    251.58  334593.3   10117.1                           38257.6680
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Mapping 'divisor_WIDTH32_DW01_sub_96'
+  Mapping 'divisor_WIDTH32_DW01_sub_97'
+  Mapping 'divisor_WIDTH32_DW01_sub_98'
+  Mapping 'divisor_WIDTH32_DW01_sub_99'
+  Mapping 'divisor_WIDTH32_DW01_sub_100'
+  Mapping 'divisor_WIDTH32_DW01_sub_101'
+  Mapping 'divisor_WIDTH32_DW01_sub_102'
+  Mapping 'divisor_WIDTH32_DW01_sub_103'
+  Mapping 'divisor_WIDTH32_DW01_sub_104'
+  Mapping 'divisor_WIDTH32_DW01_sub_105'
+  Mapping 'divisor_WIDTH32_DW01_sub_106'
+  Mapping 'divisor_WIDTH32_DW01_sub_107'
+  Mapping 'divisor_WIDTH32_DW01_sub_108'
+  Mapping 'divisor_WIDTH32_DW01_sub_109'
+  Mapping 'divisor_WIDTH32_DW01_sub_110'
+  Mapping 'divisor_WIDTH32_DW01_sub_111'
+  Mapping 'divisor_WIDTH32_DW01_sub_112'
+  Mapping 'divisor_WIDTH32_DW01_sub_113'
+  Mapping 'divisor_WIDTH32_DW01_sub_114'
+  Mapping 'divisor_WIDTH32_DW01_sub_115'
+  Mapping 'divisor_WIDTH32_DW01_sub_116'
+  Mapping 'divisor_WIDTH32_DW01_sub_117'
+  Mapping 'divisor_WIDTH32_DW01_sub_118'
+  Mapping 'divisor_WIDTH32_DW01_sub_119'
+  Mapping 'divisor_WIDTH32_DW01_sub_120'
+  Mapping 'divisor_WIDTH32_DW01_sub_121'
+  Mapping 'divisor_WIDTH32_DW01_sub_122'
+  Mapping 'divisor_WIDTH32_DW01_sub_123'
+  Mapping 'divisor_WIDTH32_DW01_sub_124'
+  Mapping 'divisor_WIDTH32_DW01_sub_125'
+  Mapping 'divisor_WIDTH32_DW01_sub_126'
+Information: Added key list 'DesignWare' to design 'adder_WIDTH32_0'. (DDB-72)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:05:01  429430.6    199.01  257439.0    7905.6                           13830.7109
+    0:07:39  454145.1    134.47  176052.1    8378.9                           15118.7783
+    0:07:39  454145.1    134.47  176052.1    8378.9                           15118.7783
+    0:07:40  453529.0    134.46  176053.9    8376.2                           15064.1729
+    0:07:54  410889.8    115.19  151999.9    6312.7                           13613.3086
+    0:07:55  393249.0    139.24  182006.0    6756.4                           12927.1992
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:08:06  367876.5    102.53  135984.4    5497.4                           11876.6133
+    0:08:09  364929.9     94.02  125265.5    5449.2                           11738.0869
+    0:08:10  364465.4     94.02  125266.1    5445.7                           11717.3506
+    0:08:25  363934.8     79.73  107283.0    5400.7                           11665.3018
+    0:08:28  363967.0     79.73  107276.0    5395.6                           11666.8223
+    0:08:28  363967.0     79.73  107276.0    5395.6                           11666.8223
+    0:08:28  363967.0     79.73  107276.0    5395.6                           11666.8223
+    0:08:28  363967.0     79.73  107276.0    5395.6                           11666.8223
+    0:08:29  363915.4     79.73  106983.4    5392.7                           11670.4668
+    0:08:29  363915.4     79.73  106983.4    5392.7                           11670.4668
+    0:10:31  382399.7     54.92   76679.8    5564.6                           12361.5703
+    0:10:31  382399.7     54.92   76679.8    5564.6                           12361.5703
+    0:10:31  382399.7     54.92   76679.8    5564.6                           12361.5703
+    0:10:33  383298.0     54.26   75678.9    5572.0                           12396.4805
+    0:10:34  383572.2     52.78   74019.6    5574.3                           12410.2822
+    0:10:36  384004.5     51.91   72925.9    5563.1                           12424.0420
+    0:10:37  384201.2     51.19   72034.3    5565.4                           12431.2734
+    0:10:38  384807.6     50.18   70868.7    5575.2                           12457.1445
+    0:10:40  385497.9     49.26   69679.8    5579.5                           12490.8896
+    0:10:41  385896.3     48.24   68417.7    5568.8                           12509.3809
+    0:10:42  386386.6     47.74   67852.6    5554.9                           12532.7109
+    0:10:43  386555.9     47.00   66902.3    5556.4                           12540.4941
+    0:10:44  386833.3     46.36   66104.5    5547.0                           12555.4775
+    0:10:47  387692.9     45.67   65206.6    5552.5                           12593.4434
+    0:10:48  388518.7     44.78   63903.7    5556.6                           12644.6533
+    0:10:49  389002.5     44.06   63027.1    5555.9                           12664.1719
+    0:10:50  389618.6     43.56   62334.6    5555.4                           12700.1953
+    0:10:52  390104.1     42.92   61692.4    5540.9                           12724.7197
+    0:10:53  390605.6     42.46   61026.1    5525.9                           12755.2979
+    0:10:54  390862.1     41.93   60443.1    5524.1                           12768.5039
+    0:10:56  391683.0     41.94   60119.4    5533.0                           12813.4971
+    0:10:57  392095.9     41.63   59872.4    5531.7                           12830.3486
+    0:10:58  392723.3     41.13   59318.1    5517.9                           12858.0615
+    0:11:00  393505.5     41.06   59286.9    5526.7                           12898.7520
+    0:11:02  393876.4     40.15   58256.8    5513.5                           12917.0762
+    0:11:03  394800.5     39.75   57631.5    5510.9                           12964.1221
+    0:11:04  395924.7     39.64   57604.5    5540.4                           13025.4209
+    0:11:06  396287.5     39.57   57504.4    5513.5                           13049.6953
+    0:11:07  396953.6     39.12   56925.1    5519.7                           13085.3643
+    0:11:08  397266.5     38.61   56298.8    5517.1                           13099.5801
+    0:11:09  397792.3     38.60   56380.3    5519.1                           13121.0547
+    0:11:12  398621.3     38.15   55813.6    5521.1                           13170.6670
+    0:11:13  398958.3     37.85   55433.0    5518.1                           13188.2148
+    0:11:16  399555.1     38.00   55558.0    5513.1                           13211.3145
+    0:11:17  399890.5     37.49   55010.4    5504.8                           13226.8271
+    0:11:19  400266.3     37.07   54451.8    5504.1                           13246.2939
+    0:11:20  400680.8     36.95   54286.7    5511.4                           13264.5312
+    0:11:22  401296.9     36.66   53927.7    5510.6                           13293.9971
+    0:11:23  401345.3     36.43   53644.6    5498.1                           13299.4531
+    0:11:24  401898.5     36.16   53250.9    5498.7                           13321.2158
+    0:11:25  402342.0     35.67   52680.7    5500.9                           13344.1270
+    0:11:26  402609.7     35.50   52477.8    5499.0                           13356.8096
+    0:11:27  402856.5     35.13   52023.8    5491.7                           13374.2324
+    0:11:30  403317.7     34.89   51606.4    5468.9                           13395.2412
+    0:11:31  403367.7     34.59   51264.5    5474.0                           13398.2861
+    0:11:33  403235.5     34.26   50885.6    5473.6                           13392.7139
+    0:11:35  403361.3     34.12   50583.9    5467.1                           13400.9541
+    0:11:36  403572.6     34.01   50415.5    5463.3                           13416.2969
+    0:11:37  403616.1     33.87   50306.1    5455.6                           13417.8232
+    0:11:39  403656.4     33.80   50237.7    5448.5                           13422.6064
+    0:11:41  403722.5     33.73   50140.5    5448.1                           13424.8340
+    0:11:42  403750.0     33.64   50035.5    5443.5                           13426.6895
+    0:11:43  403770.9     33.70   50113.9    5436.1                           13426.4756
+    0:11:46  403825.8     33.41   49726.2    5438.5                           13427.2725
+    0:11:48  403906.4     33.31   49610.2    5442.5                           13430.7666
+    0:11:49  403987.0     33.33   49627.0    5439.9                           13434.7695
+    0:11:49  403974.1     33.22   49496.7    5438.9                           13434.1621
+    0:11:49  403967.7     33.22   49492.6    5437.8                           13434.3691
+    0:11:50  403988.7     33.21   49475.5    5437.1                           13435.0986
+    0:11:50  403979.0     33.21   49468.0    5436.8                           13434.6963
+    0:11:51  403969.3     33.20   49456.4    5436.1                           13434.2529
+    0:11:51  404020.9     33.20   49456.4    5436.7                           13435.3379
+    0:11:52  403964.5     33.15   49431.1    5436.9                           13431.5664
+    0:11:54  404012.9     33.08   49326.1    5434.2                           13434.4502
+    0:11:57  404329.0     32.90   49115.2    5443.1                           13451.0391
+    0:11:59  404758.0     32.83   49042.3    5447.1                           13470.4805
+    0:12:01  404959.6     32.72   48893.4    5451.3                           13480.1660
+    0:12:03  405356.3     32.65   48841.1    5452.0                           13501.2100
+    0:12:04  405675.6     32.66   48847.1    5454.2                           13513.3779
+    0:12:04  405936.9     32.68   48875.6    5453.8                           13526.5049
+    0:12:06  406077.2     32.63   48795.4    5450.0                           13535.4316
+    0:12:06  406195.0     32.59   48740.8    5453.9                           13543.9932
+    0:12:07  406277.2     32.51   48647.5    5448.9                           13547.8320
+    0:12:09  406648.2     32.43   48565.2    5448.4                           13565.5771
+    0:12:10  406982.0     32.36   48463.7    5447.5                           13578.4717
+    0:12:11  407198.1     32.45   48553.9    5448.4                           13587.1787
+    0:12:11  407277.2     32.21   48267.7    5452.3                           13590.8965
+    0:12:13  407349.7     32.20   48281.7    5456.6                           13593.2598
+    0:12:15  407836.8     32.08   48114.6    5461.6                           13612.2842
+    0:12:16  408109.4     31.97   47979.2    5469.4                           13622.3506
+    0:12:17  408664.2     31.89   47881.7    5485.8                           13646.4980
+    0:12:17  408928.7     31.80   47778.9    5491.0                           13656.8408
+    0:12:18  409267.4     31.64   47587.2    5493.4                           13671.2529
+    0:12:21  409539.9     31.43   47286.4    5494.9                           13684.0547
+    0:12:22  409507.7     31.22   47017.8    5515.2                           13685.1436
+    0:12:23  409593.1     31.03   46781.0    5508.7                           13691.4658
+    0:12:24  409509.3     30.91   46640.6    5495.5                           13686.0254
+    0:12:25  409507.7     30.79   46489.4    5490.7                           13686.8535
+    0:12:26  409504.4     30.75   46431.7    5486.8                           13687.0156
+    0:12:26  409552.8     30.74   46431.0    5486.4                           13688.6436
+    0:12:27  409598.0     30.68   46345.7    5484.4                           13690.3623
+    0:12:28  409631.8     30.65   46313.9    5481.8                           13692.9902
+    0:12:28  409635.1     30.64   46293.1    5480.2                           13692.5645
+    0:12:30  409665.7     30.51   46135.4    5488.6                           13693.5469
+    0:12:32  409710.9     30.42   46023.3    5485.8                           13696.0283
+    0:12:32  409777.0     30.39   45977.8    5479.5                           13697.7715
+    0:12:33  409781.8     30.36   45941.4    5477.5                           13697.8535
+    0:12:34  409798.0     30.31   45887.6    5475.9                           13698.7891
+    0:12:34  409794.7     30.30   45880.0    5476.1                           13698.7793
+    0:12:35  409830.2     30.27   45836.2    5475.0                           13699.6699
+    0:12:35  409836.7     30.24   45814.4    5471.9                           13699.1484
+    0:12:36  409836.7     30.21   45766.1    5470.1                           13699.1484
+    0:12:37  409836.7     30.18   45724.8    5469.3                           13698.6953
+    0:12:38  409865.7     30.06   45581.5    5470.0                           13700.0254
+    0:12:39  409902.8     30.01   45518.9    5470.1                           13701.1396
+    0:12:40  409949.6     29.96   45460.9    5467.5                           13702.6025
+    0:12:41  409933.4     30.00   45500.8    5469.6                           13703.2031
+    0:12:41  409962.5     29.95   45442.2    5469.3                           13703.9971
+    0:12:42  409956.0     29.94   45423.9    5469.0                           13703.1865
+    0:12:42  409946.3     29.94   45427.1    5467.6                           13702.8086
+    0:12:43  409933.4     29.93   45417.6    5466.6                           13701.7207
+    0:12:43  409968.9     29.94   45425.6    5467.5                           13704.4453
+    0:12:44  409962.5     29.92   45400.0    5464.9                           13704.0488
+    0:12:45  409977.0     29.81   45267.5    5462.5                           13704.1504
+    0:12:46  409896.3     29.75   45191.9    5465.0                           13700.7412
+    0:12:47  409888.3     29.70   45127.7    5460.8                           13699.7734
+    0:12:48  409891.5     29.64   45047.8    5459.6                           13699.5977
+    0:12:49  409883.4     29.64   45050.0    5460.0                           13699.2490
+    0:12:49  409931.8     29.79   45232.5    5458.9                           13701.3857
+    0:12:50  409930.2     29.66   45073.2    5458.2                           13701.3115
+    0:12:50  409910.9     29.65   45062.3    5465.7                           13697.4287
+    0:12:51  409910.9     29.63   45034.2    5465.7                           13697.4287
+    0:12:51  409917.3     29.64   45044.8    5465.1                           13697.7061
+    0:12:52  409949.6     29.57   44971.0    5460.5                           13699.5996
+    0:12:53  409996.3     29.59   44988.7    5462.0                           13701.4844
+    0:12:54  410002.8     29.57   44963.1    5462.2                           13702.5771
+    0:12:55  409998.0     29.54   44931.8    5460.0                           13702.6025
+    0:12:55  410004.4     29.53   44910.9    5460.2                           13702.8799
+    0:12:56  409999.6     29.49   44868.8    5453.7                           13702.0068
+    0:12:56  410020.5     29.45   44812.9    5453.9                           13702.4473
+    0:12:57  409948.0     29.43   44797.0    5455.8                           13699.2812
+    0:12:58  409951.2     29.43   44799.5    5455.2                           13699.4668
+    0:12:58  409898.0     29.42   44787.5    5452.5                           13696.7236
+    0:12:59  409923.8     29.43   44804.3    5454.8                           13696.1846
+    0:13:00  410014.1     29.40   44757.6    5455.8                           13700.0381
+    0:13:01  410010.9     29.36   44705.2    5454.6                           13700.2393
+    0:13:01  410028.6     29.34   44690.8    5454.5                           13700.5664
+    0:13:01  410028.6     29.34   44690.8    5454.4                           13700.5664
+    0:13:02  410047.9     29.31   44643.9    5454.5                           13700.9814
+    0:13:03  410036.7     29.29   44624.7    5452.3                           13701.8633
+    0:13:04  410027.0     29.29   44624.7    5455.0                           13701.6416
+    0:13:04  410033.4     29.29   44624.7    5454.8                           13702.0850
+    0:13:05  410047.9     29.29   44618.1    5452.3                           13702.9512
+    0:13:07  410473.7     29.27   39811.1    5453.3                           13730.0771
+    0:13:07  410681.8     29.26   39792.8    5453.8                           13742.7412
+    0:13:08  410788.2     29.19   39708.6    5454.7                           13746.6875
+    0:13:09  410893.1     29.18   39701.8    5456.8                           13750.4443
+    0:13:10  411123.7     29.21   39732.7    5456.6                           13758.7656
+    0:13:10  411141.4     29.24   39767.5    5456.3                           13761.6055
+    0:13:11  411285.0     29.14   39643.6    5454.6                           13768.3281
+    0:13:12  411426.9     29.14   39663.8    5457.2                           13772.0732
+    0:13:14  411528.5     29.12   39637.1    5462.3                           13775.8008
+    0:13:15  411549.5     29.11   39618.1    5460.5                           13777.1260
+    0:13:17  411773.6     29.09   39594.8    5460.9                           13786.1416
+    0:13:18  411804.3     28.95   39421.3    5464.3                           13784.6719
+    0:13:19  411944.6     28.88   39322.8    5464.3                           13790.4385
+    0:13:20  412152.7     28.86   39301.1    5456.9                           13800.1475
+    0:13:21  412201.0     28.85   39284.9    5459.0                           13801.4160
+    0:13:21  412263.9     28.79   39201.4    5456.3                           13804.2021
+    0:13:22  412428.4     28.67   39062.1    5453.6                           13812.4121
+    0:13:23  412555.9     28.66   39042.5    5462.8                           13817.7285
+    0:13:24  412713.9     28.69   39082.7    5461.6                           13824.1328
+    0:13:24  412834.9     28.71   39104.7    5458.8                           13829.3525
+    0:13:26  413007.4     28.62   39003.0    5465.9                           13838.6289
+    0:13:28  412967.1     28.53   38928.8    5466.7                           13835.6592
+    0:13:31  412975.2     28.50   38879.4    5465.9                           13836.9502
+    0:13:32  412996.1     28.49   38864.6    5466.2                           13837.9717
+    0:13:33  413004.2     28.46   38818.6    5463.9                           13838.7402
+    0:13:34  413030.0     28.46   38816.6    5458.4                           13840.5479
+    0:13:34  413042.9     28.44   38792.7    5458.6                           13840.9961
+    0:13:34  413022.0     28.43   38775.5    5457.5                           13840.8857
+    0:13:35  413001.0     28.43   38787.1    5457.7                           13840.2158
+    0:13:36  413018.7     28.37   38709.8    5457.8                           13840.7969
+    0:13:38  412989.7     28.33   38659.9    5453.7                           13840.1660
+    0:13:39  413015.5     28.25   38565.3    5453.8                           13842.7803
+    0:13:40  412992.9     28.19   38476.5    5451.6                           13842.2969
+    0:13:41  412981.6     28.13   38403.1    5452.2                           13841.7021
+    0:13:42  413020.3     28.12   38394.9    5453.4                           13843.9141
+    0:13:42  412983.2     28.06   38310.0    5453.1                           13841.2793
+    0:13:44  412975.2     28.05   38300.2    5452.3                           13840.0879
+    0:13:44  413005.8     28.05   38297.9    5452.8                           13842.2822
+    0:13:45  413028.4     28.05   38304.7    5453.3                           13843.4951
+    0:13:45  413034.9     28.04   38292.6    5451.7                           13843.7715
+    0:13:46  413030.0     27.93   38174.7    5450.3                           13843.2949
+    0:13:49  413321.9     27.92   38178.8    5459.9                           13861.4160
+    0:13:51  413455.8     27.92   38172.5    5460.6                           13868.2627
+    0:13:52  413563.9     27.92   38168.5    5457.5                           13874.7461
+    0:13:53  413639.7     27.84   38077.6    5462.5                           13876.7100
+    0:13:54  413794.5     27.73   37938.8    5465.1                           13881.2715
+    0:13:55  413873.5     27.69   37883.4    5463.8                           13884.6367
+    0:13:55  413942.9     27.65   37840.4    5464.0                           13886.5869
+    0:13:56  414199.3     27.69   37879.5    5471.1                           13900.2158
+    0:13:57  414259.0     27.62   37803.1    5474.4                           13901.4746
+    0:14:00  414570.2     27.54   37683.6    5481.1                           13916.8740
+    0:14:01  414794.4     27.42   37563.9    5479.4                           13924.4658
+    0:14:02  414857.3     27.36   37450.8    5483.2                           13926.4277
+    0:14:04  414929.9     27.24   37322.3    5470.3                           13930.8945
+    0:14:05  415107.3     27.16   37234.6    5462.9                           13937.5625
+    0:14:06  415149.2     27.15   37217.7    5454.6                           13940.4277
+    0:14:08  415231.5     27.08   37133.2    5457.8                           13943.7793
+    0:14:09  415197.6     26.95   36974.9    5460.8                           13941.1172
+    0:14:10  415310.5     26.91   36909.0    5459.8                           13946.4922
+    0:14:10  415570.2     26.86   36874.4    5463.4                           13955.3887
+    0:14:14  416002.4     26.78   36722.4    5464.8                           13974.4570
+    0:14:16  415983.1     26.67   36633.9    5465.9                           13973.6455
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:14:16  415983.1     26.67   36633.9    5465.9                           13973.6455
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+    0:14:27  419674.8     28.96   39240.4    4579.1 u_riscv_core/u_datapath/u_reg_file/rd1[17] 14237.5859
+    0:14:30  421073.0     28.87   38920.4    4408.6 u_riscv_core/u_datapath/u_alu/u_divisor/net143297 14304.6748
+    0:14:31  421826.2     28.87   38973.4    4262.4 u_riscv_core/u_datapath/u_reg_file/net152007 14344.6787
+    0:14:35  422476.2     30.19   40610.3    4217.7 u_riscv_core/u_datapath/u_reg_file/rf_reg[28][21]/D 14376.7988
+    0:14:39  422727.8     28.54   38505.0    4190.2 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][22]/D 14396.8779
+    0:14:42  422647.1     28.30   38333.2    4180.4 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][14]/D 14391.8350
+    0:14:45  422616.5     28.06   38041.4    4172.1 u_riscv_core/u_datapath/u_reg_file/rf_reg[5][5]/D 14389.1875
+    0:14:49  422722.9     27.75   37635.8    4142.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[5][5]/D 14395.7041
+    0:14:52  422656.8     27.94   37852.5    4135.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[5][5]/D 14393.2969
+    0:14:55  422826.2     27.85   37746.2    4126.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[3][17]/D 14401.9375
+    0:14:57  422908.4     27.88   37756.8    4117.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][22]/D 14406.0732
+    0:14:59  423147.1     27.40   37212.4    4101.1 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][7]/D 14423.5488
+    0:15:02  423197.1     26.97   36671.4    4085.2 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][7]/D 14427.0049
+    0:15:04  423419.7     26.75   36392.2    4075.4 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][7]/D 14438.2393
+    0:15:05  423410.0     26.76   36383.5    4073.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][7]/D 14437.6387
+    0:15:08  423458.4     26.80   36421.8    4067.0 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][7]/D 14439.7158
+    0:15:11  426134.0     29.67   39686.6    3728.3 u_riscv_core/u_datapath/u_reg_file/net99797 14602.3115
+    0:15:12  426658.2     30.60   40947.4    3643.1 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14638.4355
+    0:15:15  426566.2     30.38   40676.2    3635.7 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14633.2920
+    0:15:18  426579.1     30.03   40245.6    3619.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14635.4941
+    0:15:21  426571.1     29.85   40042.1    3612.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14637.2334
+    0:15:22  426566.2     29.75   39913.1    3612.0 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14637.1074
+    0:15:23  426658.2     29.48   39572.9    3606.2 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14641.4316
+    0:15:26  426746.9     29.23   39430.7    3595.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14646.3086
+    0:15:28  426827.5     28.92   39038.9    3588.1 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14653.6543
+    0:15:32  427263.0     28.64   38785.1    3568.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14679.8018
+    0:15:34  427303.3     28.50   38615.9    3559.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14683.9736
+    0:15:36  427266.2     28.27   38341.8    3554.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14680.7764
+    0:15:39  427706.5     28.02   38233.4    3538.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14707.0088
+    0:15:41  427764.6     27.91   38100.6    3536.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14709.9668
+    0:15:42  427692.0     28.04   38251.7    3530.9 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14708.7783
+    0:15:44  427658.1     28.43   38746.3    3526.2 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14708.2764
+    0:15:46  427687.1     28.59   38938.2    3523.1 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14709.0947
+    0:15:48  427706.5     28.48   38778.6    3514.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][6]/D 14715.2422
+    0:15:51  427925.8     28.12   38321.9    3502.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14732.2715
+    0:15:54  427901.6     28.12   38366.9    3496.0 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14731.5039
+    0:15:56  428098.4     28.12   38823.5    3485.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14744.5576
+    0:15:57  428080.7     28.18   38919.1    3484.4 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14743.3096
+    0:15:59  428122.6     27.93   38597.5    3482.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14745.4404
+    0:16:01  428167.8     27.87   38528.3    3477.7 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14747.9814
+    0:16:02  428238.7     27.82   38488.9    3476.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14752.0186
+    0:16:04  428293.6     27.73   38555.6    3474.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14755.4346
+    0:16:05  428317.7     27.70   38513.1    3472.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][6]/D 14757.1260
+    0:16:07  428240.3     27.67   38466.9    3470.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][6]/D 14750.2842
+    0:16:09  428359.7     27.58   38344.5    3468.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14760.2832
+    0:16:10  428450.0     27.64   38417.1    3462.7 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14766.5537
+    0:16:13  428764.5     27.52   38295.0    3455.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][31]/D 14787.6465
+    0:16:14  428783.8     27.61   38409.2    3451.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[4][16]/D 14790.6523
+    0:16:17  428972.5     27.28   37958.9    3445.0 u_riscv_core/u_datapath/u_reg_file/rf_reg[4][16]/D 14799.9492
+    0:16:18  428937.1     27.19   37845.8    3442.9 u_riscv_core/u_datapath/u_reg_file/rf_reg[4][16]/D 14798.3916
+    0:16:21  429072.5     27.43   38200.2    3434.4 u_riscv_core/u_datapath/u_reg_file/rf_reg[4][16]/D 14805.4355
+    0:16:23  429172.5     27.32   38075.5    3431.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[4][16]/D 14811.6885
+    0:16:25  429227.4     27.29   38033.4    3423.7 u_riscv_core/u_datapath/u_reg_file/rf_reg[4][16]/D 14813.8662
+    0:16:27  429270.9     27.22   37949.5    3422.9 u_riscv_core/u_datapath/u_reg_file/rf_reg[4][16]/D 14817.0938
+    0:16:28  429279.0     27.14   37841.3    3422.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[4][16]/D 14817.7402
+    0:16:30  429290.3     27.08   37766.1    3421.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[4][16]/D 14818.6523
+    0:16:31  429351.6     27.18   37847.1    3417.7 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14822.1016
+    0:16:33  429412.8     27.07   37678.2    3415.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14826.1494
+    0:16:34  429469.3     26.93   37524.5    3413.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14828.8135
+    0:16:36  429475.7     26.79   37355.0    3412.0 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14829.5439
+    0:16:38  429459.6     26.76   37317.5    3411.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14828.6172
+    0:16:39  429504.8     26.69   37222.1    3410.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14830.1982
+    0:16:40  429564.4     26.65   37170.4    3407.0 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14834.1904
+    0:16:41  429629.0     26.73   37274.9    3405.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14839.4951
+    0:16:43  429646.7     26.67   37205.0    3404.9 u_riscv_core/u_datapath/u_reg_file/rf_reg[8][26]/D 14839.8418
+    0:16:45  430566.0     27.79   38097.6    3256.0 u_riscv_core/u_datapath/u_reg_file/net151107 14890.7695
+    0:16:47  431941.7     33.31   45026.8    3182.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14994.3447
+    0:16:51  431812.7     32.79   44376.2    3177.2 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14989.6064
+    0:16:56  431856.2     32.46   44027.1    3166.2 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14996.7607
+    0:17:00  431809.5     32.23   43735.7    3164.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14993.9219
+    0:17:02  431730.4     32.22   43719.1    3159.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14989.8262
+    0:17:03  431759.5     32.15   43634.9    3157.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14990.8408
+    0:17:04  431762.7     32.13   43610.1    3157.6                           14991.1123
+    0:17:06  430027.3     32.16   43667.1    3112.6                           14800.0420
+    0:17:06  430027.3     32.16   43667.1    3112.6                           14800.0420
+    0:29:24  451661.4     18.60   25440.1    4370.8                           15615.9463
+    0:29:24  451661.4     18.60   25440.1    4370.8                           15615.9463
+    0:29:24  451661.4     18.60   25440.1    4370.8                           15615.9463
+    0:29:29  451850.1     18.51   25298.7    4375.0                           15624.5234
+    0:29:32  451984.0     18.64   25457.4    4365.6                           15633.4658
+    0:29:35  451840.4     18.18   24915.6    4357.2                           15626.2910
+    0:29:37  452109.8     18.31   24975.8    4357.1                           15640.0664
+    0:29:38  452163.0     17.87   24452.8    4362.5                           15641.1104
+    0:29:40  452367.8     17.75   24268.4    4358.5                           15653.2285
+    0:29:41  452475.9     17.47   23946.1    4374.8                           15661.5078
+    0:29:42  452611.4     17.37   23875.1    4371.9                           15668.2373
+    0:29:44  452835.5     17.09   23517.2    4380.5                           15679.1084
+    0:29:45  453037.1     17.07   23504.6    4406.6                           15691.6689
+    0:29:49  452979.1     17.31   23633.4    4436.5                           15685.8477
+    0:29:50  453201.6     17.11   23475.9    4439.0                           15693.9531
+    0:29:51  453321.0     17.01   23415.1    4440.2                           15700.6963
+    0:29:53  453162.9     17.14   23567.4    4431.6                           15690.7207
+    0:29:55  453690.3     17.00   23382.9    4421.6                           15713.2998
+    0:29:56  453835.5     17.03   23423.5    4440.5                           15718.4492
+    0:29:57  454080.6     16.73   23044.3    4440.6                           15727.8887
+    0:29:58  454216.1     16.62   22928.8    4431.8                           15730.8203
+    0:30:00  454438.7     16.49   22766.2    4449.3                           15737.5840
+    0:30:01  454503.2     16.53   22786.0    4454.1                           15741.3125
+    0:30:04  454579.0     16.57   22867.6    4484.1                           15739.6475
+    0:30:06  454751.5     16.78   23065.4    4501.5                           15747.8486
+    0:30:07  454758.0     16.42   22672.3    4497.7                           15743.6240
+    0:30:08  454733.8     16.18   22341.5    4499.1                           15739.1611
+    0:30:10  454919.3     16.04   22177.0    4495.4                           15745.8848
+    0:30:11  455546.6     15.94   19136.9    4484.6                           15776.5576
+    0:30:13  455543.4     15.89   19109.9    4478.9                           15775.2412
+    0:30:14  455627.3     15.88   19104.0    4479.9                           15779.4033
+    0:30:14  455885.3     15.79   18980.4    4482.3                           15793.3457
+    0:30:15  456014.4     15.68   18878.5    4483.4                           15798.6191
+    0:30:18  455998.2     15.56   18700.9    4457.0                           15795.2031
+    0:30:20  456196.6     15.51   18674.5    4463.4                           15804.0127
+    0:30:22  456203.1     15.46   18509.5    4460.7                           15805.2920
+    0:30:22  456738.5     15.45   18576.7    4472.5                           15836.1367
+    0:30:24  456917.5     15.42   18552.2    4473.3                           15842.2256
+    0:30:25  457082.0     15.42   18550.2    4470.5                           15852.2354
+    0:30:26  457119.1     15.41   18537.8    4472.5                           15854.3018
+    0:30:27  457122.4     15.26   18345.8    4472.2                           15854.7129
+    0:30:28  457182.0     15.22   18305.9    4469.4                           15857.6104
+    0:30:29  457286.9     15.22   18303.7    4470.1                           15862.5107
+    0:30:31  457623.9     15.09   18156.6    4471.3                           15879.8086
+    0:30:34  457799.7     15.07   18116.1    4471.5                           15887.4854
+    0:30:35  457793.3     15.24   18331.2    4472.0                           15887.6602
+    0:30:36  457901.3     14.97   17995.1    4472.9                           15891.3799
+    0:30:37  458065.8     14.93   17960.1    4471.8                           15901.0156
+    0:30:38  458170.7     14.87   17875.1    4469.4                           15907.6689
+    0:30:39  458267.4     14.85   17844.0    4468.6                           15912.7607
+    0:30:40  458309.4     14.81   17802.6    4479.3                           15914.2021
+    0:30:40  458420.7     14.80   17805.5    4478.1                           15920.2568
+    0:30:43  458446.5     14.77   17758.0    4479.6                           15922.5273
+    0:30:45  458627.1     14.79   17768.7    4491.0                           15927.2705
+    0:30:47  458707.7     14.67   17635.8    4485.3                           15929.8359
+    0:30:49  458744.8     14.65   17628.2    4485.7                           15931.4561
+    0:30:50  458885.1     14.58   17530.0    4484.5                           15937.9971
+    0:30:52  459040.0     14.53   17472.4    4500.3                           15941.4131
+    0:30:52  459159.3     14.49   17428.9    4501.6                           15946.6777
+    0:30:54  459269.0     14.51   17449.9    4499.8                           15952.3770
+    0:30:54  459275.4     14.49   17418.7    4499.8                           15953.9688
+    0:30:55  459378.7     14.51   17446.3    4496.9                           15959.4199
+    0:30:55  459365.8     14.53   17471.4    4494.2                           15959.8486
+    0:30:57  459559.3     14.52   17471.1    4486.9                           15969.6553
+    0:30:59  459751.2     14.50   17379.8    4482.9                           15973.4414
+    0:31:00  459836.7     14.48   17362.8    4488.1                           15978.6572
+    0:31:02  460088.3     14.41   17276.9    4493.6                           15993.3711
+    0:31:03  460056.0     14.45   17342.0    4500.8                           15989.2637
+    0:31:04  460183.4     14.57   17461.9    4504.7                           15996.8643
+    0:31:05  460272.2     14.49   17417.5    4503.0                           15998.9980
+    0:31:06  460285.1     14.48   17392.7    4498.1                           15999.3447
+    0:31:07  460244.7     14.39   17307.1    4495.4                           15996.6533
+    0:31:09  460265.7     14.40   17312.1    4494.6                           15998.2793
+    0:31:11  460383.4     14.35   17245.4    4503.3                           16000.6436
+    0:31:12  460847.9     14.23   17098.6    4510.6                           16021.6904
+    0:31:13  460935.0     14.26   17136.7    4510.3                           16026.4443
+    0:31:15  460922.1     14.38   17282.6    4511.9                           16028.7119
+    0:31:16  461033.4     14.18   17033.0    4514.0                           16034.1260
+    0:31:17  461054.4     14.12   16955.9    4515.4                           16033.8916
+    0:31:18  461136.6     14.01   16856.4    4518.3                           16036.5830
+    0:31:20  461243.1     13.97   16806.4    4516.3                           16041.2393
+    0:31:22  461338.2     14.03   16874.3    4518.0                           16046.5342
+    0:31:23  461499.5     13.96   16790.3    4525.9                           16051.3203
+    0:31:26  461586.6     13.98   16807.2    4535.3                           16053.5410
+    0:31:27  461789.8     13.92   16734.2    4526.0                           16065.2441
+    0:31:29  461926.9     13.91   16725.6    4521.9                           16071.2598
+    0:31:30  462025.3     13.84   16635.4    4523.3                           16076.3301
+    0:31:31  462054.3     13.84   16636.9    4520.5                           16075.0322
+    0:31:32  462110.7     13.80   16581.7    4525.4                           16079.9697
+    0:31:33  462159.1     13.83   16619.4    4529.4                           16080.4756
+    0:31:34  462181.7     13.82   16613.1    4529.6                           16081.6943
+    0:31:35  462202.7     13.79   16578.1    4531.0                           16081.4590
+    0:31:36  462244.6     13.79   16566.7    4531.9                           16083.1123
+    0:31:38  462251.1     13.71   16472.5    4519.5                           16082.5371
+    0:31:39  462278.5     13.71   16466.0    4518.5                           16084.2793
+    0:31:40  462276.9     13.68   16434.3    4518.6                           16084.0186
+    0:31:40  462325.2     13.68   16436.7    4519.8                           16085.5498
+    0:31:41  462312.3     13.67   16436.1    4519.8                           16084.4619
+    0:31:43  462331.7     13.66   16423.0    4517.1                           16084.7051
+    0:31:44  462326.9     13.66   16417.6    4516.3                           16083.9424
+    0:31:45  462354.3     13.66   16415.0    4516.4                           16084.9619
+    0:31:45  462351.1     13.65   16402.6    4516.1                           16084.1074
+    0:31:47  462472.0     13.64   16405.4    4517.7                           16090.9092
+    0:31:48  462651.0     13.67   16443.1    4520.8                           16100.8086
+    0:31:50  462726.8     13.63   16387.6    4522.0                           16105.0820
+    0:31:51  462759.1     13.60   16350.5    4525.2                           16104.9170
+    0:31:52  462789.7     13.60   16353.4    4524.9                           16106.7852
+    0:31:53  462763.9     13.58   16345.1    4528.4                           16104.3643
+    0:31:55  462851.0     13.56   16306.9    4527.9                           16107.7832
+    0:31:55  462884.9     13.56   16307.0    4525.3                           16108.3857
+    0:31:56  462968.8     13.55   16289.4    4531.5                           16111.2178
+    0:31:57  462992.9     13.55   16292.2    4528.3                           16112.2705
+    0:31:57  463030.0     13.55   16295.2    4528.1                           16114.6182
+    0:32:00  463126.8     13.53   16236.8    4530.2                           16121.2461
+    0:32:01  463263.9     13.49   16197.4    4528.6                           16134.2959
+    0:32:03  463210.7     13.51   16221.2    4538.8                           16128.0742
+    0:32:04  463346.2     13.48   16179.1    4540.2                           16134.0381
+    0:32:05  463407.4     13.48   16176.3    4541.3                           16136.4932
+    0:32:05  463415.5     13.46   16162.3    4541.1                           16136.7812
+    0:32:06  463533.2     13.46   16161.2    4549.2                           16141.4443
+    0:32:07  463517.1     13.47   16165.8    4548.3                           16141.8984
+    0:32:08  463538.1     13.51   16222.4    4550.5                           16142.5332
+    0:32:08  463520.3     13.46   16166.4    4550.0                           16140.9395
+    0:32:10  463596.1     13.60   16337.0    4555.6                           16144.9766
+    0:32:11  463554.2     13.51   16217.4    4554.5                           16141.9932
+    0:32:12  463580.0     13.53   16242.2    4553.9                           16142.6523
+    0:32:13  463591.3     13.44   16135.9    4551.5                           16143.6631
+    0:32:14  463655.8     13.46   16170.7    4550.9                           16148.2305
+    0:32:15  463728.4     13.44   16142.5    4550.8                           16151.0293
+    0:32:17  463726.8     13.43   16122.3    4551.1                           16150.9922
+    0:32:17  463720.3     13.40   16085.1    4550.7                           16150.0352
+    0:32:18  463676.8     13.39   16083.2    4552.9                           16147.9150
+    0:32:19  463712.3     13.38   16065.1    4551.7                           16147.0254
+    0:32:20  463783.2     13.32   15990.7    4548.3                           16150.8252
+    0:32:21  463868.7     13.28   15934.9    4544.2                           16154.7246
+    0:32:22  463926.8     13.25   15902.7    4545.8                           16155.9775
+    0:32:23  463928.4     13.25   15900.0    4545.9                           16155.8740
+    0:32:23  463955.8     13.24   15890.4    4547.7                           16157.8682
+    0:32:24  463952.6     13.21   15849.7    4546.9                           16158.0283
+    0:32:25  463986.4     13.22   15860.5    4545.0                           16158.9102
+    0:32:26  464152.6     13.20   15838.3    4549.4                           16166.2031
+    0:32:27  464225.1     13.20   15838.3    4550.8                           16169.0264
+    0:32:28  464257.4     13.20   15838.3    4553.4                           16170.6787
+    0:32:30  464342.9     13.20   15847.1    4558.7                           16176.0410
+    0:32:30  464357.4     13.21   15847.9    4560.5                           16176.2432
+    0:32:31  464346.1     13.18   15812.3    4562.2                           16174.4697
+    0:32:32  464384.8     13.13   15758.4    4563.0                           16176.5762
+    0:32:33  464409.0     13.14   15771.7    4564.2                           16177.3066
+    0:32:34  464450.9     13.14   15770.1    4563.4                           16178.5771
+    0:32:34  464467.0     13.14   15764.1    4563.5                           16179.2559
+    0:32:35  464467.0     13.13   15758.2    4563.6                           16179.2559
+    0:32:36  464447.7     13.14   15768.1    4563.5                           16178.8408
+    0:32:36  464430.0     13.14   15769.3    4564.0                           16177.7949
+    0:32:38  464428.3     13.15   15777.1    4561.7                           16177.0791
+    0:32:40  464489.6     13.11   15725.5    4554.9                           16182.7656
+    0:32:41  464626.7     13.09   15699.0    4555.7                           16186.8262
+    0:32:42  464628.3     13.06   15667.9    4554.3                           16186.6738
+    0:32:42  464631.6     13.10   15718.6    4557.0                           16186.5352
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:32:43  464631.6     13.10   15718.6    4557.0                           16186.5352
+    0:33:27  443203.9     12.94   15315.0    3709.2                           14921.9609
+    0:33:27  443203.9     12.94   15315.0    3709.2                           14921.9609
+    0:33:29  443144.2     12.94   15321.9    3703.9                           14919.4434
+    0:33:37  440681.5     12.85   15207.5    3683.1                           14819.4248
+    0:33:41  438159.1     12.78   15116.8    3660.0                           14717.3896
+    0:33:44  435849.5     12.77   15117.9    3647.1                           14633.0283
+    0:33:49  435068.9     12.70   15011.0    3626.0 u_dmem/net162662          14602.3389
+    0:33:53  435502.8     12.56   14794.7    3580.6 u_dmem/net162615          14622.0479
+    0:33:56  436135.0     12.53   14870.4    3509.7 u_riscv_core/u_datapath/u_alu/u_divisor/net147122 14652.0586
+    0:33:58  437005.9     12.50   14855.5    3415.7 u_riscv_core/u_datapath/u_reg_file/net151147 14691.3555
+    0:34:00  436970.4     12.47   14820.8    3400.2 u_riscv_core/u_datapath/u_reg_file/rf_reg[4][16]/D 14689.5381
+    0:34:05  436772.0     12.17   14481.0    3472.4 u_riscv_core/u_datapath/u_reg_file/rf_reg[2][6]/D 14670.9131
+    0:34:08  436467.2     12.01   14286.9    3541.9 u_riscv_core/u_datapath/u_reg_file/rf_reg[8][11]/D 14651.7656
+    0:34:11  436525.3     11.88   14131.2    3549.2 u_riscv_core/u_datapath/u_reg_file/rf_reg[8][11]/D 14652.1982
+    0:34:15  436588.2     11.71   13915.4    3552.7 u_riscv_core/u_datapath/u_reg_file/rf_reg[8][11]/D 14653.3643
+    0:34:18  436649.5     11.56   13750.2    3554.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[8][11]/D 14659.1836
+    0:34:22  436657.5     11.48   13644.9    3561.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14657.5811
+    0:34:26  436435.0     11.30   13429.3    3564.1 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14648.8877
+    0:34:31  436502.7     11.13   13224.5    3585.1 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14649.2803
+    0:34:34  436402.7     11.02   13083.5    3606.4 u_riscv_core/u_datapath/u_reg_file/rf_reg[22][4]/D 14642.8662
+    0:34:36  436533.4     10.98   13042.1    3619.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[2][7]/D 14649.8096
+    0:34:38  436660.8     10.97   13021.5    3620.9 u_riscv_core/u_datapath/u_reg_file/rf_reg[5][13]/D 14651.8721
+    0:34:41  436575.3     10.91   12946.1    3623.7 u_riscv_core/u_datapath/u_reg_file/rf_reg[5][13]/D 14646.7100
+    0:34:44  436644.6     10.83   12850.3    3630.4 u_riscv_core/u_datapath/u_reg_file/rf_reg[5][13]/D 14648.0166
+    0:34:46  436667.2     10.80   12812.0    3631.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[5][13]/D 14649.0137
+    0:34:48  436668.8     10.77   12780.3    3633.0 u_riscv_core/u_datapath/u_reg_file/rf_reg[5][13]/D 14648.2178
+    0:34:53  437038.2     12.27   14461.6    3549.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[14][29]/D 14669.1025
+    0:34:55  436928.5     12.22   14557.6    3543.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[14][29]/D 14663.6572
+    0:34:59  437131.7     12.35   14715.8    3528.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[22][3]/D 14682.5264
+    0:35:02  437286.5     12.30   14681.7    3518.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[5][13]/D 14689.1621
+    0:35:05  437202.7     12.56   15006.2    3511.1 u_riscv_core/u_datapath/u_reg_file/rf_reg[22][3]/D 14683.9150
+    0:35:07  437330.1     12.54   14974.1    3505.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[22][3]/D 14693.5352
+    0:35:08  437288.1     12.52   14970.0    3503.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[22][3]/D 14691.8232
+    0:35:11  437222.0     12.95   15505.2    3498.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[22][3]/D 14687.2236
+    0:35:13  437291.4     12.88   15426.4    3494.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[22][3]/D 14689.6680
+    0:35:15  437249.4     12.71   15219.0    3493.2 u_riscv_core/u_datapath/u_reg_file/rf_reg[22][3]/D 14687.0215
+    0:35:17  437272.0     12.67   15163.6    3489.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][8]/D 14689.2246
+    0:35:19  437281.7     12.74   15232.7    3482.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][8]/D 14691.4355
+    0:35:21  437307.5     12.82   15333.3    3478.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][8]/D 14694.6934
+    0:35:23  437376.8     12.18   14526.5    3475.0 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][8]/D 14698.3096
+    0:35:26  437496.2     11.98   14308.1    3469.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[22][3]/D 14703.6816
+    0:35:27  437520.4     11.91   14221.1    3468.0 u_riscv_core/u_datapath/u_reg_file/rf_reg[31][2]/D 14704.9199
+    0:35:29  437463.9     12.00   14338.1    3465.2 u_riscv_core/u_datapath/u_reg_file/rf_reg[31][2]/D 14701.4365
+    0:35:32  437334.9     12.26   14593.4    3462.4 u_riscv_core/u_datapath/u_reg_file/rf_reg[22][3]/D 14694.8945
+    0:35:33  437354.3     12.39   14759.3    3459.0 u_riscv_core/u_datapath/u_reg_file/rf_reg[22][3]/D 14695.8926
+    0:35:35  437357.5     12.43   14802.3    3457.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[22][3]/D 14695.6719
+    0:35:36  437325.2     12.54   14879.2    3456.4 u_riscv_core/u_datapath/u_reg_file/rf_reg[22][3]/D 14693.4551
+    0:35:38  437351.0     12.52   14880.5    3454.9 u_riscv_core/u_datapath/u_reg_file/rf_reg[22][3]/D 14694.7676
+    0:35:39  437381.7     12.47   14816.9    3454.0 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14697.4238
+    0:35:41  437347.8     12.38   14712.4    3452.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14696.1406
+    0:35:42  437357.5     12.35   14667.9    3451.9 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14696.1133
+    0:35:44  437399.4     12.30   14605.4    3449.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14697.9443
+    0:35:45  437409.1     12.16   14433.3    3448.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14698.6650
+    0:35:46  437455.9     12.14   14412.0    3447.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][27]/D 14700.9053
+    0:35:47  437476.8     12.11   14407.5    3443.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][8]/D 14700.7627
+    0:35:49  437567.2     12.04   14323.0    3441.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[1][8]/D 14704.5371
+    0:35:50  437601.0     11.91   14279.4    3441.1 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14706.0088
+    0:35:53  437913.9     11.87   14228.1    3429.4 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14719.3447
+    0:35:55  437907.5     11.84   14191.1    3427.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14718.7852
+    0:35:56  437897.8     11.84   14184.5    3427.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14717.6475
+    0:35:57  437849.4     11.82   14165.8    3423.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14715.5420
+    0:35:58  437965.5     11.79   14123.4    3421.4 u_riscv_core/u_datapath/u_reg_file/rf_reg[15][26]/D 14720.9824
+    0:36:00  438047.8     11.69   14032.4    3416.9 u_riscv_core/u_datapath/u_reg_file/rf_reg[31][2]/D 14724.1270
+    0:36:03  438184.9     11.79   14124.1    3407.9 u_riscv_core/u_datapath/u_reg_file/rf_reg[31][2]/D 14728.8125
+    0:36:05  438270.3     11.74   14064.8    3405.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[31][2]/D 14732.2715
+    0:36:06  438323.6     11.69   14008.6    3402.7 u_riscv_core/u_datapath/u_reg_file/rf_reg[31][2]/D 14734.9150
+    0:36:07  438462.3     11.56   13835.5    3395.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[31][2]/D 14744.1455
+    0:36:09  438649.3     11.46   13728.7    3390.4 u_riscv_core/u_datapath/u_reg_file/rf_reg[31][2]/D 14753.4902
+    0:36:11  438778.4     11.27   13513.1    3383.9 u_riscv_core/u_datapath/u_reg_file/rf_reg[8][11]/D 14757.5107
+    0:36:13  438838.0     11.16   13372.6    3381.7 u_riscv_core/u_datapath/u_reg_file/rf_reg[8][11]/D 14760.6865
+    0:36:14  438868.7     11.07   13267.6    3380.1 u_riscv_core/u_datapath/u_reg_file/rf_reg[8][11]/D 14762.9092
+    0:36:15  438836.4     11.03   13207.3    3378.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[8][11]/D 14761.7754
+    0:36:17  438797.7     11.05   13241.2    3377.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[8][11]/D 14760.5293
+    0:36:21  442787.8     21.06   25795.7    2840.3 u_riscv_core/u_datapath/u_reg_file/net99871 15020.4160
+    0:36:24  443703.9     21.12   25297.8    2661.0 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15081.8154
+    0:36:27  443753.9     20.73   24879.8    2657.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15085.5938
+    0:36:30  443747.4     19.46   23291.8    2651.7 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15083.4893
+    0:36:33  443847.4     18.90   22662.8    2648.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15088.3115
+    0:36:35  443928.0     18.74   22519.7    2646.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15093.9512
+    0:36:36  443986.1     18.66   22509.2    2645.2 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15096.3955
+    0:36:38  444068.4     18.39   22314.0    2643.1 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15101.5703
+    0:36:40  444057.1     18.43   22375.9    2641.1 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15099.8828
+    0:36:42  443978.0     17.95   21762.8    2639.5 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15096.0869
+    0:36:44  443963.5     17.59   21325.0    2636.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15096.2549
+    0:36:46  444036.1     17.50   21164.8    2635.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15098.6562
+    0:36:48  444042.5     17.32   21006.5    2634.3 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15098.8232
+    0:36:50  444007.1     17.16   20815.2    2630.7 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15096.9580
+    0:36:51  444058.7     17.11   20747.5    2629.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15098.7246
+    0:36:53  444111.9     16.99   20604.7    2628.8 u_riscv_core/u_datapath/u_reg_file/rf_reg[24][28]/D 15101.0781
+    0:36:54  444144.2     17.09   20725.7    2628.6 u_riscv_core/u_datapath/u_reg_file/rf_reg[23][28]/D 15102.5732
+    0:36:57  445937.6     21.96   26287.9    2442.8 u_riscv_core/u_datapath/u_alu/u_divisor/net169140 15199.1924
+    0:36:59  446931.1     22.70   27348.4    2406.9                           15271.7783
+    0:36:59  446931.1     22.70   27348.4    2406.9                           15271.7783
+    0:37:01  446560.1     21.38   26357.8    2447.7                           15240.3740
+    0:37:03  446140.8     19.92   25130.9    2462.7                           15212.5137
+    0:37:04  446348.9     19.84   25127.5    2483.3                           15221.7246
+    0:37:06  446329.5     19.13   24181.1    2494.3                           15219.0137
+    0:37:07  446377.9     18.17   22867.2    2505.8                           15222.8887
+    0:37:08  446379.5     17.64   22286.6    2513.2                           15218.5332
+    0:37:09  446374.7     17.37   21904.4    2526.0                           15216.5166
+    0:37:10  446242.4     16.98   21399.7    2540.8                           15202.3594
+    0:37:11  446274.7     16.61   20938.4    2555.9                           15203.4414
+    0:37:12  446405.3     16.28   20562.4    2564.7                           15210.3027
+    0:37:15  446263.4     15.98   20237.2    2582.3                           15196.7656
+    0:37:16  446182.7     15.87   20107.3    2584.6                           15188.5820
+    0:37:17  446203.7     15.15   19182.5    2595.7                           15190.5625
+    0:37:18  446279.5     14.97   18989.3    2598.1                           15189.5762
+    0:37:20  446219.8     14.62   18649.5    2604.6                           15183.5967
+    0:37:21  446345.6     14.28   18205.7    2624.2                           15186.6504
+    0:37:22  446206.9     14.34   18318.1    2626.5                           15177.5830
+    0:37:24  446094.0     14.29   18259.5    2642.4                           15166.6904
+    0:37:25  446173.1     14.40   18384.3    2642.4                           15171.2988
+    0:37:25  446116.6     13.87   17781.8    2649.8                           15168.2969
+    0:37:28  446229.5     13.75   17634.4    2666.9                           15172.4453
+    0:37:30  446221.4     13.48   17230.7    2696.3                           15166.5273
+    0:37:31  446321.4     13.06   16727.7    2695.3                           15172.7471
+    0:37:32  446381.1     12.80   16435.9    2696.0                           15173.9629
+    0:37:34  446389.2     12.61   16185.0    2707.7                           15169.8838
+    0:37:35  446327.9     12.42   15968.4    2716.5                           15163.7217
+    0:37:37  446410.1     12.43   16002.5    2737.1                           15161.9990
+    0:37:38  446211.8     12.46   16019.5    2747.8                           15146.4092
+    0:37:39  446265.0     12.23   15767.3    2762.4                           15147.1328
+    0:37:40  446295.6     12.05   15521.8    2766.4                           15147.9189
+    0:37:44  446410.1     12.25   15677.4    2803.1                           15148.9434
+    0:37:45  446566.6     12.03   15435.6    2806.0                           15156.4854
+    0:37:46  446505.3     11.92   15332.5    2804.3                           15151.2607
+    0:37:47  446426.3     11.77   15146.5    2817.0                           15149.7881
+    0:37:48  446545.6     11.69   14927.7    2818.4                           15156.4395
+    0:37:49  446432.7     11.63   13686.3    2830.5                           15151.6611
+    0:37:50  446605.3     11.57   13616.9    2834.4                           15158.9941
+    0:37:51  446919.8     11.53   13565.5    2857.3                           15166.5615
+    0:37:52  446829.5     11.34   13338.2    2865.4                           15162.9473
+    0:37:54  447144.0     11.21   13178.4    2865.7                           15177.7393
+    0:37:56  447311.7     10.96   12906.8    2870.7                           15185.3984
+    0:37:58  447340.7     10.88   12777.4    2876.6                           15188.8633
+    0:37:59  447426.2     10.81   12683.6    2892.2                           15190.6523
+    0:38:00  447495.6     10.74   12606.9    2887.6                           15193.6348
+    0:38:01  447543.9     10.70   12554.9    2885.7                           15195.7236
+    0:38:02  447629.4     10.65   12493.7    2885.0                           15198.4619
+    0:38:03  447669.7     10.69   12542.5    2885.0                           15201.4219
+    0:38:03  447721.3     10.62   12483.1    2885.8                           15203.6084
+    0:38:05  447664.9     10.59   12434.2    2886.9                           15200.0400
+    0:38:05  447666.5     10.56   12402.2    2886.2                           15200.5244
+    0:38:07  447752.0     10.47   12283.3    2891.3                           15203.5000
+    0:38:09  447773.0     10.35   12131.9    2895.6                           15201.3037
+    0:38:10  447868.1     10.29   12062.0    2893.2                           15204.0283
+    0:38:12  447956.8     10.28   12051.0    2914.4                           15203.5518
+    0:38:13  448081.0     10.21   11954.5    2911.5                           15209.4668
+    0:38:14  448200.3     10.21   11973.2    2917.9                           15213.4131
+    0:38:15  448406.8     10.14   11879.5    2922.7                           15223.6494
+    0:38:17  448456.8     10.11   11824.4    2932.6                           15225.4258
+    0:38:17  448490.6     10.11   11828.8    2945.0                           15227.6221
+    0:38:18  448613.2     10.08   11793.1    2945.1                           15231.4922
+    0:38:20  448590.6     10.09   11831.1    2952.9                           15228.8398
+    0:38:22  448693.9     10.03   11725.0    2952.0                           15235.9277
+    0:38:22  448750.3      9.99   11701.6    2949.7                           15240.7080
+    0:38:24  448758.4      9.96   11658.9    2949.5                           15240.7812
+    0:38:25  448597.1      9.95   11647.8    2951.8                           15227.4297
+    0:38:26  448627.7      9.95   11649.1    2950.4                           15228.3467
+    0:38:26  448651.9      9.93   11624.9    2949.1                           15229.6709
+    0:38:27  448629.4      9.93   11594.9    2947.0                           15229.5000
+    0:38:28  448669.7      9.91   11573.4    2946.2                           15231.0498
+    0:38:28  448653.5      9.91   11573.4    2945.9                           15229.9619
+    0:38:29  448697.1      9.87   11508.5    2944.7                           15232.3906
+    0:38:31  448685.8      9.87   11544.1    2936.5                           15231.5918
+    0:38:32  448672.9      9.86   11535.8    2935.0                           15230.3174
+    0:38:34  448668.1      9.90   11580.4    2940.6                           15230.4150
+    0:38:34  448660.0      9.92   11595.5    2940.2                           15229.5781
+    0:38:35  448711.6      9.98   11665.6    2941.0                           15231.8994
+    0:38:36  448710.0      9.91   11598.7    2941.0                           15231.8369
+    0:38:37  448732.6      9.89   11571.9    2942.0                           15231.0908
+    0:38:38  448724.5      9.88   11565.8    2942.7                           15230.0742
+    0:38:38  448740.6      9.88   11559.4    2942.4                           15230.9043
+    0:38:40  448745.5      9.86   11532.6    2942.3                           15229.3154
+    0:38:40  448798.7      9.86   11532.6    2943.9                           15230.6904
+    0:38:41  448713.2      9.86   11532.6    2955.3                           15224.2705
+    0:38:41  448726.1      9.82   11489.1    2956.3                           15224.8789
+    0:38:42  448851.9      9.93   11610.4    2960.4                           15230.6260
+    0:38:43  448874.5      9.87   11534.8    2960.1                           15232.5098
+    0:38:44  448908.4      9.84   11501.2    2963.7                           15233.6514
+    0:38:45  448945.5      9.82   11469.0    2965.4                           15234.5107
+    0:38:46  448968.0      9.82   11466.7    2968.7                           15234.6719
+    0:38:47  448998.7      9.80   11431.5    2968.7                           15235.9502
+    0:38:48  448998.7      9.76   11387.7    2968.4                           15235.9141
+    0:38:48  449069.6      9.83   11474.4    2970.7                           15236.4189
+    0:38:49  449089.0      9.86   11509.0    2969.8                           15238.4111
+    0:38:49  449140.6      9.83   11476.7    2970.9                           15240.6260
+    0:38:50  449230.9      9.83   11479.1    2969.4                           15244.5312
+    0:38:50  449237.4      9.78   11406.7    2968.2                           15245.0332
+    0:38:52  449261.6      9.79   11426.3    2966.3                           15246.2354
+    0:38:53  449306.7      9.80   11423.2    2968.5                           15248.4590
+    0:38:54  449372.9      9.79   11407.4    2967.4                           15252.3887
+    0:38:55  449395.4      9.76   11369.9    2974.8                           15254.6240
+    0:38:57  449374.5      9.77   11393.3    2987.2                           15251.6143
+    0:38:58  449382.5      9.71   11332.9    2986.8                           15252.3330
+    0:39:00  449464.8      9.66   11297.7    2986.9                           15256.9014
+    0:39:02  449426.1      9.74   11270.7    2995.0                           15252.8242
+    0:39:02  449361.6      9.69   11296.0    3005.6                           15249.0566
+    0:39:03  449353.5      9.65   11261.3    3004.5                           15249.7295
+    0:39:04  449414.8      9.64   11260.3    3004.8                           15253.7334
+    0:39:05  449447.0      9.63   11257.2    3001.6                           15256.1328
+    0:39:05  449466.4      9.64   11256.4    3002.6                           15257.2344
+    0:39:06  449466.4      9.63   11254.9    3001.6                           15257.2344
+    0:39:08  449450.3      9.66   11274.0    3001.7                           15255.1758
+    0:39:09  449524.5      9.58   11203.7    3003.5                           15258.6396
+    0:39:10  449539.0      9.58   11195.7    3002.2                           15260.8027
+    0:39:11  449598.6      9.57   11183.7    3002.8                           15263.8301
+    0:39:12  449550.3      9.57   11185.2    3002.7                           15261.2930
+    0:39:13  449580.9      9.57   11184.7    3002.2                           15262.4697
+    0:39:13  449553.5      9.57   11177.2    3001.4                           15261.0996
+    0:39:14  449543.8      9.57   11176.9    3001.5                           15260.4502
+    0:39:14  449534.1      9.57   11175.1    3001.0                           15260.0068
+    0:39:15  449527.7      9.57   11173.7    3000.9                           15259.7842
+    0:39:16  449622.8      9.56   11174.4    3002.9                           15264.7715
+    0:39:17  449656.7      9.56   11159.0    2999.8                           15264.8301
+    0:39:18  449687.3      9.55   11144.6    2999.6                           15266.0879
+    0:39:19  449692.2      9.54   11140.8    2998.7                           15266.3652
+    0:39:20  449726.1      9.56   11165.5    2998.9                           15268.5029
+    0:39:21  449732.5      9.54   11133.2    3000.1                           15268.4980
+    0:39:23  449745.4      9.57   11156.9    2999.5                           15268.8340
+    0:39:23  449768.0      9.57   11151.6    2999.7                           15270.4980
+    0:39:24  449774.4      9.59   11164.9    3000.0                           15271.1426
+    0:39:24  449800.2      9.58   11169.8    2998.1                           15273.2656
+    0:39:26  449805.1      9.61   11189.3    3006.8                           15273.1025
+    0:39:27  449830.9      9.63   11189.7    3006.4                           15274.9082
+    0:39:27  449837.3      9.55   11159.5    3011.8                           15274.1406
+    0:39:29  449842.2      9.56   11153.4    3012.3                           15274.6846
+    0:39:30  449868.0      9.55   11149.6    3012.9                           15275.6748
+    0:39:30  449848.6      9.57   11166.5    3018.7                           15274.2939
+    0:39:31  449842.2      9.55   11148.9    3020.2                           15273.5156
+    0:39:32  449839.0      9.55   11151.2    3020.2                           15273.2939
+    0:39:33  449872.8      9.55   11150.4    3019.4                           15273.9824
+    0:39:34  449866.4      9.54   11146.3    3019.8                           15273.4531
+    0:39:36  449874.4      9.50   11110.5    3019.7                           15273.3574
+    0:39:39  449918.0      9.51   11114.3    3019.9                           15276.0352
+    0:39:40  449950.2      9.48   11079.7    3017.4                           15278.5430
+    0:39:41  449940.6      9.48   11079.6    3016.5                           15277.4180
+    0:39:41  449940.6      9.48   11079.6    3016.5                           15277.4180
+    0:39:47  449766.4      9.36   10911.2    3005.6                           15274.3779
+    0:39:47  449766.4      9.36   10911.2    3005.6                           15274.3779
+    0:39:50  450340.5      9.39   10992.7    3013.5                           15302.8467
+    0:40:11  441047.6      9.16   10628.8    2897.0                           14682.9199
+CPU Load: 12%, Ram Free: 96 GB, Swap Free: 31 GB, Work Disk Free: 10569 GB, Tmp Disk Free: 78 GB
+Loading db file '/home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/ccs_db/M31LLSC750GL150MS_25CTT1P8_ctyp_ccs.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+CPU Load: 12%, Ram Free: 96 GB, Swap Free: 31 GB, Work Disk Free: 10569 GB, Tmp Disk Free: 78 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+# 8. Guardar reportes en reportes/
+report_qor                                 > reportes/dc_1_report_qor.rpt
+report_timing -delay_type max -max_paths 5 > reportes/dc_2_report_timing_setup.rpt
+report_timing -delay_type min -max_paths 5 > reportes/dc_2_report_timing_hold.rpt
+report_area -hierarchy                     > reportes/dc_3_report_area.rpt
+report_power                               > reportes/dc_4_report_power.rpt
+report_constraint -all_violators           > reportes/dc_5_report_violators.rpt
+report_clock_gating                        > reportes/dc_6_report_clock_gating.rpt
+# 9. Exportar Netlist 100% mapeada a M31 y archivo SDC
+change_names -rules verilog -hierarchy
+Warning: In the design imem, net 'rd[31]' is connecting multiple ports. (UCN-1)
+Warning: In the design imem, net 'rd[2]' is connecting multiple ports. (UCN-1)
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+Warning: In the design main_decoder, net 'resultsrc[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design main_decoder, net 'aluop[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design adder_WIDTH32_1, net 'a[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design adder_WIDTH32_1, net 'a[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design extend, net 'instr[30]' is connecting multiple ports. (UCN-1)
+Warning: In the design extend, net 'instr[29]' is connecting multiple ports. (UCN-1)
+Warning: In the design extend, net 'instr[28]' is connecting multiple ports. (UCN-1)
+Warning: In the design extend, net 'instr[27]' is connecting multiple ports. (UCN-1)
+Warning: In the design extend, net 'instr[26]' is connecting multiple ports. (UCN-1)
+Warning: In the design extend, net 'instr[25]' is connecting multiple ports. (UCN-1)
+Warning: In the design extend, net 'immext[27]' is connecting multiple ports. (UCN-1)
+Warning: In the design extend, net 'immext[26]' is connecting multiple ports. (UCN-1)
+Warning: In the design extend, net 'immext[22]' is connecting multiple ports. (UCN-1)
+Warning: In the design extend, net 'immext[18]' is connecting multiple ports. (UCN-1)
+Warning: In the design flags_nzcv_ancho32, net 'result[31]' is connecting multiple ports. (UCN-1)
+1
+write -format verilog -hierarchy -output outputs/Top_RISCV_mapped.v
+Writing verilog file '/home/vpezzarossi/RISCV/outputs/Top_RISCV_mapped.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+write_sdc outputs/Top_RISCV_mapped.sdc
+1
+write -format ddc -hierarchy -output outputs/Top_RISCV_mapped.ddc
+Writing ddc file 'outputs/Top_RISCV_mapped.ddc'.
+1
+exit
+
+Memory usage for this session 512 Mbytes.
+Memory usage for this session including child processes 512 Mbytes.
+CPU usage for this session 2420 seconds ( 0.67 hours ).
+Elapsed time for this session 2431 seconds ( 0.68 hours ).
+
+Thank you...

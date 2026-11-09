@@ -1,0 +1,212 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : Top_RISCV
+Version: Y-2026.03-SP2
+Date   : Thu Nov  5 05:22:20 2026
+****************************************
+
+  Startpoint: u_riscv_core/u_datapath/u_pc_reg/pc_reg_5_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_riscv_core/u_datapath/u_pc_reg/pc_reg_31_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: typical
+  Scenario: func_typical
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg_5_/CK (DFFRBQX2TAS7)
+                                                   0.00      0.00 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg_5_/Q (DFFRBQX2TAS7)
+                                                   2.39      2.39 r
+  u_riscv_core/u_datapath/u_pc_reg/U4/O (BUFX16TAS7)
+                                                   0.92      3.31 r
+  u_imem/U64/O (XOR2X1TAS7)                        1.80      5.11 f
+  u_imem/U96/O (NAND2X1TAS7)                       0.75      5.86 r
+  u_imem/U199/O (NAND2X1TAS7)                      0.40      6.26 f
+  u_imem/U198/O (CLKINVX1TAS7)                     0.54      6.81 r
+  u_imem/U149/O (NAND4B1X2TAS7)                    1.14      7.95 f
+  u_riscv_core/u_controller/u_main_decoder/U7/O (NOR2X1TAS7)
+                                                   1.35      9.30 r
+  u_riscv_core/u_controller/u_main_decoder/U8/O (NAND2X2TAS7)
+                                                   0.69      9.99 f
+  u_riscv_core/u_controller/u_main_decoder/U16/O (NAND2X4TAS7)
+                                                   0.79     10.78 r
+  u_riscv_core/u_datapath/u_extend/U50/OB (MUX2BX1TAS7)
+                                                   0.94     11.72 f
+  u_riscv_core/u_datapath/u_extend/U52/O (AND2X1TAS7)
+                                                   0.81     12.54 f
+  u_riscv_core/u_datapath/u_pc_target/U250/CO (HAX1TAS7)
+                                                   0.77     13.31 f
+  u_riscv_core/u_datapath/u_pc_target/U104/O (OR2X1TAS7)
+                                                   1.01     14.32 f
+  u_riscv_core/u_datapath/u_pc_target/U103/O (NAND2X1TAS7)
+                                                   0.57     14.89 r
+  u_riscv_core/u_datapath/u_pc_target/U101/O (NAND2X2TAS7)
+                                                   0.51     15.41 f
+  u_riscv_core/u_datapath/u_pc_target/U230/CO (FAX1TAS7)
+                                                   3.44     18.84 f
+  u_riscv_core/u_datapath/u_pc_target/U231/CO (FAX1TAS7)
+                                                   3.34     22.18 f
+  u_riscv_core/u_datapath/u_pc_target/U89/O (NOR2B1X1TAS7)
+                                                   0.93     23.11 r
+  u_riscv_core/u_datapath/u_pc_target/U21/O (CLKINVX1TAS7)
+                                                   0.41     23.52 f
+  u_riscv_core/u_datapath/u_pc_target/U24/O (NAND2X1TAS7)
+                                                   0.51     24.03 r
+  u_riscv_core/u_datapath/u_pc_target/U19/O (NAND2X1TAS7)
+                                                   0.42     24.45 f
+  u_riscv_core/u_datapath/u_pc_target/U139/O (NOR2B1X1TAS7)
+                                                   0.76     25.22 r
+  u_riscv_core/u_datapath/u_pc_target/U74/O (OR2X1TAS7)
+                                                   0.81     26.02 r
+  u_riscv_core/u_datapath/u_pc_target/U72/O (NAND2X2TAS7)
+                                                   0.47     26.49 f
+  u_riscv_core/u_datapath/u_pc_target/U70/O (OAI12X1TAS7)
+                                                   0.97     27.46 r
+  u_riscv_core/u_datapath/u_pc_target/U68/O (NAND2X1TAS7)
+                                                   0.71     28.17 f
+  u_riscv_core/u_datapath/u_pc_target/U199/O (NOR2B1X1TAS7)
+                                                   0.88     29.05 r
+  u_riscv_core/u_datapath/u_pc_target/U111/O (OAI22X1TAS7)
+                                                   0.56     29.61 f
+  u_riscv_core/u_datapath/u_pc_target/U58/O (CLKINVX1TAS7)
+                                                   0.40     30.01 r
+  u_riscv_core/u_datapath/u_pc_target/U2/O (INVX1TAS7)
+                                                   0.32     30.33 f
+  u_riscv_core/u_datapath/u_pc_target/U234/CO (FAX1TAS7)
+                                                   2.91     33.24 f
+  u_riscv_core/u_datapath/u_pc_target/U77/O (AOI22B2X1TAS7)
+                                                   0.92     34.16 r
+  u_riscv_core/u_datapath/u_pc_target/U76/O (INVX1TAS7)
+                                                   0.46     34.62 f
+  u_riscv_core/u_datapath/u_pc_target/U251/CO (FAX1TAS7)
+                                                   3.16     37.78 f
+  u_riscv_core/u_datapath/u_pc_target/U18/O (NOR2B1X1TAS7)
+                                                   0.93     38.71 r
+  u_riscv_core/u_datapath/u_pc_target/U13/O (CLKINVX1TAS7)
+                                                   0.52     39.23 f
+  u_riscv_core/u_datapath/u_pc_target/U16/O (NAND2X2TAS7)
+                                                   0.56     39.80 r
+  u_riscv_core/u_datapath/u_pc_target/U11/O (NAND2X2TAS7)
+                                                   0.39     40.19 f
+  u_riscv_core/u_datapath/u_pc_target/U145/O (OAI12X1TAS7)
+                                                   0.94     41.12 r
+  u_riscv_core/u_datapath/u_pc_target/U153/O (NAND2X1TAS7)
+                                                   0.65     41.78 f
+  u_riscv_core/u_datapath/u_pc_target/U109/CO (FAX1TAS7)
+                                                   3.24     45.02 f
+  u_riscv_core/u_datapath/u_pc_target/U151/O (NOR2B1X1TAS7)
+                                                   0.93     45.94 r
+  u_riscv_core/u_datapath/u_pc_target/U50/O (CLKINVX1TAS7)
+                                                   0.52     46.46 f
+  u_riscv_core/u_datapath/u_pc_target/U53/O (NAND2X2TAS7)
+                                                   0.56     47.03 r
+  u_riscv_core/u_datapath/u_pc_target/U48/O (NAND2X2TAS7)
+                                                   0.41     47.44 f
+  u_riscv_core/u_datapath/u_pc_target/U235/CO (FAX1TAS7)
+                                                   2.92     50.36 f
+  u_riscv_core/u_datapath/u_pc_target/U10/O (NOR2B1X1TAS7)
+                                                   0.85     51.21 r
+  u_riscv_core/u_datapath/u_pc_target/U5/O (CLKINVX1TAS7)
+                                                   0.52     51.73 f
+  u_riscv_core/u_datapath/u_pc_target/U8/O (NAND2X2TAS7)
+                                                   0.56     52.29 r
+  u_riscv_core/u_datapath/u_pc_target/U3/O (NAND2X2TAS7)
+                                                   0.41     52.70 f
+  u_riscv_core/u_datapath/u_pc_target/U236/CO (FAX1TAS7)
+                                                   2.90     55.60 f
+  u_riscv_core/u_datapath/u_pc_target/U121/O (CLKINVX1TAS7)
+                                                   0.55     56.15 r
+  u_riscv_core/u_datapath/u_pc_target/U65/O (OR2X1TAS7)
+                                                   0.72     56.86 r
+  u_riscv_core/u_datapath/u_pc_target/U63/O (NAND2X2TAS7)
+                                                   0.62     57.49 f
+  u_riscv_core/u_datapath/u_pc_target/U60/O (OAI12X4TAS7)
+                                                   1.10     58.59 r
+  u_riscv_core/u_datapath/u_pc_target/U59/O (OAI12X4TAS7)
+                                                   0.46     59.05 f
+  u_riscv_core/u_datapath/u_pc_target/U138/O (NOR2B1X1TAS7)
+                                                   0.71     59.77 r
+  u_riscv_core/u_datapath/u_pc_target/U39/O (CLKINVX1TAS7)
+                                                   0.50     60.27 f
+  u_riscv_core/u_datapath/u_pc_target/U40/O (NAND2X2TAS7)
+                                                   0.56     60.83 r
+  u_riscv_core/u_datapath/u_pc_target/U37/O (NAND2X2TAS7)
+                                                   0.41     61.24 f
+  u_riscv_core/u_datapath/u_pc_target/U237/CO (FAX1TAS7)
+                                                   3.15     64.39 f
+  u_riscv_core/u_datapath/u_pc_target/U35/O (NOR2B1X1TAS7)
+                                                   0.93     65.32 r
+  u_riscv_core/u_datapath/u_pc_target/U28/O (CLKINVX1TAS7)
+                                                   0.52     65.84 f
+  u_riscv_core/u_datapath/u_pc_target/U31/O (NAND2X2TAS7)
+                                                   0.70     66.54 r
+  u_riscv_core/u_datapath/u_pc_target/U26/O (NAND2X4TAS7)
+                                                   0.45     66.99 f
+  u_riscv_core/u_datapath/u_pc_target/U147/O (OAI12X4TAS7)
+                                                   0.89     67.88 r
+  u_riscv_core/u_datapath/u_pc_target/U157/O (NAND2X2TAS7)
+                                                   0.48     68.36 f
+  u_riscv_core/u_datapath/u_pc_target/U110/CO (FAX1TAS7)
+                                                   3.17     71.52 f
+  u_riscv_core/u_datapath/u_pc_target/U150/O (NOR2B1X1TAS7)
+                                                   0.93     72.45 r
+  u_riscv_core/u_datapath/u_pc_target/U43/O (CLKINVX1TAS7)
+                                                   0.52     72.97 f
+  u_riscv_core/u_datapath/u_pc_target/U46/O (NAND2X2TAS7)
+                                                   0.56     73.54 r
+  u_riscv_core/u_datapath/u_pc_target/U41/O (NAND2X2TAS7)
+                                                   0.39     73.92 f
+  u_riscv_core/u_datapath/u_pc_target/U86/O (NOR2B1X1TAS7)
+                                                   0.74     74.66 r
+  u_riscv_core/u_datapath/u_pc_target/U83/O (OAI12X1TAS7)
+                                                   0.53     75.19 f
+  u_riscv_core/u_datapath/u_pc_target/U82/O (AOI22X1TAS7)
+                                                   0.88     76.08 r
+  u_riscv_core/u_datapath/u_pc_target/U81/O (CLKINVX1TAS7)
+                                                   0.66     76.74 f
+  u_riscv_core/u_datapath/u_pc_target/U248/CO (FAX1TAS7)
+                                                   2.84     79.58 f
+  u_riscv_core/u_datapath/u_pc_target/U184/O (CLKINVX1TAS7)
+                                                   0.64     80.22 r
+  u_riscv_core/u_datapath/u_pc_target/U129/O (OR2X2TAS7)
+                                                   0.76     80.97 r
+  u_riscv_core/u_datapath/u_pc_target/U123/O (NAND2X1TAS7)
+                                                   0.34     81.32 f
+  u_riscv_core/u_datapath/u_pc_target/U140/O (NAND2X1TAS7)
+                                                   0.43     81.75 r
+  u_riscv_core/u_datapath/u_pc_target/U112/O (OAI12X1TAS7)
+                                                   0.46     82.21 f
+  u_riscv_core/u_datapath/u_pc_target/U193/O (XNOR2X1TAS7)
+                                                   1.34     83.55 r
+  u_riscv_core/u_datapath/u_pc_mux/U11/O (NAND2X1TAS7)
+                                                   0.35     83.90 f
+  u_riscv_core/u_datapath/u_pc_mux/U12/O (OAI12B2X1TAS7)
+                                                   0.44     84.34 r
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg_31_/D (DFFRBQX4TAS7)
+                                                   0.00     84.34 r
+  data arrival time                                         84.34
+
+  clock clk (rise edge)                           95.00     95.00
+  clock network delay (ideal)                      0.00     95.00
+  u_riscv_core/u_datapath/u_pc_reg/pc_reg_31_/CK (DFFRBQX4TAS7)
+                                                   0.00     95.00 r
+  clock uncertainty                               -0.20     94.80
+  library setup time                              -1.21     93.59
+  data required time                                        93.59
+  ------------------------------------------------------------------------
+  data required time                                        93.59
+  data arrival time                                        -84.34
+  ------------------------------------------------------------------------
+  slack (MET)                                                9.25
+
+
+1

@@ -1,0 +1,46 @@
+Information: Using 1 threads for LVS
+[Check Short] Stage 1	Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 1-2	Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 2	Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 2-2	Elapsed =    0:00:05, CPU =    0:00:05
+[Check Short] Stage 3	Elapsed =    0:00:05, CPU =    0:00:05
+[Check Short] End	Elapsed =    0:00:05, CPU =    0:00:05
+[Check Net] Init	Elapsed =    0:00:05, CPU =    0:00:05
+Warning: Port VDD have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port VSS have no valid pin shapes. Skip this port. (RT-203)
+[Check Net] 10% 	Elapsed =    0:00:06, CPU =    0:00:06
+[Check Net] 20% 	Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 30% 	Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 40% 	Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 50% 	Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 60% 	Elapsed =    0:00:08, CPU =    0:00:08
+[Check Net] 70% 	Elapsed =    0:00:08, CPU =    0:00:08
+[Check Net] 80% 	Elapsed =    0:00:08, CPU =    0:00:08
+[Check Net] 90% 	Elapsed =    0:00:08, CPU =    0:00:08
+Warning: Net n2 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net n3 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net u_riscv_core/n23 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net u_riscv_core/n24 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net u_riscv_core/u_controller/n3 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net u_riscv_core/u_datapath/n_Logic1_ has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net u_riscv_core/u_datapath/n2 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net u_riscv_core/u_datapath/u_alu/flag_c has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net u_riscv_core/u_datapath/u_alu/n_Logic0_ has less than 2 valid port. Skip open checking for this net. (RT-204)
+[Check Net] All nets are submitted.
+[Check Net] 100%	Elapsed =    0:00:08, CPU =    0:00:08
+Information: Detected open violation for Net VDD. BBox: (6.0000 5.7600)(788.4000 785.7600). (RT-585)
+Information: Detected open violation for Net VSS. BBox: (6.0000 8.5210)(788.4000 783.1330). (RT-585)
+
+===============================================================
+    Maximum number of violations is set to 50
+    Abort checking when more than 50 violations are found
+    All violations might not be found.
+===============================================================
+Total number of input nets is 22655.
+Total number of short violations is 0.
+Total number of open nets is 2.
+Open nets are VDD VSS 
+Total number of floating route violations is 0.
+
+Elapsed =    0:00:08, CPU =    0:00:08
+1

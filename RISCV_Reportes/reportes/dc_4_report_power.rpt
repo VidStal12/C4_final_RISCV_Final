@@ -1,0 +1,655 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Top_RISCV
+Version: X-2025.06-SP5-5
+Date   : Thu Nov  5 04:48:56 2026
+****************************************
+
+
+Library(s) Used:
+
+    M31LLSC750GL150MS_25CTT1P8_ctyp_ccs (File: /home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/ccs_db/M31LLSC750GL150MS_25CTT1P8_ctyp_ccs.db)
+
+
+Operating Conditions: 25CTT1P8   Library: M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Top_RISCV              MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+riscv_core             MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+imem                   MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+controller             MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+datapath               MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+main_decoder           MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+alu_decoder            MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+adder_WIDTH32_1        MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+adder_WIDTH32_0        MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+Mux_instancia_ancho32_2
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+extend                 MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+Top_ALU_width32        MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+mux3_WIDTH32           MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+prefix_adder_ancho32   MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+logica_triestado_ancho32
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+divisor_WIDTH32        MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+Mux_decision_ancho32   MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+flags_nzcv_ancho32     MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+Mux_instancia_ancho32_0
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+Mux_instancia_ancho32_1
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+dmem                   MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_0
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_191
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_190
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_189
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_188
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_187
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_186
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_185
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_184
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_183
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_182
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_181
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_180
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_179
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_178
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_177
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_176
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_175
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_174
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_173
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_172
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_171
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_170
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_169
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_168
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_167
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_166
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_165
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_164
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_163
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_162
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_161
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_160
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_159
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_158
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_157
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_156
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_155
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_154
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_153
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_152
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_151
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_150
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_149
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_148
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_147
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_146
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_145
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_144
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_143
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_142
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_141
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_140
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_139
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_138
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_137
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_136
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_135
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_134
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_133
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_132
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_131
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_130
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_129
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_128
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_127
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_126
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_125
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_124
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_123
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_122
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_121
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_120
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_119
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_118
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_117
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_116
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_115
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_114
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_113
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_112
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_111
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_110
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_109
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_108
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_107
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_106
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_105
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_104
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_103
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_102
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_101
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_100
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_99
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_98
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_97
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_96
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_95
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_94
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_93
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_92
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_91
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_90
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_89
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_88
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_87
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_86
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_85
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_84
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_83
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_82
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_81
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_80
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_79
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_78
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_77
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_76
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_75
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_74
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_73
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_72
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_71
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_70
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_69
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_68
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_67
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_66
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_65
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_64
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_63
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_62
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_61
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_60
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_59
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_58
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_57
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_56
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_55
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_54
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_53
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_52
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_51
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_50
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_49
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_48
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_47
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_46
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_45
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_44
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_43
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_42
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_41
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_40
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_39
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_38
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_37
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_36
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_35
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_34
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_33
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_32
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_31
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_30
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_29
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_28
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_27
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_26
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_25
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_24
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_23
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_22
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_21
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_20
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_19
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_18
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_17
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_16
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_15
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_14
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_13
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_12
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_11
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_10
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_9
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_8
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_7
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_6
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_5
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_4
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_3
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_2
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_dmem_1
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+program_counter_WIDTH32
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+reg_file               MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_0
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_95
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_94
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_93
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_92
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_91
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_90
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_89
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_88
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_87
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_86
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_85
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_84
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_83
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_82
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_81
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_80
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_79
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_78
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_77
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_76
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_75
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_74
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_73
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_72
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_71
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_70
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_69
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_68
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_67
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_66
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_65
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_64
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_63
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_62
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_61
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_60
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_59
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_58
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_57
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_56
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_55
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_54
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_53
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_52
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_51
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_50
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_49
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_48
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_47
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_46
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_45
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_44
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_43
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_42
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_41
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_40
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_39
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_38
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_37
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_36
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_35
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_34
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_33
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_32
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_31
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_30
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_29
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_28
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_27
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_26
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_25
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_24
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_23
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_22
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_21
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_20
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_19
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_18
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_17
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_16
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_15
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_14
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_13
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_12
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_11
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_10
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_9
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_8
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_7
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_6
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_5
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+SNPS_CLOCK_GATE_HIGH_reg_file_4
+                       MW0K              M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 286.5039 uW   (53%)
+  Net Switching Power  = 250.6426 uW   (47%)
+                         ---------
+Total Dynamic Power    = 537.1465 uW  (100%)
+
+Cell Leakage Power     =  15.7605 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  7.3835e-02        9.0643e-03          415.9716        8.2900e-02  (  15.43%)  i
+register       2.1660e-02        4.3494e-04        4.1984e+03        2.2100e-02  (   4.11%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.1910            0.2411        1.1146e+04            0.4322  (  80.45%)
+--------------------------------------------------------------------------------------------------
+Total              0.2865 mW         0.2506 mW     1.5760e+04 pW         0.5372 mW
+1

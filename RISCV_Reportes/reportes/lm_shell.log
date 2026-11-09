@@ -1,0 +1,2171 @@
+
+                              Library Manager (TM)
+
+                Version Y-2026.03-SP2 for linux64 - Sep 01, 2026
+                           Base build date 6/22/2026.
+
+                    Copyright (c) 1988 - 2026 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+      Inc.  This software may only be used in accordance with the terms and
+  conditions of a written license agreement with Synopsys, Inc.  All other use,
+   reproduction, or distribution of this software is strictly prohibited.  By
+   installing, accessing, using, or executing this software, you agree that it
+  will reside on, operate within, and have access to the computers and networks
+    where such software is used ("Host System"), and that Synopsys may access
+     components and data of the Host System as necessary for it to function
+ properly, to authenticate and validate license keys, to verify that it is used
+ only in conformity with the applicable license restrictions, and to communicate
+                 error messages and associated data to Synopsys.
+
+ 
+Invocation: /usr/synopsys/fusioncompiler/Y-2026.03-SP2/linux64/nwtn/bin/lm_shell_exec
+Execution time: Wed Nov  4 22:39:38 2026
+Host: synopsys-unis (1 x 3000.000 MHz Intel(R) Xeon(R) D-2123IT CPU @ 2.20GHz)
+Working directory: /home/vpezzarossi/RISCV
+
+set BASE_DIR  "$env(HOME)/RISCV/M31/M31LLSC750GL150MS_00.01.000"
+/home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000
+set TECH_FILE "$BASE_DIR/M31LLSC750GL150MS.0.01/milkyway_techfiles/tech/GL150M_5M1T_9K.tf"
+/home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/M31LLSC750GL150MS.0.01/milkyway_techfiles/tech/GL150M_5M1T_9K.tf
+set TECH_LEF  "$BASE_DIR/M31LLSC750GL150MS.0.01/lef_techfiles/tech/GL150M_5M1T_9K.lef"
+/home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/M31LLSC750GL150MS.0.01/lef_techfiles/tech/GL150M_5M1T_9K.lef
+set CELL_LEF  "$BASE_DIR/M31LLSC750GL150MS.0.01/lef/M31LLSC750GL150MS.lef"
+/home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/M31LLSC750GL150MS.0.01/lef/M31LLSC750GL150MS.lef
+set DB_FILE   "$BASE_DIR/ccs_db/M31LLSC750GL150MS_25CTT1P8_ctyp_ccs.db"
+/home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/ccs_db/M31LLSC750GL150MS_25CTT1P8_ctyp_ccs.db
+create_workspace M31_workspace -technology $TECH_FILE -flow normal
+Information: Loading technology file '/home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/M31LLSC750GL150MS.0.01/milkyway_techfiles/tech/GL150M_5M1T_9K.tf' (FILE-007)
+... created workspace M31_workspace
+read_db  $DB_FILE
+{M31LLSC750GL150MS_25CTT1P8_ctyp_ccs}
+read_lef $TECH_LEF
+Information: The default value of lib.workspace.library_developer_mode will be 'true' in future release. (LMUI-054)
+Information: Loading LEF file '/home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/M31LLSC750GL150MS.0.01/lef_techfiles/tech/GL150M_5M1T_9K.lef' (FILE-007)
+Information: Read LEF into a new library 'GL150M_5M1T_9K'. (LEFR-022)
+{GL150M_5M1T_9K}
+read_lef $CELL_LEF
+Information: The default value of lib.workspace.library_developer_mode will be 'true' in future release. (LMUI-054)
+Information: Loading LEF file '/home/vpezzarossi/RISCV/M31/M31LLSC750GL150MS_00.01.000/M31LLSC750GL150MS.0.01/lef/M31LLSC750GL150MS.lef' (FILE-007)
+Information: Read LEF into a new library 'M31LLSC750GL150MS'. (LEFR-022)
+Information: Changed the site definition for the AND2X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 29, Set is_zero_spacing for 3/3 non-real cut OBS in macro AND2X1TAS7. (LEFR-062)
+Information: Changed the site definition for the AND2X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 118, Set is_zero_spacing for 3/3 non-real cut OBS in macro AND2X2TAS7. (LEFR-062)
+Information: Changed the site definition for the AND2X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 214, Set is_zero_spacing for 3/3 non-real cut OBS in macro AND2X4TAS7. (LEFR-062)
+Information: Changed the site definition for the AND3X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 326, Set is_zero_spacing for 4/4 non-real cut OBS in macro AND3X1TAS7. (LEFR-062)
+Information: Changed the site definition for the AND3X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 425, Set is_zero_spacing for 4/4 non-real cut OBS in macro AND3X2TAS7. (LEFR-062)
+Information: Changed the site definition for the AND3X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 531, Set is_zero_spacing for 4/4 non-real cut OBS in macro AND3X4TAS7. (LEFR-062)
+Information: Changed the site definition for the AND4X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 653, Set is_zero_spacing for 4/4 non-real cut OBS in macro AND4X1TAS7. (LEFR-062)
+Information: Changed the site definition for the AND4X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 764, Set is_zero_spacing for 4/4 non-real cut OBS in macro AND4X2TAS7. (LEFR-062)
+Information: Changed the site definition for the AND4X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 882, Set is_zero_spacing for 4/4 non-real cut OBS in macro AND4X4TAS7. (LEFR-062)
+Information: Changed the site definition for the ANTENNAX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the AOI112X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 1054, Set is_zero_spacing for 2/2 non-real cut OBS in macro AOI112X1TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI112X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 1163, Set is_zero_spacing for 5/5 non-real cut OBS in macro AOI112X2TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI112X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 1308, Set is_zero_spacing for 8/8 non-real cut OBS in macro AOI112X4TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI122X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 1483, Set is_zero_spacing for 4/4 non-real cut OBS in macro AOI122X1TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI122X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 1604, Set is_zero_spacing for 8/8 non-real cut OBS in macro AOI122X2TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI122X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 1770, Set is_zero_spacing for 14/14 non-real cut OBS in macro AOI122X4TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI12B2X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 1984, Set is_zero_spacing for 3/3 non-real cut OBS in macro AOI12B2X1TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI12B2X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 2090, Set is_zero_spacing for 4/4 non-real cut OBS in macro AOI12B2X2TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI12B2X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 2211, Set is_zero_spacing for 6/6 non-real cut OBS in macro AOI12B2X4TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI12X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 2359, Set is_zero_spacing for 2/2 non-real cut OBS in macro AOI12X1TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI12X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 2455, Set is_zero_spacing for 5/5 non-real cut OBS in macro AOI12X2TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI12X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 2578, Set is_zero_spacing for 8/8 non-real cut OBS in macro AOI12X4TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI222X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 2731, Set is_zero_spacing for 5/5 non-real cut OBS in macro AOI222X1TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI222X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 2882, Set is_zero_spacing for 10/10 non-real cut OBS in macro AOI222X2TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI222X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 3062, Set is_zero_spacing for 18/18 non-real cut OBS in macro AOI222X4TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI22B2X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 3299, Set is_zero_spacing for 6/6 non-real cut OBS in macro AOI22B2X1TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI22B2X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 3425, Set is_zero_spacing for 10/10 non-real cut OBS in macro AOI22B2X2TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI22B2X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 3577, Set is_zero_spacing for 14/14 non-real cut OBS in macro AOI22B2X4TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI22X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 3760, Set is_zero_spacing for 3/3 non-real cut OBS in macro AOI22X1TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI22X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 3871, Set is_zero_spacing for 6/6 non-real cut OBS in macro AOI22X2TAS7. (LEFR-062)
+Information: Changed the site definition for the AOI22X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 4008, Set is_zero_spacing for 10/10 non-real cut OBS in macro AOI22X4TAS7. (LEFR-062)
+Information: Changed the site definition for the BUFX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 4185, Set is_zero_spacing for 4/4 non-real cut OBS in macro BUFX1TAS7. (LEFR-062)
+Information: Changed the site definition for the BUFX12TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 4270, Set is_zero_spacing for 8/8 non-real cut OBS in macro BUFX12TAS7. (LEFR-062)
+Information: Changed the site definition for the BUFX16TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 4445, Set is_zero_spacing for 8/8 non-real cut OBS in macro BUFX16TAS7. (LEFR-062)
+Information: Changed the site definition for the BUFX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 4653, Set is_zero_spacing for 5/5 non-real cut OBS in macro BUFX2TAS7. (LEFR-062)
+Information: Changed the site definition for the BUFX20TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 4746, Set is_zero_spacing for 11/11 non-real cut OBS in macro BUFX20TAS7. (LEFR-062)
+Information: Changed the site definition for the BUFX3TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 4991, Set is_zero_spacing for 5/5 non-real cut OBS in macro BUFX3TAS7. (LEFR-062)
+Information: Changed the site definition for the BUFX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 5090, Set is_zero_spacing for 5/5 non-real cut OBS in macro BUFX4TAS7. (LEFR-062)
+Information: Changed the site definition for the BUFX8TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 5196, Set is_zero_spacing for 5/5 non-real cut OBS in macro BUFX8TAS7. (LEFR-062)
+Information: Changed the site definition for the BUSHOLDX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 5334, Set is_zero_spacing for 4/4 non-real cut OBS in macro BUSHOLDX1TAS7. (LEFR-062)
+Information: Changed the site definition for the CLKBUFX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 5407, Set is_zero_spacing for 5/5 non-real cut OBS in macro CLKBUFX1TAS7. (LEFR-062)
+Information: Changed the site definition for the CLKBUFX12TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 5493, Set is_zero_spacing for 8/8 non-real cut OBS in macro CLKBUFX12TAS7. (LEFR-062)
+Information: Changed the site definition for the CLKBUFX16TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 5668, Set is_zero_spacing for 8/8 non-real cut OBS in macro CLKBUFX16TAS7. (LEFR-062)
+Information: Changed the site definition for the CLKBUFX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 5876, Set is_zero_spacing for 5/5 non-real cut OBS in macro CLKBUFX2TAS7. (LEFR-062)
+Information: Changed the site definition for the CLKBUFX20TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 5969, Set is_zero_spacing for 11/11 non-real cut OBS in macro CLKBUFX20TAS7. (LEFR-062)
+Information: Changed the site definition for the CLKBUFX3TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 6214, Set is_zero_spacing for 5/5 non-real cut OBS in macro CLKBUFX3TAS7. (LEFR-062)
+Information: Changed the site definition for the CLKBUFX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 6312, Set is_zero_spacing for 5/5 non-real cut OBS in macro CLKBUFX4TAS7. (LEFR-062)
+Information: Changed the site definition for the CLKBUFX8TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 6417, Set is_zero_spacing for 5/5 non-real cut OBS in macro CLKBUFX8TAS7. (LEFR-062)
+Information: Changed the site definition for the CLKINVX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the CLKINVX12TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the CLKINVX16TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the CLKINVX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the CLKINVX20TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the CLKINVX3TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the CLKINVX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the CLKINVX8TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the DELAX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 7508, Set is_zero_spacing for 14/14 non-real cut OBS in macro DELAX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DELAX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 7622, Set is_zero_spacing for 14/14 non-real cut OBS in macro DELAX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DELAX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 7743, Set is_zero_spacing for 14/14 non-real cut OBS in macro DELAX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DELBX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 7878, Set is_zero_spacing for 32/32 non-real cut OBS in macro DELBX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DELBX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 8048, Set is_zero_spacing for 32/32 non-real cut OBS in macro DELBX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DELBX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 8225, Set is_zero_spacing for 32/32 non-real cut OBS in macro DELBX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DELCX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 8416, Set is_zero_spacing for 68/68 non-real cut OBS in macro DELCX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DELCX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 8698, Set is_zero_spacing for 68/68 non-real cut OBS in macro DELCX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DELCX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 8987, Set is_zero_spacing for 68/68 non-real cut OBS in macro DELCX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DELDX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 9290, Set is_zero_spacing for 140/140 non-real cut OBS in macro DELDX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DELDX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 9804, Set is_zero_spacing for 140/140 non-real cut OBS in macro DELDX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DELDX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 10325, Set is_zero_spacing for 140/140 non-real cut OBS in macro DELDX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFCKBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 10860, Set is_zero_spacing for 22/22 non-real cut OBS in macro DFFCKBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFCKBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 11037, Set is_zero_spacing for 22/22 non-real cut OBS in macro DFFCKBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFCKBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 11221, Set is_zero_spacing for 22/22 non-real cut OBS in macro DFFCKBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFCKBRBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 11419, Set is_zero_spacing for 23/23 non-real cut OBS in macro DFFCKBRBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFCKBRBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 11626, Set is_zero_spacing for 23/23 non-real cut OBS in macro DFFCKBRBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFCKBRBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 11840, Set is_zero_spacing for 23/23 non-real cut OBS in macro DFFCKBRBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFCKBRSBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 12070, Set is_zero_spacing for 26/26 non-real cut OBS in macro DFFCKBRSBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFCKBRSBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 12305, Set is_zero_spacing for 26/26 non-real cut OBS in macro DFFCKBRSBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFCKBRSBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 12547, Set is_zero_spacing for 26/26 non-real cut OBS in macro DFFCKBRSBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFCKBSBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 12805, Set is_zero_spacing for 25/25 non-real cut OBS in macro DFFCKBSBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFCKBSBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 13011, Set is_zero_spacing for 25/25 non-real cut OBS in macro DFFCKBSBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFCKBSBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 13224, Set is_zero_spacing for 25/25 non-real cut OBS in macro DFFCKBSBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 13451, Set is_zero_spacing for 22/22 non-real cut OBS in macro DFFQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 13628, Set is_zero_spacing for 22/22 non-real cut OBS in macro DFFQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 13812, Set is_zero_spacing for 22/22 non-real cut OBS in macro DFFQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFRBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 14010, Set is_zero_spacing for 23/23 non-real cut OBS in macro DFFRBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFRBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 14220, Set is_zero_spacing for 23/23 non-real cut OBS in macro DFFRBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFRBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 14437, Set is_zero_spacing for 23/23 non-real cut OBS in macro DFFRBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFRSBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 14670, Set is_zero_spacing for 26/26 non-real cut OBS in macro DFFRSBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFRSBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 14902, Set is_zero_spacing for 26/26 non-real cut OBS in macro DFFRSBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFRSBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 15141, Set is_zero_spacing for 26/26 non-real cut OBS in macro DFFRSBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFSBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 15396, Set is_zero_spacing for 25/25 non-real cut OBS in macro DFFSBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFSBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 15602, Set is_zero_spacing for 25/25 non-real cut OBS in macro DFFSBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DFFSBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 15815, Set is_zero_spacing for 25/25 non-real cut OBS in macro DFFSBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DLATCHRBX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 16042, Set is_zero_spacing for 12/12 non-real cut OBS in macro DLATCHRBX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DLATCHRBX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 16219, Set is_zero_spacing for 12/12 non-real cut OBS in macro DLATCHRBX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DLATCHRBX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 16412, Set is_zero_spacing for 12/12 non-real cut OBS in macro DLATCHRBX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DLATCHRSBX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 16634, Set is_zero_spacing for 24/24 non-real cut OBS in macro DLATCHRSBX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DLATCHRSBX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 16883, Set is_zero_spacing for 24/24 non-real cut OBS in macro DLATCHRSBX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DLATCHRSBX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 17137, Set is_zero_spacing for 24/24 non-real cut OBS in macro DLATCHRSBX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DLATCHSBX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 17422, Set is_zero_spacing for 16/16 non-real cut OBS in macro DLATCHSBX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DLATCHSBX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 17617, Set is_zero_spacing for 16/16 non-real cut OBS in macro DLATCHSBX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DLATCHSBX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 17824, Set is_zero_spacing for 16/16 non-real cut OBS in macro DLATCHSBX4TAS7. (LEFR-062)
+Information: Changed the site definition for the DLATCHX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 18059, Set is_zero_spacing for 13/13 non-real cut OBS in macro DLATCHX1TAS7. (LEFR-062)
+Information: Changed the site definition for the DLATCHX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 18223, Set is_zero_spacing for 13/13 non-real cut OBS in macro DLATCHX2TAS7. (LEFR-062)
+Information: Changed the site definition for the DLATCHX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 18403, Set is_zero_spacing for 13/13 non-real cut OBS in macro DLATCHX4TAS7. (LEFR-062)
+Information: Changed the site definition for the ENDCAPX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the FAX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 18655, Set is_zero_spacing for 17/17 non-real cut OBS in macro FAX1TAS7. (LEFR-062)
+Information: Changed the site definition for the FAX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 18869, Set is_zero_spacing for 17/17 non-real cut OBS in macro FAX2TAS7. (LEFR-062)
+Information: Changed the site definition for the FAX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 19097, Set is_zero_spacing for 17/17 non-real cut OBS in macro FAX4TAS7. (LEFR-062)
+Information: Changed the site definition for the FILLER1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the FILLER16TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the FILLER2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the FILLER32TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the FILLER4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the FILLER64TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the FILLER8TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the FILLERC16TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 19563, Set is_zero_spacing for 33/33 non-real cut OBS in macro FILLERC16TAS7. (LEFR-062)
+Information: Changed the site definition for the FILLERC32TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 19656, Set is_zero_spacing for 69/69 non-real cut OBS in macro FILLERC32TAS7. (LEFR-062)
+Information: Changed the site definition for the FILLERC4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 19792, Set is_zero_spacing for 5/5 non-real cut OBS in macro FILLERC4TAS7. (LEFR-062)
+Information: Changed the site definition for the FILLERC64TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 19850, Set is_zero_spacing for 137/137 non-real cut OBS in macro FILLERC64TAS7. (LEFR-062)
+Information: Changed the site definition for the FILLERC8TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 20069, Set is_zero_spacing for 13/13 non-real cut OBS in macro FILLERC8TAS7. (LEFR-062)
+Information: Changed the site definition for the GCKHBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 20142, Set is_zero_spacing for 22/22 non-real cut OBS in macro GCKHBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the GCKHBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 20330, Set is_zero_spacing for 22/22 non-real cut OBS in macro GCKHBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the GCKHBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 20525, Set is_zero_spacing for 22/22 non-real cut OBS in macro GCKHBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the GCKLBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 20734, Set is_zero_spacing for 20/20 non-real cut OBS in macro GCKLBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the GCKLBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 20923, Set is_zero_spacing for 20/20 non-real cut OBS in macro GCKLBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the GCKLBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 21119, Set is_zero_spacing for 20/20 non-real cut OBS in macro GCKLBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the HAX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 21328, Set is_zero_spacing for 18/18 non-real cut OBS in macro HAX1TAS7. (LEFR-062)
+Information: Changed the site definition for the HAX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 21491, Set is_zero_spacing for 18/18 non-real cut OBS in macro HAX2TAS7. (LEFR-062)
+Information: Changed the site definition for the HAX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 21668, Set is_zero_spacing for 18/18 non-real cut OBS in macro HAX4TAS7. (LEFR-062)
+Information: Changed the site definition for the INVX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the INVX12TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the INVX16TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the INVX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the INVX20TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the INVX3TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the INVX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the INVX8TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the LOWLATCHRBX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 22826, Set is_zero_spacing for 11/11 non-real cut OBS in macro LOWLATCHRBX1TAS7. (LEFR-062)
+Information: Changed the site definition for the LOWLATCHRBX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 23002, Set is_zero_spacing for 11/11 non-real cut OBS in macro LOWLATCHRBX2TAS7. (LEFR-062)
+Information: Changed the site definition for the LOWLATCHRBX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 23196, Set is_zero_spacing for 11/11 non-real cut OBS in macro LOWLATCHRBX4TAS7. (LEFR-062)
+Information: Changed the site definition for the LOWLATCHRSBX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 23419, Set is_zero_spacing for 20/20 non-real cut OBS in macro LOWLATCHRSBX1TAS7. (LEFR-062)
+Information: Changed the site definition for the LOWLATCHRSBX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 23645, Set is_zero_spacing for 20/20 non-real cut OBS in macro LOWLATCHRSBX2TAS7. (LEFR-062)
+Information: Changed the site definition for the LOWLATCHRSBX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 23874, Set is_zero_spacing for 20/20 non-real cut OBS in macro LOWLATCHRSBX4TAS7. (LEFR-062)
+Information: Changed the site definition for the LOWLATCHSBX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 24140, Set is_zero_spacing for 16/16 non-real cut OBS in macro LOWLATCHSBX1TAS7. (LEFR-062)
+Information: Changed the site definition for the LOWLATCHSBX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 24337, Set is_zero_spacing for 16/16 non-real cut OBS in macro LOWLATCHSBX2TAS7. (LEFR-062)
+Information: Changed the site definition for the LOWLATCHSBX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 24546, Set is_zero_spacing for 16/16 non-real cut OBS in macro LOWLATCHSBX4TAS7. (LEFR-062)
+Information: Changed the site definition for the LOWLATCHX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 24783, Set is_zero_spacing for 13/13 non-real cut OBS in macro LOWLATCHX1TAS7. (LEFR-062)
+Information: Changed the site definition for the LOWLATCHX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 24949, Set is_zero_spacing for 13/13 non-real cut OBS in macro LOWLATCHX2TAS7. (LEFR-062)
+Information: Changed the site definition for the LOWLATCHX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 25131, Set is_zero_spacing for 13/13 non-real cut OBS in macro LOWLATCHX4TAS7. (LEFR-062)
+Information: Changed the site definition for the MUX2BX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 25343, Set is_zero_spacing for 4/4 non-real cut OBS in macro MUX2BX1TAS7. (LEFR-062)
+Information: Changed the site definition for the MUX2BX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 25462, Set is_zero_spacing for 10/10 non-real cut OBS in macro MUX2BX2TAS7. (LEFR-062)
+Information: Changed the site definition for the MUX2BX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 25614, Set is_zero_spacing for 10/10 non-real cut OBS in macro MUX2BX4TAS7. (LEFR-062)
+Information: Changed the site definition for the MUX2X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 25780, Set is_zero_spacing for 7/7 non-real cut OBS in macro MUX2X1TAS7. (LEFR-062)
+Information: Changed the site definition for the MUX2X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 25911, Set is_zero_spacing for 7/7 non-real cut OBS in macro MUX2X2TAS7. (LEFR-062)
+Information: Changed the site definition for the MUX2X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 26049, Set is_zero_spacing for 7/7 non-real cut OBS in macro MUX2X4TAS7. (LEFR-062)
+Information: Changed the site definition for the MUX4BX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 26201, Set is_zero_spacing for 24/24 non-real cut OBS in macro MUX4BX1TAS7. (LEFR-062)
+Information: Changed the site definition for the MUX4BX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 26464, Set is_zero_spacing for 24/24 non-real cut OBS in macro MUX4BX2TAS7. (LEFR-062)
+Information: Changed the site definition for the MUX4BX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 26734, Set is_zero_spacing for 24/24 non-real cut OBS in macro MUX4BX4TAS7. (LEFR-062)
+Information: Changed the site definition for the MUX4X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 27018, Set is_zero_spacing for 21/21 non-real cut OBS in macro MUX4X1TAS7. (LEFR-062)
+Information: Changed the site definition for the MUX4X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 27267, Set is_zero_spacing for 21/21 non-real cut OBS in macro MUX4X2TAS7. (LEFR-062)
+Information: Changed the site definition for the MUX4X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 27523, Set is_zero_spacing for 21/21 non-real cut OBS in macro MUX4X4TAS7. (LEFR-062)
+Information: Changed the site definition for the NAND2B1X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 27793, Set is_zero_spacing for 3/3 non-real cut OBS in macro NAND2B1X1TAS7. (LEFR-062)
+Information: Changed the site definition for the NAND2B1X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 27893, Set is_zero_spacing for 5/5 non-real cut OBS in macro NAND2B1X2TAS7. (LEFR-062)
+Information: Changed the site definition for the NAND2B1X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 28012, Set is_zero_spacing for 6/6 non-real cut OBS in macro NAND2B1X4TAS7. (LEFR-062)
+Information: Changed the site definition for the NAND2X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the NAND2X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the NAND2X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the NAND3B1X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 28440, Set is_zero_spacing for 3/3 non-real cut OBS in macro NAND3B1X1TAS7. (LEFR-062)
+Information: Changed the site definition for the NAND3B1X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 28552, Set is_zero_spacing for 5/5 non-real cut OBS in macro NAND3B1X2TAS7. (LEFR-062)
+Information: Changed the site definition for the NAND3B1X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 28683, Set is_zero_spacing for 7/7 non-real cut OBS in macro NAND3B1X4TAS7. (LEFR-062)
+Information: Changed the site definition for the NAND3X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the NAND3X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the NAND3X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the NAND4B1X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 29194, Set is_zero_spacing for 3/3 non-real cut OBS in macro NAND4B1X1TAS7. (LEFR-062)
+Information: Changed the site definition for the NAND4B1X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 29321, Set is_zero_spacing for 7/7 non-real cut OBS in macro NAND4B1X2TAS7. (LEFR-062)
+Information: Changed the site definition for the NAND4B1X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 29471, Set is_zero_spacing for 10/10 non-real cut OBS in macro NAND4B1X4TAS7. (LEFR-062)
+Information: Changed the site definition for the NAND4B2X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 29649, Set is_zero_spacing for 6/6 non-real cut OBS in macro NAND4B2X1TAS7. (LEFR-062)
+Information: Changed the site definition for the NAND4B2X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 29791, Set is_zero_spacing for 11/11 non-real cut OBS in macro NAND4B2X2TAS7. (LEFR-062)
+Information: Changed the site definition for the NAND4B2X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 29957, Set is_zero_spacing for 15/15 non-real cut OBS in macro NAND4B2X4TAS7. (LEFR-062)
+Information: Changed the site definition for the NAND4X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the NAND4X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 30255, Set is_zero_spacing for 3/3 non-real cut OBS in macro NAND4X2TAS7. (LEFR-062)
+Information: Changed the site definition for the NAND4X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 30389, Set is_zero_spacing for 5/5 non-real cut OBS in macro NAND4X4TAS7. (LEFR-062)
+Information: Changed the site definition for the NOR2B1X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 30552, Set is_zero_spacing for 3/3 non-real cut OBS in macro NOR2B1X1TAS7. (LEFR-062)
+Information: Changed the site definition for the NOR2B1X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 30651, Set is_zero_spacing for 5/5 non-real cut OBS in macro NOR2B1X2TAS7. (LEFR-062)
+Information: Changed the site definition for the NOR2B1X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 30767, Set is_zero_spacing for 6/6 non-real cut OBS in macro NOR2B1X4TAS7. (LEFR-062)
+Information: Changed the site definition for the NOR2X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the NOR2X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the NOR2X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the NOR3B1X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 31212, Set is_zero_spacing for 3/3 non-real cut OBS in macro NOR3B1X1TAS7. (LEFR-062)
+Information: Changed the site definition for the NOR3B1X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 31325, Set is_zero_spacing for 5/5 non-real cut OBS in macro NOR3B1X2TAS7. (LEFR-062)
+Information: Changed the site definition for the NOR3B1X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 31464, Set is_zero_spacing for 7/7 non-real cut OBS in macro NOR3B1X4TAS7. (LEFR-062)
+Information: Changed the site definition for the NOR3X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the NOR3X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the NOR3X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the NOR4B1X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 32017, Set is_zero_spacing for 3/3 non-real cut OBS in macro NOR4B1X1TAS7. (LEFR-062)
+Information: Changed the site definition for the NOR4B1X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 32143, Set is_zero_spacing for 7/7 non-real cut OBS in macro NOR4B1X2TAS7. (LEFR-062)
+Information: Changed the site definition for the NOR4B1X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 32304, Set is_zero_spacing for 10/10 non-real cut OBS in macro NOR4B1X4TAS7. (LEFR-062)
+Information: Changed the site definition for the NOR4B2X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 32502, Set is_zero_spacing for 7/7 non-real cut OBS in macro NOR4B2X1TAS7. (LEFR-062)
+Information: Changed the site definition for the NOR4B2X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 32641, Set is_zero_spacing for 11/11 non-real cut OBS in macro NOR4B2X2TAS7. (LEFR-062)
+Information: Changed the site definition for the NOR4B2X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 32818, Set is_zero_spacing for 15/15 non-real cut OBS in macro NOR4B2X4TAS7. (LEFR-062)
+Information: Changed the site definition for the NOR4X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the NOR4X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 33142, Set is_zero_spacing for 3/3 non-real cut OBS in macro NOR4X2TAS7. (LEFR-062)
+Information: Changed the site definition for the NOR4X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 33287, Set is_zero_spacing for 5/5 non-real cut OBS in macro NOR4X4TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI112X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 33473, Set is_zero_spacing for 2/2 non-real cut OBS in macro OAI112X1TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI112X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 33584, Set is_zero_spacing for 4/4 non-real cut OBS in macro OAI112X2TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI112X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 33720, Set is_zero_spacing for 7/7 non-real cut OBS in macro OAI112X4TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI122X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 33889, Set is_zero_spacing for 4/4 non-real cut OBS in macro OAI122X1TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI122X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 34016, Set is_zero_spacing for 9/9 non-real cut OBS in macro OAI122X2TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI122X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 34184, Set is_zero_spacing for 16/16 non-real cut OBS in macro OAI122X4TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI12B2X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 34393, Set is_zero_spacing for 4/4 non-real cut OBS in macro OAI12B2X1TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI12B2X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 34506, Set is_zero_spacing for 5/5 non-real cut OBS in macro OAI12B2X2TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI12B2X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 34630, Set is_zero_spacing for 7/7 non-real cut OBS in macro OAI12B2X4TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI12X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 34774, Set is_zero_spacing for 2/2 non-real cut OBS in macro OAI12X1TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI12X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 34874, Set is_zero_spacing for 4/4 non-real cut OBS in macro OAI12X2TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI12X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 35000, Set is_zero_spacing for 7/7 non-real cut OBS in macro OAI12X4TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI13X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 35159, Set is_zero_spacing for 2/2 non-real cut OBS in macro OAI13X1TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI13X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 35276, Set is_zero_spacing for 5/5 non-real cut OBS in macro OAI13X2TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI13X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 35428, Set is_zero_spacing for 9/9 non-real cut OBS in macro OAI13X4TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI222X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 35618, Set is_zero_spacing for 5/5 non-real cut OBS in macro OAI222X1TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI222X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 35768, Set is_zero_spacing for 9/9 non-real cut OBS in macro OAI222X2TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI222X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 35939, Set is_zero_spacing for 17/17 non-real cut OBS in macro OAI222X4TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI22B2X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 36151, Set is_zero_spacing for 5/5 non-real cut OBS in macro OAI22B2X1TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI22B2X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 36283, Set is_zero_spacing for 8/8 non-real cut OBS in macro OAI22B2X2TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI22B2X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 36435, Set is_zero_spacing for 10/10 non-real cut OBS in macro OAI22B2X4TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI22X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 36601, Set is_zero_spacing for 3/3 non-real cut OBS in macro OAI22X1TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI22X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 36719, Set is_zero_spacing for 5/5 non-real cut OBS in macro OAI22X2TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI22X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 36852, Set is_zero_spacing for 9/9 non-real cut OBS in macro OAI22X4TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI23X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 37010, Set is_zero_spacing for 3/3 non-real cut OBS in macro OAI23X1TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI23X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 37141, Set is_zero_spacing for 6/6 non-real cut OBS in macro OAI23X2TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI23X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 37308, Set is_zero_spacing for 11/11 non-real cut OBS in macro OAI23X4TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI33X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 37519, Set is_zero_spacing for 3/3 non-real cut OBS in macro OAI33X1TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI33X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 37662, Set is_zero_spacing for 7/7 non-real cut OBS in macro OAI33X2TAS7. (LEFR-062)
+Information: Changed the site definition for the OAI33X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 37848, Set is_zero_spacing for 13/13 non-real cut OBS in macro OAI33X4TAS7. (LEFR-062)
+Information: Changed the site definition for the OR2X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 38079, Set is_zero_spacing for 3/3 non-real cut OBS in macro OR2X1TAS7. (LEFR-062)
+Information: Changed the site definition for the OR2X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 38170, Set is_zero_spacing for 3/3 non-real cut OBS in macro OR2X2TAS7. (LEFR-062)
+Information: Changed the site definition for the OR2X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 38268, Set is_zero_spacing for 3/3 non-real cut OBS in macro OR2X4TAS7. (LEFR-062)
+Information: Changed the site definition for the OR3X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 38382, Set is_zero_spacing for 4/4 non-real cut OBS in macro OR3X1TAS7. (LEFR-062)
+Information: Changed the site definition for the OR3X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 38489, Set is_zero_spacing for 4/4 non-real cut OBS in macro OR3X2TAS7. (LEFR-062)
+Information: Changed the site definition for the OR3X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 38603, Set is_zero_spacing for 4/4 non-real cut OBS in macro OR3X4TAS7. (LEFR-062)
+Information: Changed the site definition for the OR4X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 38733, Set is_zero_spacing for 4/4 non-real cut OBS in macro OR4X1TAS7. (LEFR-062)
+Information: Changed the site definition for the OR4X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 38853, Set is_zero_spacing for 4/4 non-real cut OBS in macro OR4X2TAS7. (LEFR-062)
+Information: Changed the site definition for the OR4X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 38980, Set is_zero_spacing for 4/4 non-real cut OBS in macro OR4X4TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFCKBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 39123, Set is_zero_spacing for 30/30 non-real cut OBS in macro SFFCKBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFCKBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 39356, Set is_zero_spacing for 30/30 non-real cut OBS in macro SFFCKBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFCKBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 39596, Set is_zero_spacing for 30/30 non-real cut OBS in macro SFFCKBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFCKBRBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 39850, Set is_zero_spacing for 31/31 non-real cut OBS in macro SFFCKBRBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFCKBRBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 40117, Set is_zero_spacing for 31/31 non-real cut OBS in macro SFFCKBRBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFCKBRBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 40391, Set is_zero_spacing for 31/31 non-real cut OBS in macro SFFCKBRBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFCKBRSBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 40679, Set is_zero_spacing for 34/34 non-real cut OBS in macro SFFCKBRSBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFCKBRSBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 40973, Set is_zero_spacing for 34/34 non-real cut OBS in macro SFFCKBRSBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFCKBRSBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 41274, Set is_zero_spacing for 34/34 non-real cut OBS in macro SFFCKBRSBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFCKBSBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 41589, Set is_zero_spacing for 33/33 non-real cut OBS in macro SFFCKBSBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFCKBSBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 41850, Set is_zero_spacing for 33/33 non-real cut OBS in macro SFFCKBSBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFCKBSBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 42118, Set is_zero_spacing for 33/33 non-real cut OBS in macro SFFCKBSBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 42400, Set is_zero_spacing for 31/31 non-real cut OBS in macro SFFQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 42634, Set is_zero_spacing for 31/31 non-real cut OBS in macro SFFQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 42875, Set is_zero_spacing for 31/31 non-real cut OBS in macro SFFQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFRBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 43130, Set is_zero_spacing for 32/32 non-real cut OBS in macro SFFRBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFRBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 43403, Set is_zero_spacing for 32/32 non-real cut OBS in macro SFFRBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFRBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 43683, Set is_zero_spacing for 32/32 non-real cut OBS in macro SFFRBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFRSBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 43977, Set is_zero_spacing for 35/35 non-real cut OBS in macro SFFRSBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFRSBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 44273, Set is_zero_spacing for 35/35 non-real cut OBS in macro SFFRSBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFRSBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 44576, Set is_zero_spacing for 35/35 non-real cut OBS in macro SFFRSBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFSBQX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 44893, Set is_zero_spacing for 34/34 non-real cut OBS in macro SFFSBQX1TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFSBQX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 45156, Set is_zero_spacing for 34/34 non-real cut OBS in macro SFFSBQX2TAS7. (LEFR-062)
+Information: Changed the site definition for the SFFSBQX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 45426, Set is_zero_spacing for 34/34 non-real cut OBS in macro SFFSBQX4TAS7. (LEFR-062)
+Information: Changed the site definition for the TAP01TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Changed the site definition for the TIE0X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 45752, Set is_zero_spacing for 3/3 non-real cut OBS in macro TIE0X1TAS7. (LEFR-062)
+Information: Changed the site definition for the TIE1X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 45818, Set is_zero_spacing for 2/2 non-real cut OBS in macro TIE1X1TAS7. (LEFR-062)
+Information: Changed the site definition for the TRIBUFX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 45880, Set is_zero_spacing for 8/8 non-real cut OBS in macro TRIBUFX1TAS7. (LEFR-062)
+Information: Changed the site definition for the TRIBUFX12TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 45996, Set is_zero_spacing for 36/36 non-real cut OBS in macro TRIBUFX12TAS7. (LEFR-062)
+Information: Changed the site definition for the TRIBUFX16TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 46237, Set is_zero_spacing for 49/49 non-real cut OBS in macro TRIBUFX16TAS7. (LEFR-062)
+Information: Changed the site definition for the TRIBUFX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 46538, Set is_zero_spacing for 12/12 non-real cut OBS in macro TRIBUFX2TAS7. (LEFR-062)
+Information: Changed the site definition for the TRIBUFX3TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 46686, Set is_zero_spacing for 14/14 non-real cut OBS in macro TRIBUFX3TAS7. (LEFR-062)
+Information: Changed the site definition for the TRIBUFX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 46840, Set is_zero_spacing for 16/16 non-real cut OBS in macro TRIBUFX4TAS7. (LEFR-062)
+Information: Changed the site definition for the TRIBUFX8TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 47002, Set is_zero_spacing for 24/24 non-real cut OBS in macro TRIBUFX8TAS7. (LEFR-062)
+Information: Changed the site definition for the TRIINVX1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 47192, Set is_zero_spacing for 4/4 non-real cut OBS in macro TRIINVX1TAS7. (LEFR-062)
+Information: Changed the site definition for the TRIINVX12TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 47287, Set is_zero_spacing for 14/14 non-real cut OBS in macro TRIINVX12TAS7. (LEFR-062)
+Information: Changed the site definition for the TRIINVX16TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 47524, Set is_zero_spacing for 18/18 non-real cut OBS in macro TRIINVX16TAS7. (LEFR-062)
+Information: Changed the site definition for the TRIINVX2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 47825, Set is_zero_spacing for 4/4 non-real cut OBS in macro TRIINVX2TAS7. (LEFR-062)
+Information: Changed the site definition for the TRIINVX3TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 47940, Set is_zero_spacing for 5/5 non-real cut OBS in macro TRIINVX3TAS7. (LEFR-062)
+Information: Changed the site definition for the TRIINVX4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 48063, Set is_zero_spacing for 6/6 non-real cut OBS in macro TRIINVX4TAS7. (LEFR-062)
+Information: Changed the site definition for the TRIINVX8TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 48203, Set is_zero_spacing for 10/10 non-real cut OBS in macro TRIINVX8TAS7. (LEFR-062)
+Information: Changed the site definition for the XNOR2X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 48389, Set is_zero_spacing for 10/10 non-real cut OBS in macro XNOR2X1TAS7. (LEFR-062)
+Information: Changed the site definition for the XNOR2X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 48515, Set is_zero_spacing for 10/10 non-real cut OBS in macro XNOR2X2TAS7. (LEFR-062)
+Information: Changed the site definition for the XNOR2X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 48648, Set is_zero_spacing for 10/10 non-real cut OBS in macro XNOR2X4TAS7. (LEFR-062)
+Information: Changed the site definition for the XNOR3X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 48797, Set is_zero_spacing for 20/20 non-real cut OBS in macro XNOR3X1TAS7. (LEFR-062)
+Information: Changed the site definition for the XNOR3X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 48982, Set is_zero_spacing for 20/20 non-real cut OBS in macro XNOR3X2TAS7. (LEFR-062)
+Information: Changed the site definition for the XNOR3X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 49174, Set is_zero_spacing for 20/20 non-real cut OBS in macro XNOR3X4TAS7. (LEFR-062)
+Information: Changed the site definition for the XOR2X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 49380, Set is_zero_spacing for 11/11 non-real cut OBS in macro XOR2X1TAS7. (LEFR-062)
+Information: Changed the site definition for the XOR2X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 49509, Set is_zero_spacing for 11/11 non-real cut OBS in macro XOR2X2TAS7. (LEFR-062)
+Information: Changed the site definition for the XOR2X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 49645, Set is_zero_spacing for 11/11 non-real cut OBS in macro XOR2X4TAS7. (LEFR-062)
+Information: Changed the site definition for the XOR3X1TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 49797, Set is_zero_spacing for 22/22 non-real cut OBS in macro XOR3X1TAS7. (LEFR-062)
+Information: Changed the site definition for the XOR3X2TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 49987, Set is_zero_spacing for 22/22 non-real cut OBS in macro XOR3X2TAS7. (LEFR-062)
+Information: Changed the site definition for the XOR3X4TAS7 library cell to unit from M31_CORE_7T. (LEFR-064)
+Information: Line 50184, Set is_zero_spacing for 22/22 non-real cut OBS in macro XOR3X4TAS7. (LEFR-062)
+{M31LLSC750GL150MS}
+check_workspace -allow_missing
+Checking libraries...
+Information: Only one logical library loaded - internal checks only (LM-005)
+Using M31LLSC750GL150MS_25CTT1P8_ctyp_ccs as the base library.
+Warning: Library M31LLSC750GL150MS_25CTT1P8_ctyp_ccs has 912 duplicate rcv cap record(s) (LM-006)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AND2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AND2X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AND2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AND2X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AND2X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AND2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AND2X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AND2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AND2X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AND2X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AND2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AND2X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AND2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AND2X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AND2X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AND3X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AND3X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AND3X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AND3X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AND3X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AND3X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AND3X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AND3X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AND3X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AND3X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AND3X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AND3X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AND3X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AND3X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AND3X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AND4X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AND4X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AND4X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AND4X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AND4X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AND4X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AND4X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AND4X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AND4X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AND4X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AND4X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AND4X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AND4X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AND4X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AND4X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/ANTENNAX1TAS7/design
+	does not match expected value 'in' from M31_workspace/ANTENNAX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/ANTENNAX1TAS7/design
+	does not match expected value 'in' from M31_workspace/ANTENNAX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block ANTENNAX1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI112X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI112X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI112X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI112X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI112X1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI112X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI112X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI112X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI112X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI112X2TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI112X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI112X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI112X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI112X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI112X4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI122X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI122X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI122X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI122X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI122X1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI122X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI122X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI122X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI122X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI122X2TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI122X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI122X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI122X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI122X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI122X4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI12B2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI12B2X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI12B2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI12B2X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI12B2X1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI12B2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI12B2X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI12B2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI12B2X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI12B2X2TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI12B2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI12B2X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI12B2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI12B2X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI12B2X4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI12X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI12X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI12X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI12X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI12X1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI12X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI12X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI12X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI12X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI12X2TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI12X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI12X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI12X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI12X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI12X4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI222X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI222X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI222X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI222X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI222X1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI222X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI222X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI222X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI222X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI222X2TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI222X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI222X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI222X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI222X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI222X4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI22B2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI22B2X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI22B2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI22B2X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI22B2X1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI22B2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI22B2X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI22B2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI22B2X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI22B2X2TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI22B2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI22B2X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI22B2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI22B2X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI22B2X4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI22X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI22X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI22X1TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI22X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI22X1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI22X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI22X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI22X2TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI22X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI22X2TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/AOI22X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI22X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/AOI22X4TAS7/design
+	does not match expected value 'in' from M31_workspace/AOI22X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block AOI22X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/BUFX1TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/BUFX1TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block BUFX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/BUFX12TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX12TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/BUFX12TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX12TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block BUFX12TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/BUFX16TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX16TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/BUFX16TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX16TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block BUFX16TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/BUFX2TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/BUFX2TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block BUFX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/BUFX20TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX20TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/BUFX20TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX20TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block BUFX20TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/BUFX3TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX3TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/BUFX3TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX3TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block BUFX3TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/BUFX4TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/BUFX4TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block BUFX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/BUFX8TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX8TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/BUFX8TAS7/design
+	does not match expected value 'in' from M31_workspace/BUFX8TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block BUFX8TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/BUSHOLDX1TAS7/design
+	does not match expected value 'in' from M31_workspace/BUSHOLDX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/BUSHOLDX1TAS7/design
+	does not match expected value 'in' from M31_workspace/BUSHOLDX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block BUSHOLDX1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKBUFX1TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKBUFX1TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKBUFX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKBUFX12TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX12TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKBUFX12TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX12TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKBUFX12TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKBUFX16TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX16TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKBUFX16TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX16TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKBUFX16TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKBUFX2TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKBUFX2TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKBUFX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKBUFX20TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX20TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKBUFX20TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX20TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKBUFX20TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKBUFX3TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX3TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKBUFX3TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX3TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKBUFX3TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKBUFX4TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKBUFX4TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKBUFX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKBUFX8TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX8TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKBUFX8TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKBUFX8TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKBUFX8TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKINVX1TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKINVX1TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKINVX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKINVX12TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX12TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKINVX12TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX12TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKINVX12TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKINVX16TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX16TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKINVX16TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX16TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKINVX16TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKINVX2TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKINVX2TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKINVX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKINVX20TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX20TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKINVX20TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX20TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKINVX20TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKINVX3TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX3TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKINVX3TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX3TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKINVX3TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKINVX4TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKINVX4TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKINVX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/CLKINVX8TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX8TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/CLKINVX8TAS7/design
+	does not match expected value 'in' from M31_workspace/CLKINVX8TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block CLKINVX8TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DELAX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DELAX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DELAX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DELAX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DELAX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DELAX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DELAX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DELAX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DELAX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DELAX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DELAX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DELAX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DELAX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DELAX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DELAX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DELBX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DELBX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DELBX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DELBX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DELBX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DELBX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DELBX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DELBX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DELBX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DELBX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DELBX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DELBX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DELBX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DELBX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DELBX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DELCX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DELCX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DELCX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DELCX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DELCX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DELCX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DELCX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DELCX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DELCX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DELCX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DELCX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DELCX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DELCX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DELCX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DELCX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DELDX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DELDX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DELDX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DELDX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DELDX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DELDX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DELDX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DELDX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DELDX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DELDX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DELDX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DELDX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DELDX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DELDX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DELDX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFCKBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFCKBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFCKBQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFCKBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFCKBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFCKBQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFCKBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFCKBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFCKBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFCKBRBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBRBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFCKBRBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBRBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFCKBRBQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFCKBRBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBRBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFCKBRBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBRBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFCKBRBQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFCKBRBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBRBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFCKBRBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBRBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFCKBRBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFCKBRSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBRSBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFCKBRSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBRSBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFCKBRSBQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFCKBRSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBRSBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFCKBRSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBRSBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFCKBRSBQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFCKBRSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBRSBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFCKBRSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBRSBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFCKBRSBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFCKBSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBSBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFCKBSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBSBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFCKBSBQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFCKBSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBSBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFCKBSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBSBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFCKBSBQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFCKBSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBSBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFCKBSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFCKBSBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFCKBSBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFRBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFRBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFRBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFRBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFRBQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFRBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFRBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFRBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFRBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFRBQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFRBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFRBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFRBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFRBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFRBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFRSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFRSBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFRSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFRSBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFRSBQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFRSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFRSBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFRSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFRSBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFRSBQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFRSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFRSBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFRSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFRSBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFRSBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFSBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFSBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFSBQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFSBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFSBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFSBQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DFFSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFSBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DFFSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DFFSBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DFFSBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DLATCHRBX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHRBX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DLATCHRBX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHRBX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DLATCHRBX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DLATCHRBX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHRBX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DLATCHRBX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHRBX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DLATCHRBX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DLATCHRBX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHRBX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DLATCHRBX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHRBX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DLATCHRBX4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DLATCHRSBX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHRSBX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DLATCHRSBX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHRSBX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DLATCHRSBX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DLATCHRSBX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHRSBX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DLATCHRSBX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHRSBX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DLATCHRSBX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DLATCHRSBX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHRSBX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DLATCHRSBX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHRSBX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DLATCHRSBX4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DLATCHSBX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHSBX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DLATCHSBX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHSBX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DLATCHSBX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DLATCHSBX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHSBX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DLATCHSBX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHSBX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DLATCHSBX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DLATCHSBX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHSBX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DLATCHSBX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHSBX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DLATCHSBX4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DLATCHX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DLATCHX1TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DLATCHX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DLATCHX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DLATCHX2TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DLATCHX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/DLATCHX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/DLATCHX4TAS7/design
+	does not match expected value 'in' from M31_workspace/DLATCHX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block DLATCHX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FAX1TAS7/design
+	does not match expected value 'in' from M31_workspace/FAX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FAX1TAS7/design
+	does not match expected value 'in' from M31_workspace/FAX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FAX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FAX2TAS7/design
+	does not match expected value 'in' from M31_workspace/FAX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FAX2TAS7/design
+	does not match expected value 'in' from M31_workspace/FAX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FAX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FAX4TAS7/design
+	does not match expected value 'in' from M31_workspace/FAX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FAX4TAS7/design
+	does not match expected value 'in' from M31_workspace/FAX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FAX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FILLERC16TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLERC16TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FILLERC16TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLERC16TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FILLERC16TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FILLERC32TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLERC32TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FILLERC32TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLERC32TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FILLERC32TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FILLERC4TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLERC4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FILLERC4TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLERC4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FILLERC4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FILLERC64TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLERC64TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FILLERC64TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLERC64TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FILLERC64TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FILLERC8TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLERC8TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FILLERC8TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLERC8TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FILLERC8TAS7 (LM-054)
+Information: Deriving related power/ground pin for cell GCKHBQX1TAS7. (LM-175)
+Warning: Direction 'inout' for port VCCK on M31_workspace/GCKHBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/GCKHBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/GCKHBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/GCKHBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block GCKHBQX1TAS7 (LM-054)
+Information: Deriving related power/ground pin for cell GCKHBQX2TAS7. (LM-175)
+Warning: Direction 'inout' for port GNDK on M31_workspace/GCKHBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/GCKHBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/GCKHBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/GCKHBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block GCKHBQX2TAS7 (LM-054)
+Information: Deriving related power/ground pin for cell GCKHBQX4TAS7. (LM-175)
+Warning: Direction 'inout' for port GNDK on M31_workspace/GCKHBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/GCKHBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/GCKHBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/GCKHBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block GCKHBQX4TAS7 (LM-054)
+Information: Deriving related power/ground pin for cell GCKLBQX1TAS7. (LM-175)
+Warning: Direction 'inout' for port GNDK on M31_workspace/GCKLBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/GCKLBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/GCKLBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/GCKLBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block GCKLBQX1TAS7 (LM-054)
+Information: Deriving related power/ground pin for cell GCKLBQX2TAS7. (LM-175)
+Warning: Direction 'inout' for port GNDK on M31_workspace/GCKLBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/GCKLBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/GCKLBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/GCKLBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block GCKLBQX2TAS7 (LM-054)
+Information: Deriving related power/ground pin for cell GCKLBQX4TAS7. (LM-175)
+Warning: Direction 'inout' for port GNDK on M31_workspace/GCKLBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/GCKLBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/GCKLBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/GCKLBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block GCKLBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/HAX1TAS7/design
+	does not match expected value 'in' from M31_workspace/HAX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/HAX1TAS7/design
+	does not match expected value 'in' from M31_workspace/HAX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block HAX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/HAX2TAS7/design
+	does not match expected value 'in' from M31_workspace/HAX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/HAX2TAS7/design
+	does not match expected value 'in' from M31_workspace/HAX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block HAX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/HAX4TAS7/design
+	does not match expected value 'in' from M31_workspace/HAX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/HAX4TAS7/design
+	does not match expected value 'in' from M31_workspace/HAX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block HAX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/INVX1TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/INVX1TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block INVX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/INVX12TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX12TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/INVX12TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX12TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block INVX12TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/INVX16TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX16TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/INVX16TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX16TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block INVX16TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/INVX2TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/INVX2TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block INVX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/INVX20TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX20TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/INVX20TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX20TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block INVX20TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/INVX3TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX3TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/INVX3TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX3TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block INVX3TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/INVX4TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/INVX4TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block INVX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/INVX8TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX8TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/INVX8TAS7/design
+	does not match expected value 'in' from M31_workspace/INVX8TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block INVX8TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/LOWLATCHRBX1TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHRBX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/LOWLATCHRBX1TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHRBX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block LOWLATCHRBX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/LOWLATCHRBX2TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHRBX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/LOWLATCHRBX2TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHRBX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block LOWLATCHRBX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/LOWLATCHRBX4TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHRBX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/LOWLATCHRBX4TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHRBX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block LOWLATCHRBX4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/LOWLATCHRSBX1TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHRSBX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/LOWLATCHRSBX1TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHRSBX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block LOWLATCHRSBX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/LOWLATCHRSBX2TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHRSBX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/LOWLATCHRSBX2TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHRSBX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block LOWLATCHRSBX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/LOWLATCHRSBX4TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHRSBX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/LOWLATCHRSBX4TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHRSBX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block LOWLATCHRSBX4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/LOWLATCHSBX1TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHSBX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/LOWLATCHSBX1TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHSBX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block LOWLATCHSBX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/LOWLATCHSBX2TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHSBX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/LOWLATCHSBX2TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHSBX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block LOWLATCHSBX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/LOWLATCHSBX4TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHSBX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/LOWLATCHSBX4TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHSBX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block LOWLATCHSBX4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/LOWLATCHX1TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/LOWLATCHX1TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block LOWLATCHX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/LOWLATCHX2TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/LOWLATCHX2TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block LOWLATCHX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/LOWLATCHX4TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/LOWLATCHX4TAS7/design
+	does not match expected value 'in' from M31_workspace/LOWLATCHX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block LOWLATCHX4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/MUX2BX1TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX2BX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/MUX2BX1TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX2BX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block MUX2BX1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/MUX2BX2TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX2BX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/MUX2BX2TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX2BX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block MUX2BX2TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/MUX2BX4TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX2BX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/MUX2BX4TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX2BX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block MUX2BX4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/MUX2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX2X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/MUX2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX2X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block MUX2X1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/MUX2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX2X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/MUX2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX2X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block MUX2X2TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/MUX2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX2X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/MUX2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX2X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block MUX2X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/MUX4BX1TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX4BX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/MUX4BX1TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX4BX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block MUX4BX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/MUX4BX2TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX4BX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/MUX4BX2TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX4BX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block MUX4BX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/MUX4BX4TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX4BX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/MUX4BX4TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX4BX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block MUX4BX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/MUX4X1TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX4X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/MUX4X1TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX4X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block MUX4X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/MUX4X2TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX4X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/MUX4X2TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX4X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block MUX4X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/MUX4X4TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX4X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/MUX4X4TAS7/design
+	does not match expected value 'in' from M31_workspace/MUX4X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block MUX4X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND2B1X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND2B1X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND2B1X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND2B1X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND2B1X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND2B1X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND2B1X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND2B1X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND2B1X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND2B1X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND2B1X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND2B1X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND2B1X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND2B1X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND2B1X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND2X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND2X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND2X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND2X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND2X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND2X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND2X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND2X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND2X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND3B1X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND3B1X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND3B1X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND3B1X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND3B1X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND3B1X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND3B1X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND3B1X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND3B1X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND3B1X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND3B1X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND3B1X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND3B1X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND3B1X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND3B1X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND3X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND3X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND3X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND3X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND3X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND3X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND3X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND3X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND3X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND3X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND3X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND3X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND3X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND3X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND3X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND4B1X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4B1X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND4B1X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4B1X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND4B1X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND4B1X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4B1X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND4B1X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4B1X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND4B1X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND4B1X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4B1X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND4B1X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4B1X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND4B1X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND4B2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4B2X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND4B2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4B2X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND4B2X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND4B2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4B2X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND4B2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4B2X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND4B2X2TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND4B2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4B2X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND4B2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4B2X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND4B2X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND4X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND4X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND4X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND4X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND4X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND4X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NAND4X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NAND4X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NAND4X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NAND4X4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR2B1X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR2B1X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR2B1X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR2B1X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR2B1X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR2B1X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR2B1X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR2B1X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR2B1X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR2B1X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR2B1X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR2B1X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR2B1X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR2B1X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR2B1X4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR2X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR2X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR2X1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR2X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR2X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR2X2TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR2X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR2X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR2X4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR3B1X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR3B1X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR3B1X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR3B1X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR3B1X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR3B1X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR3B1X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR3B1X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR3B1X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR3B1X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR3B1X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR3B1X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR3B1X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR3B1X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR3B1X4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR3X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR3X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR3X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR3X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR3X1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR3X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR3X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR3X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR3X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR3X2TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR3X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR3X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR3X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR3X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR3X4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR4B1X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4B1X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR4B1X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4B1X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR4B1X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR4B1X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4B1X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR4B1X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4B1X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR4B1X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR4B1X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4B1X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR4B1X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4B1X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR4B1X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR4B2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4B2X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR4B2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4B2X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR4B2X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR4B2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4B2X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR4B2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4B2X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR4B2X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR4B2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4B2X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR4B2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4B2X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR4B2X4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR4X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR4X1TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR4X1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR4X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR4X2TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR4X2TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/NOR4X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/NOR4X4TAS7/design
+	does not match expected value 'in' from M31_workspace/NOR4X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block NOR4X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI112X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI112X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI112X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI112X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI112X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI112X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI112X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI112X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI112X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI112X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI112X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI112X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI112X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI112X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI112X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI122X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI122X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI122X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI122X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI122X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI122X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI122X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI122X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI122X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI122X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI122X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI122X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI122X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI122X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI122X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI12B2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI12B2X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI12B2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI12B2X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI12B2X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI12B2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI12B2X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI12B2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI12B2X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI12B2X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI12B2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI12B2X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI12B2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI12B2X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI12B2X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI12X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI12X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI12X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI12X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI12X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI12X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI12X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI12X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI12X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI12X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI12X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI12X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI12X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI12X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI12X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI13X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI13X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI13X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI13X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI13X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI13X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI13X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI13X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI13X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI13X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI13X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI13X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI13X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI13X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI13X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI222X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI222X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI222X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI222X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI222X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI222X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI222X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI222X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI222X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI222X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI222X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI222X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI222X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI222X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI222X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI22B2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI22B2X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI22B2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI22B2X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI22B2X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI22B2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI22B2X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI22B2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI22B2X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI22B2X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI22B2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI22B2X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI22B2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI22B2X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI22B2X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI22X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI22X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI22X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI22X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI22X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI22X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI22X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI22X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI22X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI22X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI22X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI22X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI22X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI22X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI22X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI23X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI23X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI23X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI23X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI23X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI23X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI23X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI23X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI23X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI23X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI23X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI23X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI23X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI23X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI23X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI33X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI33X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI33X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI33X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI33X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI33X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI33X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI33X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI33X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI33X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OAI33X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI33X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OAI33X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OAI33X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OAI33X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OR2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OR2X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OR2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OR2X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OR2X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OR2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OR2X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OR2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OR2X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OR2X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OR2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OR2X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OR2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OR2X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OR2X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OR3X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OR3X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OR3X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OR3X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OR3X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OR3X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OR3X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OR3X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OR3X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OR3X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OR3X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OR3X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OR3X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OR3X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OR3X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OR4X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OR4X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OR4X1TAS7/design
+	does not match expected value 'in' from M31_workspace/OR4X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OR4X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OR4X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OR4X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OR4X2TAS7/design
+	does not match expected value 'in' from M31_workspace/OR4X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OR4X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/OR4X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OR4X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/OR4X4TAS7/design
+	does not match expected value 'in' from M31_workspace/OR4X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block OR4X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFCKBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFCKBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFCKBQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFCKBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFCKBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFCKBQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFCKBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFCKBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFCKBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFCKBRBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBRBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFCKBRBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBRBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFCKBRBQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFCKBRBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBRBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFCKBRBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBRBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFCKBRBQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFCKBRBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBRBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFCKBRBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBRBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFCKBRBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFCKBRSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBRSBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFCKBRSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBRSBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFCKBRSBQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFCKBRSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBRSBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFCKBRSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBRSBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFCKBRSBQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFCKBRSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBRSBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFCKBRSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBRSBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFCKBRSBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFCKBSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBSBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFCKBSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBSBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFCKBSBQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFCKBSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBSBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFCKBSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBSBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFCKBSBQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFCKBSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBSBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFCKBSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFCKBSBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFCKBSBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFRBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFRBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFRBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFRBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFRBQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFRBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFRBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFRBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFRBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFRBQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFRBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFRBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFRBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFRBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFRBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFRSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFRSBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFRSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFRSBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFRSBQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFRSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFRSBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFRSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFRSBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFRSBQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFRSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFRSBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFRSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFRSBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFRSBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFSBQX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFSBQX1TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFSBQX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFSBQX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFSBQX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFSBQX2TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFSBQX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFSBQX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/SFFSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFSBQX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/SFFSBQX4TAS7/design
+	does not match expected value 'in' from M31_workspace/SFFSBQX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block SFFSBQX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TIE0X1TAS7/design
+	does not match expected value 'in' from M31_workspace/TIE0X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TIE0X1TAS7/design
+	does not match expected value 'in' from M31_workspace/TIE0X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TIE0X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TIE1X1TAS7/design
+	does not match expected value 'in' from M31_workspace/TIE1X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TIE1X1TAS7/design
+	does not match expected value 'in' from M31_workspace/TIE1X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TIE1X1TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TRIBUFX1TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIBUFX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TRIBUFX1TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIBUFX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TRIBUFX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TRIBUFX12TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIBUFX12TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TRIBUFX12TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIBUFX12TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TRIBUFX12TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TRIBUFX16TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIBUFX16TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TRIBUFX16TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIBUFX16TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TRIBUFX16TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TRIBUFX2TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIBUFX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TRIBUFX2TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIBUFX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TRIBUFX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TRIBUFX3TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIBUFX3TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TRIBUFX3TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIBUFX3TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TRIBUFX3TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TRIBUFX4TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIBUFX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TRIBUFX4TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIBUFX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TRIBUFX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TRIBUFX8TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIBUFX8TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TRIBUFX8TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIBUFX8TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TRIBUFX8TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TRIINVX1TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIINVX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TRIINVX1TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIINVX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TRIINVX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TRIINVX12TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIINVX12TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TRIINVX12TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIINVX12TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TRIINVX12TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TRIINVX16TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIINVX16TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TRIINVX16TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIINVX16TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TRIINVX16TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TRIINVX2TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIINVX2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TRIINVX2TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIINVX2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TRIINVX2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TRIINVX3TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIINVX3TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TRIINVX3TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIINVX3TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TRIINVX3TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TRIINVX4TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIINVX4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TRIINVX4TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIINVX4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TRIINVX4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TRIINVX8TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIINVX8TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TRIINVX8TAS7/design
+	does not match expected value 'in' from M31_workspace/TRIINVX8TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TRIINVX8TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/XNOR2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/XNOR2X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/XNOR2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/XNOR2X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block XNOR2X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/XNOR2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/XNOR2X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/XNOR2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/XNOR2X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block XNOR2X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/XNOR2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/XNOR2X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/XNOR2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/XNOR2X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block XNOR2X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/XNOR3X1TAS7/design
+	does not match expected value 'in' from M31_workspace/XNOR3X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/XNOR3X1TAS7/design
+	does not match expected value 'in' from M31_workspace/XNOR3X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block XNOR3X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/XNOR3X2TAS7/design
+	does not match expected value 'in' from M31_workspace/XNOR3X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/XNOR3X2TAS7/design
+	does not match expected value 'in' from M31_workspace/XNOR3X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block XNOR3X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/XNOR3X4TAS7/design
+	does not match expected value 'in' from M31_workspace/XNOR3X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/XNOR3X4TAS7/design
+	does not match expected value 'in' from M31_workspace/XNOR3X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block XNOR3X4TAS7 (LM-054)
+Warning: Direction 'inout' for port VCCK on M31_workspace/XOR2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/XOR2X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port GNDK on M31_workspace/XOR2X1TAS7/design
+	does not match expected value 'in' from M31_workspace/XOR2X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block XOR2X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/XOR2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/XOR2X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/XOR2X2TAS7/design
+	does not match expected value 'in' from M31_workspace/XOR2X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block XOR2X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/XOR2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/XOR2X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/XOR2X4TAS7/design
+	does not match expected value 'in' from M31_workspace/XOR2X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block XOR2X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/XOR3X1TAS7/design
+	does not match expected value 'in' from M31_workspace/XOR3X1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/XOR3X1TAS7/design
+	does not match expected value 'in' from M31_workspace/XOR3X1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block XOR3X1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/XOR3X2TAS7/design
+	does not match expected value 'in' from M31_workspace/XOR3X2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/XOR3X2TAS7/design
+	does not match expected value 'in' from M31_workspace/XOR3X2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block XOR3X2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/XOR3X4TAS7/design
+	does not match expected value 'in' from M31_workspace/XOR3X4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/XOR3X4TAS7/design
+	does not match expected value 'in' from M31_workspace/XOR3X4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block XOR3X4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/ENDCAPX1TAS7/design
+	does not match expected value 'in' from M31_workspace/ENDCAPX1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/ENDCAPX1TAS7/design
+	does not match expected value 'in' from M31_workspace/ENDCAPX1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block ENDCAPX1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FILLER1TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLER1TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FILLER1TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLER1TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FILLER1TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FILLER16TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLER16TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FILLER16TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLER16TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FILLER16TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FILLER2TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLER2TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FILLER2TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLER2TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FILLER2TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FILLER32TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLER32TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FILLER32TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLER32TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FILLER32TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FILLER4TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLER4TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FILLER4TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLER4TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FILLER4TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FILLER64TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLER64TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FILLER64TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLER64TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FILLER64TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/FILLER8TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLER8TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/FILLER8TAS7/design
+	does not match expected value 'in' from M31_workspace/FILLER8TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block FILLER8TAS7 (LM-054)
+Warning: Direction 'inout' for port GNDK on M31_workspace/TAP01TAS7/design
+	does not match expected value 'in' from M31_workspace/TAP01TAS7/timing (NDM-032w)
+Warning: Direction 'inout' for port VCCK on M31_workspace/TAP01TAS7/design
+	does not match expected value 'in' from M31_workspace/TAP01TAS7/timing (NDM-032w)
+Information: Fixed direction mismatches for block TAP01TAS7 (LM-054)
+Information: Combined 295 physical designs:295 with a design view (225 had ports reordered); (LM-034)
+... creating frames for M31_workspace
+Warning: Block AND2X1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AND2X2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AND3X1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AND3X2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AND4X1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AND4X2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AOI12B2X1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AOI12B2X2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AOI12B2X4TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block CLKBUFX1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block DFFQX1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block DFFQX2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block DFFRBQX1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block DFFRBQX2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block DFFRSBQX1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block DFFRSBQX2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block DFFSBQX1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block DLATCHRSBX1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block DLATCHRSBX2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block DLATCHRSBX4TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block FAX1TAS7.frame has a very large regular routing blockage RB_2 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block FAX2TAS7.frame has a very large regular routing blockage RB_2 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block FAX4TAS7.frame has a very large regular routing blockage RB_2 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block MUX4BX1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block MUX4BX2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block MUX4BX4TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block MUX4X1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block MUX4X2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block MUX4X4TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block NAND2B1X2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block NAND2B1X4TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block NAND3B1X2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block NAND3B1X4TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block NOR2B1X2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block NOR2B1X4TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block NOR3B1X2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block NOR3B1X4TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block NOR4B2X2TAS7.frame has a very large regular routing blockage RB_1 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block NOR4B2X4TAS7.frame has a very large regular routing blockage RB_1 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OAI12B2X1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OAI12B2X2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OAI12B2X4TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OAI22X1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OAI23X1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OR2X1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OR3X1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OR3X2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OR4X1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OR4X2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TRIBUFX12TAS7.frame has a very large regular routing blockage RB_2 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TRIBUFX16TAS7.frame has a very large regular routing blockage RB_2 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TRIBUFX2TAS7.frame has a very large regular routing blockage RB_2 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TRIBUFX3TAS7.frame has a very large regular routing blockage RB_2 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TRIBUFX4TAS7.frame has a very large regular routing blockage RB_2 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TRIBUFX8TAS7.frame has a very large regular routing blockage RB_2 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TRIINVX1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TRIINVX12TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TRIINVX16TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TRIINVX2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TRIINVX3TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TRIINVX4TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TRIINVX8TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block XNOR2X1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block XNOR2X2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block XOR2X1TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block XOR2X1TAS7.frame has a very large regular routing blockage RB_1 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block XOR2X2TAS7.frame has a very large regular routing blockage RB_0 on the METAL1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+... created 295 frames
+
+Workspace check succeeded!
+
+Warning: EMS database "check_workspace.ems" already exists, over-writing it. (EMS-040)
+commit_workspace -output M31LLSC750GL150MS.ndm
+Error: Directory '/home/vpezzarossi/RISCV/M31LLSC750GL150MS.ndm' already exists (FILE-008)
+Information: script '/home/vpezzarossi/RISCV/create_ndm.tcl'
+	stopped at line 12 due to error. (CMD-081)
+Extended error info:
+
+    while executing
+"commit_workspace -output M31LLSC750GL150MS.ndm"
+    (file "/home/vpezzarossi/RISCV/create_ndm.tcl" line 12)
+ -- End Extended Error Info
+lm_shell> 

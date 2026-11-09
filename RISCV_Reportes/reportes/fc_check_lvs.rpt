@@ -1,0 +1,87 @@
+Information: Using 1 threads for LVS
+[Check Short] Stage 1	Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 1-2	Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 2	Elapsed =    0:00:00, CPU =    0:00:00
+Detected more than 50 short violations. Skip checking short violations
+[Check Short] Stage 3	Elapsed =    0:00:01, CPU =    0:00:01
+[Check Short] End	Elapsed =    0:00:01, CPU =    0:00:01
+[Check Net] Init	Elapsed =    0:00:01, CPU =    0:00:01
+Warning: Port VSS have no valid pin shapes. Skip this port. (RT-203)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_110. Net2: VDD. BBox: (42.9600 5.7600)(60.7200 6.2400). Layer: METAL1. (RT-586)
+Information: Detected open violation for Net VSS. BBox: (6.0000 7.7600)(468.2400 466.5600). (RT-585)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_110. Cell2: xofiller!FILLER1TAS7!x1010400y93600. BBox: (101.0400 9.1200)(101.5200 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_110. Cell2: xofiller!FILLERC4TAS7!x991200y93600. BBox: (99.1200 9.1200)(101.0400 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_110. Cell2: xofiller!FILLERC4TAS7!x972000y93600. BBox: (97.2000 9.1200)(99.1200 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/ctmi_7180. Cell2: xofiller!FILLERC4TAS7!x972000y93600. BBox: (97.1990 9.1190)(97.2010 9.6010). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/ctmi_7180. Cell2: xofiller!FILLERC4TAS7!x933600y93600. BBox: (95.2790 9.1190)(95.2810 9.6010). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/ctmi_7147. Net2: VSS. BBox: (102.0000 9.1200)(108.7200 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/ctmi_7180. Net2: VSS. BBox: (95.2800 9.1200)(97.2000 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I17/ctmi_7145. Net2: VSS. BBox: (102.0000 9.1200)(103.9200 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/ctmi_7147. Net2: VDD. BBox: (102.0000 5.7600)(108.7200 6.2400). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/A2790. Cell2: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_110. BBox: (87.1200 9.1200)(93.3600 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_110. Cell2: xofiller!FILLERC4TAS7!x933600y93600. BBox: (93.3600 9.1200)(95.2800 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_110. Cell2: xofiller!FILLER1TAS7!x866400y93600. BBox: (86.6400 9.1200)(87.1200 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_110. Cell2: xofiller!FILLER1TAS7!x861600y93600. BBox: (86.1600 9.1200)(86.6400 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/ctmi_7077. Cell2: xofiller!FILLER1TAS7!x856800y93600. BBox: (85.6790 9.1190)(85.6810 9.6010). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_110. Cell2: xofiller!FILLER1TAS7!x856800y93600. BBox: (85.6800 9.1200)(86.1600 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_110. Cell2: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/ctmi_7077. BBox: (78.9600 9.1200)(80.4000 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_110. Cell2: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/ctmi_7077. BBox: (84.2400 9.1200)(85.6800 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_110. Cell2: xofiller!FILLER1TAS7!x784800y93600. BBox: (78.4800 9.1200)(78.9600 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/ctmi_7077. Cell2: xofiller!FILLER1TAS7!x784800y93600. BBox: (78.9590 9.1190)(78.9610 9.6010). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_110. Cell2: xofiller!FILLER1TAS7!x780000y93600. BBox: (78.0000 9.1200)(78.4800 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_110. Cell2: xofiller!FILLERC4TAS7!x823200y60000. BBox: (84.2390 9.1190)(84.2410 9.6010). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/ctmi_7077. Cell2: xofiller!FILLERC4TAS7!x823200y60000. BBox: (82.3200 9.1200)(84.2400 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_110. Cell2: xofiller!FILLERC4TAS7!x823200y60000. BBox: (84.2390 5.7590)(84.2410 6.2410). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_110. Cell2: xofiller!FILLERC4TAS7!x804000y60000. BBox: (80.3990 9.1190)(80.4010 9.6010). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/ctmi_7077. Cell2: xofiller!FILLERC4TAS7!x804000y60000. BBox: (80.4000 9.1200)(82.3200 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_110. Cell2: xofiller!FILLERC4TAS7!x804000y60000. BBox: (80.3990 5.7590)(80.4010 6.2410). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_110. Net2: VSS. BBox: (84.2400 9.1200)(102.0000 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/ctmi_7077. Net2: VSS. BBox: (78.9600 9.1200)(85.6800 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/U_110. Net2: VDD. BBox: (84.2400 5.7600)(102.0000 6.2400). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/ctmi_7181. Cell2: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_110. BBox: (74.1600 9.1200)(76.0800 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_110. Cell2: xofiller!FILLER1TAS7!x736800y93600. BBox: (73.6800 9.1200)(74.1600 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/ctmi_7181. Cell2: xofiller!FILLER1TAS7!x736800y93600. BBox: (74.1590 9.1190)(74.1610 9.6010). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_110. Cell2: xofiller!FILLER1TAS7!x732000y93600. BBox: (73.2000 9.1200)(73.6800 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I18/ctmi_7181. Net2: VSS. BBox: (74.1600 9.1200)(76.0800 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/ctmi_7111. Cell2: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_110. BBox: (59.7600 9.1200)(60.7200 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_110. Cell2: xofiller!FILLER1TAS7!x592800y93600. BBox: (59.2800 9.1200)(59.7600 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/ctmi_7111. Cell2: xofiller!FILLER1TAS7!x592800y93600. BBox: (59.7590 9.1190)(59.7610 9.6010). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_110. Net2: VSS. BBox: (62.6400 9.1200)(80.4000 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/ctmi_7111. Net2: VSS. BBox: (59.7600 9.1200)(61.6800 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I19/U_110. Net2: VDD. BBox: (62.6400 5.7600)(80.4000 6.2400). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/A2766. Cell2: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_110. BBox: (42.9600 9.1200)(43.4400 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_110. Cell2: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/ctmi_7076. BBox: (45.8400 9.1200)(47.7600 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_110. Cell2: xofiller!FILLER1TAS7!x453600y93600. BBox: (45.3600 9.1200)(45.8400 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/ctmi_7076. Cell2: xofiller!FILLER1TAS7!x453600y93600. BBox: (45.8390 9.1190)(45.8410 9.6010). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_110. Cell2: xofiller!FILLERC4TAS7!x434400y93600. BBox: (43.4400 9.1200)(45.3600 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_110. Cell2: xofiller!FILLER1TAS7!x424800y60000. BBox: (42.9590 9.1190)(42.9610 9.6010). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_110. Cell2: xofiller!FILLER1TAS7!x424800y60000. BBox: (42.9590 5.7590)(42.9610 6.2410). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/U_110. Net2: VSS. BBox: (42.9600 9.1200)(60.7200 9.6000). Layer: METAL1. (RT-586)
+Information: Detected short violation. Cell1: u_riscv_core/u_datapath/u_alu/u_divisor/sub_47_I20/ctmi_7076. Net2: VSS. BBox: (45.8400 9.1200)(47.7600 9.6000). Layer: METAL1. (RT-586)
+Warning: Port VDD have no valid pin shapes. Skip this port. (RT-203)
+[Check Net] 10% 	Elapsed =    0:00:01, CPU =    0:00:01
+[Check Net] 20% 	Elapsed =    0:00:01, CPU =    0:00:01
+[Check Net] 30% 	Elapsed =    0:00:01, CPU =    0:00:01
+[Check Net] 40% 	Elapsed =    0:00:01, CPU =    0:00:01
+[Check Net] 50% 	Elapsed =    0:00:01, CPU =    0:00:01
+[Check Net] 60% 	Elapsed =    0:00:01, CPU =    0:00:01
+[Check Net] 70% 	Elapsed =    0:00:01, CPU =    0:00:01
+[Check Net] 80% 	Elapsed =    0:00:01, CPU =    0:00:01
+[Check Net] 90% 	Elapsed =    0:00:02, CPU =    0:00:02
+[Check Net] All nets are submitted.
+[Check Net] 100%	Elapsed =    0:00:02, CPU =    0:00:02
+Information: Detected open violation for Net VDD. BBox: (6.0000 5.7600)(468.2400 464.0630). (RT-585)
+
+===============================================================
+    Maximum number of violations is set to 50
+    Abort checking when more than 50 violations are found
+    All violations might not be found.
+===============================================================
+Total number of input nets is 6506.
+Total number of short violations is 50.
+Total number of open nets is 2.
+Open nets are VDD VSS 
+Total number of floating route violations is 0.
+
+Elapsed =    0:00:02, CPU =    0:00:02
+1
